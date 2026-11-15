@@ -8,138 +8,138 @@
   "files": [
     {
       "path": "index.html",
-      "sha256": "d67e6352aebbce408a5db393700230079560efdf937d762b456f650ea175d782",
-      "bytes": 1166236
+      "sha256": "05dabf8aa4b83169ad4550c402aeff351dbcf4f57fc8d49b592b407adb9ca563",
+      "bytes": 1202981
     },
     {
       "path": "company/advise/index.html",
-      "sha256": "aa22c1366d3afe6fec54bd01a961d91156e2bb6891abe30fcd584db54e5ae410",
-      "bytes": 20560
+      "sha256": "ef1b1f630df86d0338f64d0fe1a7a22da00db1638e211942180d19a31c3b1989",
+      "bytes": 27265
     },
     {
       "path": "company/aerones/index.html",
-      "sha256": "77e5fb55f258c861da01e7c55652d88296e90b6cd14d5538e4e69379f0a32b9a",
-      "bytes": 30990
+      "sha256": "44c4ee0e590304bcb63edad57827803c3d502f6ef282ade81d93408744f11348",
+      "bytes": 37694
     },
     {
       "path": "company/aisdr/index.html",
-      "sha256": "f84897a58fb8260e1abd25b547f94f94160949ae96d89962d290d3738908ba8a",
-      "bytes": 21944
+      "sha256": "4b26ea9ef308ed0bda952f8bb238ec4b624f96c2fbf12dd944423e195eda4776",
+      "bytes": 28649
     },
     {
       "path": "company/apollo/index.html",
-      "sha256": "44064470231b3ccae53be4faa1eb034ede31b243d430728874a8c7dfee8543a0",
-      "bytes": 22223
+      "sha256": "c18107e8bab0a51cd33422d5e0d368dd3832c2e5f6db073041bed17a4b2d91c4",
+      "bytes": 28928
     },
     {
       "path": "company/autozone/index.html",
-      "sha256": "2711b63238f80a8117df036004b458320fa8f7a975a0c1d9bf96506e454baf8f",
-      "bytes": 35581
+      "sha256": "cef6a7a2c84ae593bdfa2ed8b5670cbed6456c9fc6a7144a7744ea2b1d84acec",
+      "bytes": 42280
     },
     {
       "path": "company/bear/index.html",
-      "sha256": "ef21ae1bb3989b4d4250aba41253c5f87ee794780bd0bb361c5a2c612dd2ad92",
-      "bytes": 32664
+      "sha256": "37168b33c3255d8c29313ecc1a030d1bfe18e0e9d85ac3402a4f13c7be0cb9cb",
+      "bytes": 39366
     },
     {
       "path": "company/bookoff/index.html",
-      "sha256": "a1de9333a2f6b06bba90131072694bacc08aec91e2512834a5c71de05d591640",
-      "bytes": 43144
+      "sha256": "abdf2642389ade4cc7c838b7203e2d232e009c020f48d1eeed7c533a21ffcbed",
+      "bytes": 49841
     },
     {
       "path": "company/buildpad/index.html",
-      "sha256": "33f32bab4855f44e706c31f3e28f7ad1901a25ec3348a72099b9ecb1b4c5f1c4",
-      "bytes": 25355
+      "sha256": "ab2f84a3278e65ed20ff2ff29448c5bd25d84fe9e0cc63115bc198eea40eff66",
+      "bytes": 32060
     },
     {
       "path": "company/chaldal/index.html",
-      "sha256": "7e612bd58ca9318330c48a4554237490fd105899ee9530f0860302ff4c0fce92",
-      "bytes": 30484
+      "sha256": "67de1db210dc6a7c703ec40afd5841da1ef9094d74362b1003fd6ebbeb59b2a3",
+      "bytes": 37188
     },
     {
       "path": "company/datafa/index.html",
-      "sha256": "91f51e14a6171efb1f7caeeded8622f864640f486f6a6e80b0fcd5a7ac3123cd",
-      "bytes": 22081
+      "sha256": "06b505c3a4ba63ea8e6f80738c27ed2cc05bc38c3c6c4ccef0e65fe3f0def52c",
+      "bytes": 28786
     },
     {
       "path": "company/dollargeneral/index.html",
-      "sha256": "b78353402947c61fe1fe2f30d37ccd1663816f8fbf29ed6c2e88de2aa855a0a8",
-      "bytes": 38572
+      "sha256": "623eff38fc3b3023ca4004175696405df5be6246e3adc48f8c345e2642d964f1",
+      "bytes": 45270
     },
     {
       "path": "company/ential/index.html",
-      "sha256": "a74abb160e51325bdd9c8cd7a97caff821ecb948796f0ca3189108c396f2295d",
-      "bytes": 21638
+      "sha256": "5a1ed6b829109c7a7397608e55cd5b99207178366be52d04f8ee7d60705075c1",
+      "bytes": 28343
     },
     {
       "path": "company/figma/index.html",
-      "sha256": "783b8082294b4e0c3ec04675d52cd7e16b1c8ec70759a4eb3f7ca2bf12a0cab5",
-      "bytes": 39880
+      "sha256": "a73ff67264cea8657296cf9a88d3b70384f5bfb49d1e1adb925a58052414489c",
+      "bytes": 54330
     },
     {
       "path": "company/google/index.html",
-      "sha256": "f9b825a848d7c99411608df2d54202ab2f1825faae06ad6c595a267249c4c863",
-      "bytes": 33139
+      "sha256": "f964a9a937bef498d43a497b47429e325ac8462363f3ef2d4b4bd73d6228905d",
+      "bytes": 39841
     },
     {
       "path": "company/gummy/index.html",
-      "sha256": "49fd1f87a817e2049d4721305d3babec473092890364ce40b779d94ea2754e09",
-      "bytes": 21123
+      "sha256": "ce91cedbfedb0316dfe7c2e8b5a2ed1affe8e90da4fa1c0addc42b61c998acc0",
+      "bytes": 27828
     },
     {
       "path": "company/jd/index.html",
-      "sha256": "a86a5e30dbe64b25ad9eb7f81c0535853f88e20f03cba73e61a349d0a7d3fc75",
-      "bytes": 39435
+      "sha256": "437247353e1efc298220dcdac4f79c79fe018c6647f7cab673113412f72d6983",
+      "bytes": 46136
     },
     {
       "path": "company/lancer/index.html",
-      "sha256": "af4919052f8b6d9f8f39fc2700db239b30660188d742534af1f90eb93bb8a4ec",
-      "bytes": 21223
+      "sha256": "47ad332d928c719d9a73ce549fcb38040a4eb13551bc520251a76e3f622a5967",
+      "bytes": 27928
     },
     {
       "path": "company/nitori/index.html",
-      "sha256": "e57eeb567ab4101537d094e5d357d1148d05241f1849b0a6027e8536dac52bf4",
-      "bytes": 43694
+      "sha256": "a7994d17e63f8b28b688eb6545eadcb8570a1160a3f160dd546ed1dcb2f5c1ac",
+      "bytes": 50388
     },
     {
       "path": "company/onlyway/index.html",
-      "sha256": "899897626fa9e3812c3f722065248b124ccc89ac3f53896df470bb97302327fb",
-      "bytes": 32204
+      "sha256": "522f379b6110dfd5eaf7d5a9ebb2f033a4eeb1a768bee753d83dfc1522086e7f",
+      "bytes": 38906
     },
     {
       "path": "company/plausible/index.html",
-      "sha256": "04ade7e379419a3ad637088b9a176bbe37a801ab973458eb4e2a9400dc782435",
-      "bytes": 26979
+      "sha256": "f35e971dfb69c08bdae56223194aa6845e020ed813d9164f7243c9de1ca83cc1",
+      "bytes": 33683
     },
     {
       "path": "company/salesshortcut/index.html",
-      "sha256": "ba8e946b29c52a717e0d90286864f207a6897b45835d2f09921162522a871e28",
-      "bytes": 21469
+      "sha256": "26d9295550b8b20f831c144c94ae863c88ffc427154de7c8f36531a87387bdd2",
+      "bytes": 28174
     },
     {
       "path": "company/tally/index.html",
-      "sha256": "ac3edd80ee120ea07c21800e8d79cc1c58700d93befd0daa9b3b75add8c8287e",
-      "bytes": 29530
+      "sha256": "a837d13f82784c9c078584d192ecc7cc4c321e093a6aa6ad1b26676af386a53c",
+      "bytes": 36234
     },
     {
       "path": "company/threesquirrels/index.html",
-      "sha256": "ade0f0d73b95d0b945ed1fbec658ce9466e33b4cb677d5717ab681da616be699",
-      "bytes": 33548
+      "sha256": "8549e15c43bc8fa6d0ff3567eb542059bbb1d666ea4401df5c7e9fdb91be4eb6",
+      "bytes": 40251
     },
     {
       "path": "company/uniqlo/index.html",
-      "sha256": "bd952855abdf2d2ae05775344c53f0ededa90d9294796f03f77b61ac1eb2afd1",
-      "bytes": 49313
+      "sha256": "6c4eb58b740258c10359350b3d9002b3791f0781b7ea199aed71f7b8ad66bbc7",
+      "bytes": 63414
     },
     {
       "path": "company/wework/index.html",
-      "sha256": "dfecf10b16b3a8ff5093427e322571708d9c5cc7a987150608881e782629935e",
-      "bytes": 47169
+      "sha256": "4c87d6b92b1146434bb7d4092492563237119bddaefd8ef498ae3e0bad81c6f1",
+      "bytes": 61511
     },
     {
       "path": "company/zamzar/index.html",
-      "sha256": "4eefcd160afbb37bcac274533e3a834c1ad049ad1896531ccd0f0a045d74c232",
-      "bytes": 26260
+      "sha256": "859df21aef2237d586bd1aba3000f276baaf8f98416d9c0a4233277599c79ed1",
+      "bytes": 32965
     },
     {
       "path": "evidence-media/advise-official-20261114.webp",
@@ -357,6 +357,21 @@
       "bytes": 12101
     },
     {
+      "path": "people-media/adam-neumann-2015.webp",
+      "sha256": "486cf027faa9485866aae2b85a39eceea9fe124c5b65b33dbb7c0d765d1afa3d",
+      "bytes": 56788
+    },
+    {
+      "path": "people-media/dylan-field-2022.webp",
+      "sha256": "0561108860b98e125dcd0d6e4fe5d1a6a8322f0b8292611dce18fed4c0a3c467",
+      "bytes": 46480
+    },
+    {
+      "path": "people-media/tadashi-yanai-2022.webp",
+      "sha256": "b1593a513ff413a88e779e9bd5cfd82c3dc2116f0c30e261b7d0ba79cb0fde75",
+      "bytes": 42816
+    },
+    {
       "path": "robots.txt",
       "sha256": "65fa822a43fc0eea097ab66a0247ee08bc2b6dc16af2adf1f9664a9b379184fd",
       "bytes": 71
@@ -367,5 +382,5 @@
       "bytes": 1844
     }
   ],
-  "release_id": "9a62abfed126f722"
+  "release_id": "763e3e19278ceead"
 }

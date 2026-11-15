@@ -129,8 +129,91 @@
  .pf-chart-scroll svg{min-width:720px}
  .pf-caption{font-size:13px}
 }
+/* Source-grounded biography: editorial human history, not avatar decoration. */
+.people-archive{background:#f8faf6;border:1px solid #d8e5d8;border-radius:22px;padding:clamp(22px,2.4vw,42px);margin:25px 0 39px;color:#294837;box-shadow:0 15px 36px rgba(18,52,37,.055)}
+.people-section-head{max-width:1150px;margin-bottom:25px}
+.people-kicker{font-size:13px;font-weight:850;letter-spacing:.12em;color:#63947a}
+.people-section-head h3{margin:9px 0 10px;font-size:clamp(28px,2.25vw,39px);line-height:1.25;letter-spacing:-.04em;color:#173b2d}
+.people-section-head p{font-size:18px;line-height:1.85;color:#536e5c;max-width:1010px;margin:0}
+.people-lead-grid{display:grid;grid-template-columns:minmax(210px,360px) minmax(0,1fr);gap:clamp(24px,2.6vw,50px);align-items:start}
+.people-hero-image{margin:0;overflow:hidden;border-radius:15px;background:#e5ede3;border:1px solid #d2e1d2;position:relative}
+.people-hero-image>a{display:block;aspect-ratio:4/5;overflow:hidden}
+.people-hero-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 31%;transition:transform .25s ease}
+.people-hero-image>a:hover img{transform:scale(1.025)}
+.people-hero-image figcaption{background:#183f30;color:#ebf4ec;padding:14px 17px;display:grid;gap:5px}
+.people-hero-image figcaption span{font-size:14px;font-weight:800}
+.people-hero-image figcaption small{font-size:12px;color:#c1d5c5;line-height:1.65}
+.people-lead-story{min-width:0}
+.people-lead-role{font-size:13px;letter-spacing:.085em;font-weight:800;color:#648c72}
+.people-lead-story h4{font-size:clamp(32px,3.1vw,49px);margin:8px 0 4px;color:#1e4230;line-height:1.15}
+.people-lead-english{font-size:19px;color:#72917d;font-weight:750;letter-spacing:.025em;margin:0 0 16px!important}
+.people-lead-title{font-size:17px;font-weight:750;color:#345741;line-height:1.8}
+.people-lead-story>p:not(.people-lead-english){font-size:17px;line-height:1.85;max-width:860px}
+.people-lead-story>a,.people-team-member>a,.people-era a,.people-decision-body>a{font-size:14px;color:#226e4b;font-weight:800;display:inline-block;text-underline-offset:4px}
+.people-lead-support{border-top:1px solid #d7e4d7;margin-top:25px;padding-top:16px;display:grid;gap:5px}
+.people-lead-support>b{font-size:18px;color:#264b39}
+.people-lead-support>small{color:#759080;font-size:13px;line-height:1.7}
+.people-team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:16px}
+.people-team-member{min-width:0;border-radius:12px;border:1px solid #dce7dc;background:#fff;padding:16px;display:flex;flex-direction:column;gap:8px}
+.people-member-line{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 10px}
+.people-member-line strong{font-size:19px;color:#254631}
+.people-member-line span{font-size:13px;color:#6b8270;overflow-wrap:anywhere}
+.people-member-role{font-size:14px;font-weight:700;color:#55725c;line-height:1.6}
+.people-team-member p{font-size:14px;line-height:1.75;color:#6c806d;margin:0}
+.people-team-member a{margin-top:auto}
+.people-subheading{border-top:1px solid #dae6db;margin:32px 0 18px;padding-top:22px}
+.people-subheading h4{font-size:24px;color:#204531;margin:0 0 5px}
+.people-subheading p{margin:0;color:#6a8370;font-size:15px;line-height:1.7}
+.people-era-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.people-era{background:#fff;border:1px solid #dce6dc;border-radius:12px;padding:19px;min-width:0;position:relative}
+.people-era:before{content:"";width:34px;height:3px;background:#4b9770;position:absolute;top:0;left:20px}
+.people-era time{display:block;color:#4e8a61;font-weight:850;font-size:20px;letter-spacing:-.03em;margin-bottom:12px;font-variant-numeric:tabular-nums}
+.people-era strong{display:block;font-size:18px;color:#244c36;margin-bottom:11px;line-height:1.5}
+.people-era p{color:#687f6e;font-size:14px;line-height:1.75;margin:0 0 13px}
+.people-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.people-media-link{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0;border:1px solid #d7e5d9;background:#eff6ee;border-radius:13px;padding:20px;text-decoration:none!important;transition:transform .15s ease,border-color .15s ease}
+.people-media-link:hover{transform:translateY(-2px);border-color:#619b78}
+.people-media-kind{font-size:12px!important;letter-spacing:.06em;font-weight:850;color:#3b8161}
+.people-media-link strong{font-size:18px;color:#204732;line-height:1.5}
+.people-media-link small{font-size:13px;line-height:1.75;color:#6a816f}
+.people-media-link b{font-size:14px;margin-top:auto;color:#286d4c}
+.people-photo-credit{font-size:12px;color:#809384;line-height:1.75;margin-top:22px;padding-top:14px;border-top:1px dashed #ceddce}
+.people-photo-credit a{color:#386d51}
+.people-decision-moment{display:grid;grid-template-columns:105px minmax(0,1fr);gap:22px;background:#f1f5ee;border:1px solid #dce7db;border-left:5px solid #54906f;border-radius:15px;padding:clamp(21px,2.3vw,38px);margin:16px 0 30px}
+.people-decision-year{font-size:clamp(24px,2.15vw,35px);line-height:1.2;letter-spacing:-.06em;color:#377a59;font-weight:880;font-variant-numeric:tabular-nums}
+.people-decision-body{min-width:0}
+.people-decision-label{font-size:12px;font-weight:850;letter-spacing:.055em;color:#618b72;margin-bottom:11px}
+.people-decision-body h4{font-size:clamp(20px,1.8vw,27px);margin:0 0 15px;line-height:1.5;color:#203d2d}
+.people-decision-body>p{font-size:17px;line-height:1.9;margin:0 0 14px;color:#395842}
+.people-decision-meaning{font-size:15px;line-height:1.8;color:#5b765f;margin-bottom:15px;background:#fff;border:1px solid #e2e8df;padding:14px 16px;border-radius:9px}
+.people-decision-meaning strong{color:#345540;margin-right:5px}
+@media(max-width:1000px){
+ .people-lead-grid{grid-template-columns:minmax(180px,300px) minmax(0,1fr);gap:20px}
+ .people-team-grid,.people-era-list{grid-template-columns:1fr}
+ .people-team-member{padding:15px}
+}
+@media(max-width:690px){
+ .people-archive{margin:20px -2px 32px;padding:18px 15px;border-radius:16px}
+ .people-section-head h3{font-size:29px}
+ .people-section-head p{font-size:16px}
+ .people-lead-grid{grid-template-columns:1fr;gap:20px}
+ .people-hero-image{max-width:440px}
+ .people-hero-image>a{aspect-ratio:4/3}
+ .people-hero-image img{object-position:center 29%}
+ .people-lead-story h4{font-size:34px}
+ .people-lead-story>p:not(.people-lead-english){font-size:16px}
+ .people-media-grid{grid-template-columns:1fr}
+ .people-decision-moment{grid-template-columns:1fr;padding:20px 16px;gap:5px}
+ .people-decision-year{font-size:23px}
+ .people-decision-body>p{font-size:16px}
+ .people-era-list{gap:11px}
+ .people-photo-credit{overflow-wrap:anywhere}
+}
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-plausible">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / Plausible Analytics</p><h1>Google 免费提供的网站统计，他偏要收费：一开始月入 64 美元，后来做到百万美元 ARR。</h1><p class="intro">2018 年底，开发者 Uku Taht 不愿再给工作项目接入 Google Analytics，开始写一个更简单、尊重隐私的网站分析工具。2019 年他在 Indie Hackers 分享公开测试版，约 60 名活跃测试用户中有人开始付费，首个收费月只有 $64 MRR。这个市场已有免费的巨头，前一年几乎没有增长奇迹。2020 年，懂内容营销的 Marko Saric 加入，文章直击目标用户对 Google Analytics 的不满，才出现新的增长转折。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/plausible-product.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/plausible-product.webp" alt="2026 年 11 月 14 日采集的 Plausible Analytics 当前首页，不是早年历史现场"><span>查看完整图片 ↗</span></a><figcaption><strong>Plausible 官网：隐私友好的网站分析工具</strong><span>plausible.io · 2026-11-14整理</span><small>2026-11-14 官网公开页面截图，不是历史留影；不证明付费流水或净利润</small><a href="https://plausible.io/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>
-<figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/plausible-founder-retrospective.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/plausible-founder-retrospective.webp" alt="2026 年 11 月 14 日采集的 Plausible 官方 2022 年回顾网页，不是 2022 年截图"><span>查看完整图片 ↗</span></a><figcaption><strong>2022 年官方创业复盘文章：从首批付费到百万 ARR</strong><span>plausible.io · 2026-11-14整理</span><small>2026-11-14 官网公开页面截图，不是历史留影；不证明付费流水或净利润</small><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（8个节点）</summary><ol><li><time>2018 年 12 月</time><div><p>创始人 Uku 为寻找 Google Analytics 替代工具开始写 Plausible。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">公司创立故事 · 查看原文</a></div></li><li><time>2019 年 1 月</time><div><p>Indie Hackers 公测及公开开发日志，获得第一批使用者。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">创始人逐月回顾 · 查看原文</a></div></li><li><time>2019 年 5 月 14 日</time><div><p>创始团队记录首位付费订阅者；2019 年 5 月月末报告 $64 MRR。</p><a href="https://plausible.io/blog/bootstrapping-saas" target="_blank" rel="noopener noreferrer">付费起点 · 查看原文</a></div></li><li><time>2020 年 2 月</time><div><p>创始人自述 MRR $403，Uku 邀请 Marko 共同创业分担营销工作。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">创始人经营复盘 · 查看原文</a></div></li><li><time>2020 年 4 月 8 日</time><div><p>批评 Google Analytics 的文章传播；当月 MRR $607，访问量不等于付费。</p><a href="https://plausible.io/blog/blog-post-changed-my-startup" target="_blank" rel="noopener noreferrer">创始人原始营销复盘 · 查看原文</a></div></li><li><time>2020 年 9 月 10 日</time><div><p>团队称首次从业务收入向两位创始人发薪；当月 MRR $5,035。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">官方经营时间线 · 查看原文</a></div></li><li><time>2022 年 6 月 2 日</time><div><p>创始人披露达到 $1M ARR、7,000+ 付费客户；这不是 $1M 的净利润。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">创始团队 2022 复盘 · 查看原文</a></div></li><li><time>2026 年 11 月 14 日查阅</time><div><p>官网 About 自称 22,000+ 付费订阅者、11 人团队、自负盈亏且无外部投资；均为当前页面自述。</p><a href="https://plausible.io/about" target="_blank" rel="noopener noreferrer">当前官网展示时点 · 查看原文</a></div></li></ol></details><section class="chapter"><h2>第一笔钱不是广告带来的，而是从公开测试用户中来的</h2><p>2018 年 12 月 Uku 开始开发；2019 年 1 月在 Indie Hackers 发布公测，持续公开写开发进展。2019 年 5 月推出订阅，当时约有 60 名活跃 beta 使用者，部分选择付费；官方逐月复盘自述首月 $64 MRR。可确定是有人愿意订阅，无法根据文章知道首个客户姓名、单笔银行流水或实际利润。</p><p class="source">原文依据：<a href="https://plausible.io/blog/open-source-saas" rel="noopener noreferrer">创始团队 2022 年逐月复盘</a></p></section>\n<section class="chapter"><h2>前 324 天很难熬：产品工程与获客是两种能力</h2><p>2019 年 5 月 14 日出现首位付费订阅者；到 2020 年 2 月公司自报仍仅 $403 MRR。创始人承认增长缓慢，Uku 邀请了曾写“如何减少 Google 依赖”文章的 Marko 担任联合创始人，分别负责研发与营销。团队后来披露曾用个人储蓄垫付运营、长期未给自己发工资，不能把 MRR 当作老板到手收入。</p><p class="source">原文依据：<a href="https://plausible.io/blog/bootstrapping-saas" rel="noopener noreferrer">2019–2021 年创业复盘</a></p></section>\n<section class="chapter"><h2>一篇立场鲜明的文章改变获客，但点击量还不等于付款</h2><p>2020 年 4 月 8 日发布批评 Google Analytics 的文章，并被 Hacker News 社区传播。公司称几天内 50,000 多人阅读、第一周新增 166 次试用；但当月 MRR 为 $607，收入增加滞后于阅读量，不能把一周试用都算成新客户。公司随后继续写内容、改进产品、扩展服务器能力，而不是靠一次爆款维持全部收入。</p><p class="source">原文依据：<a href="https://plausible.io/blog/blog-post-changed-my-startup" rel="noopener noreferrer">2020 年当期复盘 + 2021/2022 回顾</a></p></section>\n<section class="chapter"><h2>开源软件不卖代码，也能靠省事和信任收费</h2><p>官方 GitHub 仓库可验证产品仍以开源形式维护，并提供自托管方案。买云端订阅的客户并非为“看不到代码”付费，而是在购买托管、升级、可靠性与维护省心。2022 年官方披露突破 $1M ARR、有 7,000 多名付费订阅者；2026 年 11 月官网自述 22,000 多名付费订阅客户及盈利，但没有向我们提交 2026 年独立审计的收入和利润。</p><p class="source">原文依据：<a href="https://plausible.io/about" rel="noopener noreferrer">创始人经营回顾 + 当前官网</a></p></section><section><h2>第一批真正的客户在哪里？</h2><p>能追溯到 2019-05-14 首位付费订阅者，且创始人披露付费来自 60 名左右活跃公测用户中的一部分；最早的用户主要由 Indie Hackers、开发日志和个人社交平台的公开分享吸引。无法确认首位客户身份、订单金额、哪一条帖子直接带来首单，也没有可查银行流水。</p></section>
+<figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/plausible-founder-retrospective.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/plausible-founder-retrospective.webp" alt="2026 年 11 月 14 日采集的 Plausible 官方 2022 年回顾网页，不是 2022 年截图"><span>查看完整图片 ↗</span></a><figcaption><strong>2022 年官方创业复盘文章：从首批付费到百万 ARR</strong><span>plausible.io · 2026-11-14整理</span><small>2026-11-14 官网公开页面截图，不是历史留影；不证明付费流水或净利润</small><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（8个节点）</summary><ol><li><time>2018 年 12 月</time><div><p>创始人 Uku 为寻找 Google Analytics 替代工具开始写 Plausible。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">公司创立故事 · 查看原文</a></div></li><li><time>2019 年 1 月</time><div><p>Indie Hackers 公测及公开开发日志，获得第一批使用者。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">创始人逐月回顾 · 查看原文</a></div></li><li><time>2019 年 5 月 14 日</time><div><p>创始团队记录首位付费订阅者；2019 年 5 月月末报告 $64 MRR。</p><a href="https://plausible.io/blog/bootstrapping-saas" target="_blank" rel="noopener noreferrer">付费起点 · 查看原文</a></div></li><li><time>2020 年 2 月</time><div><p>创始人自述 MRR $403，Uku 邀请 Marko 共同创业分担营销工作。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">创始人经营复盘 · 查看原文</a></div></li><li><time>2020 年 4 月 8 日</time><div><p>批评 Google Analytics 的文章传播；当月 MRR $607，访问量不等于付费。</p><a href="https://plausible.io/blog/blog-post-changed-my-startup" target="_blank" rel="noopener noreferrer">创始人原始营销复盘 · 查看原文</a></div></li><li><time>2020 年 9 月 10 日</time><div><p>团队称首次从业务收入向两位创始人发薪；当月 MRR $5,035。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">官方经营时间线 · 查看原文</a></div></li><li><time>2022 年 6 月 2 日</time><div><p>创始人披露达到 $1M ARR、7,000+ 付费客户；这不是 $1M 的净利润。</p><a href="https://plausible.io/blog/open-source-saas" target="_blank" rel="noopener noreferrer">创始团队 2022 复盘 · 查看原文</a></div></li><li><time>2026 年 11 月 14 日查阅</time><div><p>官网 About 自称 22,000+ 付费订阅者、11 人团队、自负盈亏且无外部投资；均为当前页面自述。</p><a href="https://plausible.io/about" target="_blank" rel="noopener noreferrer">当前官网展示时点 · 查看原文</a></div></li></ol></details><section class="chapter"><h2>第一笔钱不是广告带来的，而是从公开测试用户中来的</h2><p>2018 年 12 月 Uku 开始开发；2019 年 1 月在 Indie Hackers 发布公测，持续公开写开发进展。2019 年 5 月推出订阅，当时约有 60 名活跃 beta 使用者，部分选择付费；官方逐月复盘自述首月 $64 MRR。可确定是有人愿意订阅，无法根据文章知道首个客户姓名、单笔银行流水或实际利润。</p><p class="source">原文依据：<a href="https://plausible.io/blog/open-source-saas" rel="noopener noreferrer">创始团队 2022 年逐月复盘</a></p></section>
+<section class="chapter"><h2>前 324 天很难熬：产品工程与获客是两种能力</h2><p>2019 年 5 月 14 日出现首位付费订阅者；到 2020 年 2 月公司自报仍仅 $403 MRR。创始人承认增长缓慢，Uku 邀请了曾写“如何减少 Google 依赖”文章的 Marko 担任联合创始人，分别负责研发与营销。团队后来披露曾用个人储蓄垫付运营、长期未给自己发工资，不能把 MRR 当作老板到手收入。</p><p class="source">原文依据：<a href="https://plausible.io/blog/bootstrapping-saas" rel="noopener noreferrer">2019–2021 年创业复盘</a></p></section>
+<section class="chapter"><h2>一篇立场鲜明的文章改变获客，但点击量还不等于付款</h2><p>2020 年 4 月 8 日发布批评 Google Analytics 的文章，并被 Hacker News 社区传播。公司称几天内 50,000 多人阅读、第一周新增 166 次试用；但当月 MRR 为 $607，收入增加滞后于阅读量，不能把一周试用都算成新客户。公司随后继续写内容、改进产品、扩展服务器能力，而不是靠一次爆款维持全部收入。</p><p class="source">原文依据：<a href="https://plausible.io/blog/blog-post-changed-my-startup" rel="noopener noreferrer">2020 年当期复盘 + 2021/2022 回顾</a></p></section>
+<section class="chapter"><h2>开源软件不卖代码，也能靠省事和信任收费</h2><p>官方 GitHub 仓库可验证产品仍以开源形式维护，并提供自托管方案。买云端订阅的客户并非为“看不到代码”付费，而是在购买托管、升级、可靠性与维护省心。2022 年官方披露突破 $1M ARR、有 7,000 多名付费订阅者；2026 年 11 月官网自述 22,000 多名付费订阅客户及盈利，但没有向我们提交 2026 年独立审计的收入和利润。</p><p class="source">原文依据：<a href="https://plausible.io/about" rel="noopener noreferrer">创始人经营回顾 + 当前官网</a></p></section><section><h2>第一批真正的客户在哪里？</h2><p>能追溯到 2019-05-14 首位付费订阅者，且创始人披露付费来自 60 名左右活跃公测用户中的一部分；最早的用户主要由 Indie Hackers、开发日志和个人社交平台的公开分享吸引。无法确认首位客户身份、订单金额、哪一条帖子直接带来首单，也没有可查银行流水。</p></section>
 <section><h2>哪些可以借鉴？</h2><p>先选一个免费巨头未满足的具体细分痛点（例如隐私友好、操作简单），用可用原型邀请目标社区测试。公开改进日志，找到能说出明确不满的真实用户，再用简洁的收费托管方案验证他们是否愿意为省心与可靠性持续付费。</p></section>
 <section><h2>哪些不能照搬？</h2><p>隐私监管与浏览器环境、开源技术能力、两位创始人的开发/内容互补技能、Hacker News 受众和 2020 年的媒体机遇都不可照抄；开源软件需要长期维护与服务器成本。不能保证现在复制一个 Google Analytics 替代品也能获得同样的流量或收入。</p></section>
 <section><h2>怎样做一个小规模验证？</h2><p>七天小实验：选一个现有工具复杂或不透明的痛点；第 1–2 天访谈 10 个真实用户，第 3–4 天做单用途原型，第 5 天请 5 人实际完成任务，第 6 天提出明确月费方案并记录真实愿付承诺，第 7 天统计使用成功率、二次使用与真实预付意愿。没有真实反馈前不推算 MRR。</p></section>
