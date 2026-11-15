@@ -67,7 +67,7 @@ body{background:#fcfbf6;color:#252b22}
 .editorial-fact-strip strong{font-size:clamp(32px,3.8vw,52px);font-weight:900;color:#d4f2ac;line-height:1.05;letter-spacing:-1.3px}
 .editorial-fact-strip span{color:#c4dcca;font-size:11px}.editorial-fact-strip a{font-size:11px;color:#e0f5c3;text-decoration:underline;white-space:nowrap}
 .editorial-intro{font-size:14px;line-height:2.05;color:#4e6856;margin:22px 0 28px}
-.editorial-chapters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.editorial-chapters{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
 .editorial-chapter{background:#fafaf4;border:1px solid #ebeddf;border-radius:12px;padding:19px;display:flex;flex-direction:column;gap:9px;min-width:0}
 .editorial-chapter-index{font-size:10px;color:#997f45;font-weight:800}.editorial-chapter h3{font-size:17px;color:#2b3b2d;margin:0;line-height:1.6}
 .editorial-chapter p{font-size:12px;line-height:1.95;color:#5f7262;margin:0;flex:1}.editorial-chapter>a{font-size:11px;color:#3d7951;text-decoration:underline;text-underline-offset:3px;margin-top:6px}
@@ -619,11 +619,11 @@ body{font-size:16px;line-height:1.75}
 .viz-dashboard-footnote,.viz-cn-history .viz-cn-disclaimer{color:#536b5a}
 .bulk-source-meta,.bulk-licence,.era-card-body small{color:#536c59}
 .editorial-reading .editorial-sources a small{color:#536b59}
-/* 2026-11-14 Wide-screen Chinese reading system.
-   Keep existing palette and editorial identity; use the room for evidence,
-   charts and browsable cards, but cap prose line length for comfortable reading.
-   No fixed pixel viewport and no browser zoom tricks. */
-:root{--reading-text:18px;--reading-muted:15px;--wide-article-limit:86ch}
+/* 2026-11-16 Shared full-width Chinese reading system.
+   All routes use the same 1920px outer shell and 56px maximum gutter.
+   Narrative text uses em (not western ch), with one column for long-form
+   chapters. Evidence cards and numerical diagrams can keep their grids. */
+:root{--reading-text:18px;--reading-muted:15px;--wide-article-limit:72em}
 body{font-size:17px;line-height:1.8}
 .container{max-width:1920px;padding-inline:clamp(18px,3.125vw,56px)}
 /* Masthead/header and front-page text. */
@@ -655,15 +655,15 @@ body{font-size:17px;line-height:1.8}
 /* Preserve readability: newspaper prose stays at a bounded measure even
    inside the much wider article/chart surface. */
 .editorial-reading{padding:clamp(24px,2.2vw,42px)}
-.editorial-reading>h2{font-size:clamp(28px,1.9vw,37px);max-width:1000px}
+.editorial-reading>h2{font-size:clamp(28px,1.9vw,37px);max-width:min(100%,1500px)}
 .editorial-subhead{font-size:18px;line-height:1.8;max-width:var(--wide-article-limit)}
-.editorial-intro{font-size:19px;line-height:1.95;max-width:var(--wide-article-limit);overflow-wrap:anywhere}
+.editorial-intro{font-size:19px;line-height:1.95;max-width:var(--wide-article-limit);overflow-wrap:break-word;word-break:normal;line-break:auto}
 .editorial-reading-label{font-size:15px}
 .editorial-chapter{padding:clamp(19px,1.25vw,26px);gap:10px}
 .editorial-chapter-index{font-size:14px}
 .editorial-chapter h3{font-size:21px;line-height:1.55}
-.editorial-chapter p{font-size:18px;line-height:1.92;overflow-wrap:anywhere}
-.editorial-chapter>a{font-size:15px;overflow-wrap:anywhere;line-height:1.7}
+.editorial-chapter p{font-size:18px;line-height:1.92;max-width:var(--wide-article-limit);overflow-wrap:break-word;word-break:normal;line-break:auto}
+.editorial-chapter>a{font-size:15px;overflow-wrap:break-word;word-break:normal;line-height:1.7}
 .editorial-truth span{font-size:17px}
 .editorial-truth p,.editorial-transfer-grid p{font-size:17px;line-height:1.9;max-width:var(--wide-article-limit)}
 .editorial-test p,.editorial-caution,.editorial-pending p{font-size:16px;line-height:1.85}
@@ -751,7 +751,7 @@ body{font-size:17px;line-height:1.8}
  .viz-flow-chain{gap:14px}
 }
 @media(min-width:901px) and (max-width:1240px){
- .editorial-chapters{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .editorial-chapters{grid-template-columns:minmax(0,1fr)}
  .viz-flow-chain{grid-template-columns:repeat(3,minmax(0,1fr))}
  .research-layout{grid-template-columns:minmax(0,1.5fr) minmax(260px,.8fr)}
 }
@@ -811,7 +811,7 @@ body{font-size:17px;line-height:1.8}
 /* 反周期 · source-first editorial collection, separate from published stories */
 .cc-hero{margin:26px 0 24px;padding:clamp(22px,4vw,52px);background:#163e31;color:#f2f7f0;border-radius:22px}
 .cc-hero .section-kicker{color:#b9dfac;font-size:13px;font-weight:800;letter-spacing:2px}
-.cc-hero h1{font-size:clamp(34px,4.2vw,62px);line-height:1.25;letter-spacing:-1.5px;max-width:19ch;margin:20px 0}
+.cc-hero h1{font-size:clamp(34px,4.2vw,62px);line-height:1.25;letter-spacing:-1.5px;max-width:min(100%,22em);margin:20px 0}
 .cc-hero p{font-size:17px;max-width:80ch;line-height:1.9;color:#e0eee6}
 .cc-hero-foot{display:flex;flex-wrap:wrap;gap:13px;align-items:center;margin-top:22px;color:#bfdbcd;font-size:14px}
 .cc-hero-foot strong{font-size:18px;color:#fff}
@@ -877,7 +877,7 @@ body{font-size:17px;line-height:1.8}
 .cc-program h3{font-size:20px;line-height:1.5;color:#22533d}
 .cc-program p{line-height:1.75;color:#405b4d}
 .cc-program small{font-size:13px;color:#668070;line-height:1.65}
-@media(min-width:1500px){.container:has(.cc-hero){max-width:1490px}}
+/* All routes share .container; do not shrink the countercycle route. */
 @media(max-width:1000px){.cc-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-program-grid{grid-template-columns:1fr}}
 @media(max-width:730px){.cc-japan-grid{grid-template-columns:1fr}.cc-bar-row{grid-template-columns:100px minmax(0,1fr) 62px;gap:6px;font-size:12px}.cc-chart-axis{max-width:calc(100% - 168px);margin-left:106px;margin-right:62px}.cc-grid{grid-template-columns:1fr}.cc-hero h1{font-size:35px}.cc-method h2{font-size:22px}.cc-steps{grid-template-columns:1fr}.cc-card{padding:19px}}
 
@@ -1954,8 +1954,8 @@ document.addEventListener('change',e=>{
 window.addEventListener('hashchange',renderRoute);
 renderRoute();
 // The served HTML is a versioned static artifact, not a live database query.
-// Check the public release manifest on return to an existing tab. If a new
-// full story was deployed, reload just the homepage using its release ID to
+// Check the public release manifest on return to an existing tab. If any new
+// reviewed site version was deployed (including a style-only change), reload the homepage using its release ID to
 // avoid leaving an old static homepage in a long-lived Chrome tab.
 let lastManifestCheck=0;
 async function checkNewPublicStories(){
@@ -1968,7 +1968,7 @@ async function checkNewPublicStories(){
   const response=await fetch(manifestUrl.toString(),{cache:'no-store',credentials:'omit'});
   if(!response.ok)return;
   const release=await response.json();
-  if(!release||!release.release_id||!Number.isInteger(release.public_stories)||release.public_stories<=COMPANY.length)return;
+  if(!release||!release.release_id||!Number.isInteger(release.public_stories))return;
   const target=new URL(location.href);
   if(target.searchParams.get('release')===release.release_id)return;
   target.searchParams.set('release',release.release_id);
