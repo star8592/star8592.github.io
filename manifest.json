@@ -1,0 +1,371 @@
+{
+  "schema_version": "company_stories.public_release.v0.1",
+  "source_as_of": "2026-11-14",
+  "latest_editorial_reviewed_at": "2026-11-15",
+  "file_policy": "ONLY_REVIEWED_WEBP_AND_GENERATED_PUBLIC_SEO",
+  "public_stories": 26,
+  "source_provenance": "Screenshots show websites at their capture date; not independent financial audits",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "52e0956dae20c653337bad9c2347a9e4277fcab8841834e76456c6ea569e494c",
+      "bytes": 1113862
+    },
+    {
+      "path": "company/advise/index.html",
+      "sha256": "212543bb02bccf12c6ac45c77a861451732fb16593db27eba9498ef8e34adf4d",
+      "bytes": 8362
+    },
+    {
+      "path": "company/aerones/index.html",
+      "sha256": "f6ca05463b911ee4a85042164fe53aca6b606dd63e254da1994b907584b993a9",
+      "bytes": 18155
+    },
+    {
+      "path": "company/aisdr/index.html",
+      "sha256": "4b7de5291da8dd22b7d5757141fcc060664a46339cacb11f4ab0e233e5064482",
+      "bytes": 9747
+    },
+    {
+      "path": "company/apollo/index.html",
+      "sha256": "dbd07540febe9006815def6b76257733bcbc6650d84f11af6f35c50a2d2d4700",
+      "bytes": 10025
+    },
+    {
+      "path": "company/autozone/index.html",
+      "sha256": "434803164c936ef5a489e8de08d67e1e6825ce89675a8e8a3c4189d4e14449a3",
+      "bytes": 23367
+    },
+    {
+      "path": "company/bear/index.html",
+      "sha256": "0688106a3700f0f9ea3b25970fcc2cc4a704f1dd59668c5752ff0ab4f8081e6c",
+      "bytes": 20457
+    },
+    {
+      "path": "company/bookoff/index.html",
+      "sha256": "3320372ecf0d136120fc4852030e437ebaa4a372b6ff7aaf839aa676f2811639",
+      "bytes": 27071
+    },
+    {
+      "path": "company/buildpad/index.html",
+      "sha256": "c3bc447ce4ffb8147c5959bd9a2ca5d826c97f8e469dc587d973c0dc864bb50c",
+      "bytes": 12953
+    },
+    {
+      "path": "company/chaldal/index.html",
+      "sha256": "04ee995f3ba7c5b0e4c1022d38a3f8b055f85a5326bc427ecb473059b5ee6d22",
+      "bytes": 18076
+    },
+    {
+      "path": "company/datafa/index.html",
+      "sha256": "567d4494411bd90310e49785a5fe67a0f3a4ada181c85fbb284c1992a8f74e49",
+      "bytes": 9883
+    },
+    {
+      "path": "company/dollargeneral/index.html",
+      "sha256": "eaed0f087bcf5f0efe93d8cc73e2e50e0db603acb900e4820eeb1a3fd9fcfa60",
+      "bytes": 22585
+    },
+    {
+      "path": "company/ential/index.html",
+      "sha256": "979e034ac509adc18154c27b2e8da972f443bf41ba80a6fe152e14d3318c019e",
+      "bytes": 9440
+    },
+    {
+      "path": "company/figma/index.html",
+      "sha256": "7e10c950dfd7c717f74ff2de02db1c7885aae34c1a98c8b327171cf3f8aa6703",
+      "bytes": 27416
+    },
+    {
+      "path": "company/google/index.html",
+      "sha256": "3332576473ce7025d45393b17ed15a48b2d22a9f3ca03b61d9e7ddcbb5d103c8",
+      "bytes": 20918
+    },
+    {
+      "path": "company/gummy/index.html",
+      "sha256": "d94af7d56a4397f9bdde3359abe49f4d2d39cec914c32fb7ba1ee5dc67da36f8",
+      "bytes": 8926
+    },
+    {
+      "path": "company/jd/index.html",
+      "sha256": "09d952d207d122ab43b7539fdb5f22cbcb9dab31d023b5ed4679391c71abf80f",
+      "bytes": 27218
+    },
+    {
+      "path": "company/lancer/index.html",
+      "sha256": "e5f6230156fc57719d3e626aa6bc5edbcd6809dfe8955906302d291debda24b2",
+      "bytes": 9025
+    },
+    {
+      "path": "company/nitori/index.html",
+      "sha256": "874afa972a791f17c1ed8042a59c9c4d40abfe3401b28654f26cafe4d7d55a09",
+      "bytes": 27562
+    },
+    {
+      "path": "company/onlyway/index.html",
+      "sha256": "fddb6aedc2f90dbfc67bde6bee3e8a2eccbb4887b4aa7c7de9c701d4db55ec1c",
+      "bytes": 19982
+    },
+    {
+      "path": "company/plausible/index.html",
+      "sha256": "15fc2ef27f117c2ca6562644daf4ecd18698385991e00281e2533e57685b0174",
+      "bytes": 14566
+    },
+    {
+      "path": "company/salesshortcut/index.html",
+      "sha256": "6ea0af3f5033ed8940283a6d5b9f446574794ab0dfb7a27cc66a071b2d4401d0",
+      "bytes": 9264
+    },
+    {
+      "path": "company/tally/index.html",
+      "sha256": "c7f72f42ee9b3a19f9037e3d6d2f216a99ac67eac9ad23d825d31167a1a8c7a8",
+      "bytes": 16899
+    },
+    {
+      "path": "company/threesquirrels/index.html",
+      "sha256": "49f337c54c1fd448c46b70347f69b5d9ef0f5bdb16110381860cbab2ee1d3bed",
+      "bytes": 21106
+    },
+    {
+      "path": "company/uniqlo/index.html",
+      "sha256": "b09bfbcf4d9685e615ebe82429454300c82f465b38e4e426dd45970af8059d27",
+      "bytes": 32512
+    },
+    {
+      "path": "company/wework/index.html",
+      "sha256": "be3014c75a464fd30e36c86ee12a25a95b673161b781dc6a2f5220c99c950d92",
+      "bytes": 29898
+    },
+    {
+      "path": "company/zamzar/index.html",
+      "sha256": "6acf1cfe00d921a12c431f6f2419220ef16ca51511bd3951f43b1b08de5be8b2",
+      "bytes": 13854
+    },
+    {
+      "path": "evidence-media/advise-official-20261114.webp",
+      "sha256": "89591af7149010c4f18a02fd7753875facc8da7b925e72bd0b4b25589d18b3c4",
+      "bytes": 25018
+    },
+    {
+      "path": "evidence-media/aerones-about-20261114.webp",
+      "sha256": "671c2f8039388105458d4384a72610e3bfa4b8264a487ea4b9d0a8782d911819",
+      "bytes": 42338
+    },
+    {
+      "path": "evidence-media/aerones-eif-20261114.webp",
+      "sha256": "9f2734ba1f0f41869137cffe70d9204a5286be3605d16ffda5c5701f1d59bf89",
+      "bytes": 21344
+    },
+    {
+      "path": "evidence-media/aerones-gallery-20261114.webp",
+      "sha256": "47167a19c2a8a81b3b884878bd9138c2f76196a2db9f53802ca19f7c782a93d5",
+      "bytes": 31126
+    },
+    {
+      "path": "evidence-media/aerones-product-20261114.webp",
+      "sha256": "f4ec40725fc775a901f8b71530c7a45ec897883f6a999afadb91a6e50a75281f",
+      "bytes": 50982
+    },
+    {
+      "path": "evidence-media/aisdr-official-20261114.webp",
+      "sha256": "9c3288ec0780ba2cf438a6fc0441e8e6aa8faf434126a57a9c400891959d0c4c",
+      "bytes": 31238
+    },
+    {
+      "path": "evidence-media/apollo-official-20261114.webp",
+      "sha256": "3264b6021c690cf8311204753e29ae6bba23688b05e637e1248969be4c506108",
+      "bytes": 32936
+    },
+    {
+      "path": "evidence-media/autozone-2007-2009-financial-chart.webp",
+      "sha256": "75cea781f7e5cd5c6b8781b76f83949d5ee35ee85d70135624ddebc3f733a306",
+      "bytes": 50270
+    },
+    {
+      "path": "evidence-media/bear-2019-ipo-page110-20261114.webp",
+      "sha256": "ac95e5eeb44993d1bee9adf830ae080dba01767f3983d9b182d97045cd58b36a",
+      "bytes": 110062
+    },
+    {
+      "path": "evidence-media/bookoff-1997-2001-jpf-contrast-original-chart.webp",
+      "sha256": "8d7e7e3e1082e487aca1675af36b20db50db45a0885cb76d66eb5f958bf05fbc",
+      "bytes": 35420
+    },
+    {
+      "path": "evidence-media/bookoff-fy2025-fy2026-gaap-jpy-original-chart.webp",
+      "sha256": "d0f0fd375c27c6f976cbd6b80b42f29450e8fec1b367db690c1a55a75992603c",
+      "bytes": 40020
+    },
+    {
+      "path": "evidence-media/buildpad-founder-story.webp",
+      "sha256": "434a6533c328caa847ea9bf259bb08b964285d8aa52e1c02a2958b3deed37f1f",
+      "bytes": 14160
+    },
+    {
+      "path": "evidence-media/buildpad-product.webp",
+      "sha256": "73c15a0f5496d2c921e44cba7594b5cf6c218f4ead3ccc2408752dadf395b547",
+      "bytes": 11114
+    },
+    {
+      "path": "evidence-media/chaldal-founder-20261114.webp",
+      "sha256": "7b0835aac1e67a8d801c4026e75cb2b242c948e38bb50ebf4b8038a332ca0dfc",
+      "bytes": 62018
+    },
+    {
+      "path": "evidence-media/chaldal-yc-20261114.webp",
+      "sha256": "0fd76855dbee91a7ef8700905403b47b294d4082e4e02b06367d2fa91bb6e781",
+      "bytes": 40764
+    },
+    {
+      "path": "evidence-media/datafa-official-20261114.webp",
+      "sha256": "180fd40012fea66c4ed04038e123af09ea53d3a6d42ad78bacb11fb750902242",
+      "bytes": 21296
+    },
+    {
+      "path": "evidence-media/dollargeneral-2008-2009-sec-financial-chart.webp",
+      "sha256": "5c6a5b293c5076e94af3f1e7c2d8cfaf743c9747645100780e36802e01d9ec8e",
+      "bytes": 46704
+    },
+    {
+      "path": "evidence-media/ential-official-20261114.webp",
+      "sha256": "b953e94497fbf3dd7bc6d80b51e89074c25b68c795d05ab6e5587a17c7d655ef",
+      "bytes": 30670
+    },
+    {
+      "path": "evidence-media/figma-2026q3-gaap-nongaap-cash-original-chart.webp",
+      "sha256": "ef3f89217079e35f829c5a17ae1b318517bb9ca8df50c0ab09fe67a4a41f11ce",
+      "bytes": 39840
+    },
+    {
+      "path": "evidence-media/figma-sec-2023-2025-revenue-gaap-original-chart.webp",
+      "sha256": "c57756176b132093b8ad1bb985ffc2fcf63c128ebee47951f3b50b392a20b37c",
+      "bytes": 33282
+    },
+    {
+      "path": "evidence-media/google-sec-1999-2003-original-chart-20261114.webp",
+      "sha256": "dff2e39b5c5873cf4267a52ab7d8f25432292b52979d55563293907f4f12e9a6",
+      "bytes": 41110
+    },
+    {
+      "path": "evidence-media/gummy-official-20261114.webp",
+      "sha256": "1c41c379d04b67374e85ae1d1aa720b1339181469e5d7368a05450fc94df9118",
+      "bytes": 43014
+    },
+    {
+      "path": "evidence-media/jd-sec-2012-2014-original-revenue-chart.webp",
+      "sha256": "dceb4e0a7191532744a6bab2faea90a728a8842c56237c0ab4b9432486f28bc0",
+      "bytes": 43440
+    },
+    {
+      "path": "evidence-media/lancer-official-20261114.webp",
+      "sha256": "f3f30c2f26d2e99ba3ea802b6e8d75f0ec9287adb0a5d86ecb54740c42d951de",
+      "bytes": 18676
+    },
+    {
+      "path": "evidence-media/nitori-fy2025-fy2026-ifrs-revenue-profit-original-chart.webp",
+      "sha256": "05c8253f92dee0e3da559bad2922e42621b46d54c576d8f15f635e9d3fd21786",
+      "bytes": 34312
+    },
+    {
+      "path": "evidence-media/nitori-fy2027h1-and-oct2026-comparison-original-chart.webp",
+      "sha256": "ccdafa803bc4212ba01fc7629eb60273a06408d4c386444a66a199a6c5fcd2a5",
+      "bytes": 32262
+    },
+    {
+      "path": "evidence-media/onlyway-dev-2026-sales-refunds-original-chart.webp",
+      "sha256": "209339d25a665318f6d430776786c024e1df6d16dfaa2207327eb05280b46844",
+      "bytes": 50638
+    },
+    {
+      "path": "evidence-media/plausible-founder-retrospective.webp",
+      "sha256": "dd8f3ce565d234c116a8d6af2a1d9ee6b62cd714b3ab941ed7c21c1dfa321514",
+      "bytes": 15198
+    },
+    {
+      "path": "evidence-media/plausible-product.webp",
+      "sha256": "bc0908ab071caf24894d86c8e5609e24d9fca9e075e4e97264c0120c21d4a6de",
+      "bytes": 25102
+    },
+    {
+      "path": "evidence-media/salesshortcut-official-20261114.webp",
+      "sha256": "5a2035cbcdb1700f53c1513ab9f23bf076a5e0dc8b62b869684bba2002ecba04",
+      "bytes": 44430
+    },
+    {
+      "path": "evidence-media/tally-2021-founder-20261114.webp",
+      "sha256": "992e22f94487546a4f08ef7e015b5db09e7c1af9e1b9178ee8db5d525fbe5379",
+      "bytes": 37580
+    },
+    {
+      "path": "evidence-media/tally-2026-founder-20261114.webp",
+      "sha256": "fa2f91034c0f786577a3a1d2e5b084da9ee958825f998c71b6e91b0ac4277b51",
+      "bytes": 33256
+    },
+    {
+      "path": "evidence-media/tally-product-20261114.webp",
+      "sha256": "d9d718f914aaddd711e91cc01f356b2ee245b0b97b061052d7250dc7edbf99a7",
+      "bytes": 24796
+    },
+    {
+      "path": "evidence-media/three-squirrels-2014-interview-20261114.webp",
+      "sha256": "4b9843f8a2ef4f6d8f30f6356a44c61e99d6a38ae04aea9093f619bcd591e36b",
+      "bytes": 52224
+    },
+    {
+      "path": "evidence-media/three-squirrels-2016-founder-20261114.webp",
+      "sha256": "b83ff6ddcda6984a75102657f41daf7cb213a0b53d63282999926bcab8c94f0c",
+      "bytes": 36502
+    },
+    {
+      "path": "evidence-media/uniqlo-fastretailing-2000-2002-financial-pullback-original-chart.webp",
+      "sha256": "5ba70e9979ac5856754dbfeb526f744044cca0a5005a3ed691d122f9c9e8f15a",
+      "bytes": 38862
+    },
+    {
+      "path": "evidence-media/uniqlo-first-store-official-free-use-photo.webp",
+      "sha256": "731471fe6708628f2ee002d5dad57fde13e59d3b139e0e6fcc0973fbcd8f04ef",
+      "bytes": 169688
+    },
+    {
+      "path": "evidence-media/uniqlo-japan-international-fy2026-and-oct-monthly-original-chart.webp",
+      "sha256": "6d7471cc625f63aa58232593c6a3f37bc7ec6d93359aa8f294460541a643c43c",
+      "bytes": 33660
+    },
+    {
+      "path": "evidence-media/wework-2025-2026-operations-self-report-original-chart.webp",
+      "sha256": "81a6642e3ed65f938a50bdb7c82d62955ab5692878d51abac1e68f533ca732ba",
+      "bytes": 42854
+    },
+    {
+      "path": "evidence-media/wework-sec-2016-2018-revenue-loss-original-chart.webp",
+      "sha256": "f58ed5b67d64fbd153cf80c637b502093f45ce148b25a3ebc50ba22ab674acce",
+      "bytes": 31182
+    },
+    {
+      "path": "evidence-media/zamzar-first-paying-customer.webp",
+      "sha256": "215ef4394e890607861a6346d32dc09cd7b2f29086cf5486b44e3a767555b4c3",
+      "bytes": 27412
+    },
+    {
+      "path": "evidence-media/zamzar-product.webp",
+      "sha256": "493a05a2044d94302517f25ee16b70839ab05afaca41772b9824e5cd40c3511c",
+      "bytes": 39670
+    },
+    {
+      "path": "feed.xml",
+      "sha256": "6e5f53980d42f236ab88f583b0b448c7bac33253e65f77fe73acc00ea19c740b",
+      "bytes": 12101
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "65fa822a43fc0eea097ab66a0247ee08bc2b6dc16af2adf1f9664a9b379184fd",
+      "bytes": 71
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "904cbdfd04519023d2dc72991672a3190ae86f83a204e7df3dae71fd05541270",
+      "bytes": 1844
+    }
+  ],
+  "release_id": "540104ae1e0a331b"
+}
