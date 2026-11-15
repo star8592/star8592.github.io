@@ -209,6 +209,55 @@
  .people-era-list{gap:11px}
  .people-photo-credit{overflow-wrap:anywhere}
 }
+/* Contextual historical originals; no generic image carousel or fabricated 'retro' visuals. */
+.hm-exhibit{margin:24px 0 39px;padding:clamp(22px,2.3vw,38px);background:#f7f8f4;border-radius:20px;border:1px solid #dce6db;box-shadow:0 16px 38px rgba(25,58,42,.055);color:#274734;min-width:0}
+.hm-kicker{color:#41775a;font-size:12px;font-weight:830;letter-spacing:.12em;margin-bottom:8px}
+.hm-exhibit>h4{font-size:clamp(23px,1.95vw,33px);line-height:1.35;font-weight:840;color:#183f30;letter-spacing:-.02em;margin:0 0 11px;max-width:1150px}
+.hm-lead{font-size:clamp(16px,1.1vw,18px);line-height:1.85;max-width:1120px;color:#54715b;margin:0 0 22px}
+.hm-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.hm-gallery.hm-count-1{grid-template-columns:minmax(0,1fr);max-width:900px}
+.hm-photo{margin:0;background:#fff;border:1px solid #dce6dc;border-radius:14px;overflow:hidden;min-width:0}
+.hm-photo-open{position:relative;display:block;overflow:hidden;background:#e2ebdf;aspect-ratio:4/3}
+.hm-photo-open>img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .2s ease}
+.hm-photo-open:hover>img{transform:scale(1.015)}
+.hm-photo-open>span{display:block;position:absolute;right:12px;bottom:12px;background:#163e30e8;color:#fff;border-radius:9px;padding:9px 13px;font-size:14px;font-weight:800}
+.hm-photo figcaption{padding:18px 19px;display:grid;gap:8px;min-width:0}
+.hm-photo figcaption strong{color:#244a36;font-size:18px}
+.hm-photo figcaption small{line-height:1.75;color:#6d856f;font-size:13px}
+.hm-photo figcaption a,.hm-interpretation a,.hm-video>a{color:#21694b;font-weight:770;text-underline-offset:4px;font-size:14px}
+.hm-video{border:1px solid #d2e4d3;border-radius:15px;background:#fff;margin:18px 0 0;overflow:hidden}
+.hm-video>summary{cursor:pointer;display:flex;align-items:center;gap:18px;padding:20px 23px;list-style:none;color:#284e39}
+.hm-video>summary::-webkit-details-marker{display:none}
+.hm-video>summary:after{content:"展开 ▼";font-size:13px;color:#648b71;margin-left:auto;white-space:nowrap}
+.hm-video[open]>summary:after{content:"收起 ▲"}
+.hm-video>summary>span:last-of-type{display:grid;gap:6px}
+.hm-video>summary b{font-size:19px;color:#244a36}
+.hm-video>summary small{font-size:13px;color:#6c826e}
+.hm-play{width:60px;height:60px;border-radius:14px;display:grid;place-items:center;flex:0 0 auto;background:#244c3a;color:#fff;font-size:24px}
+.hm-video-frame{position:relative;aspect-ratio:16/9;background:#18382c;max-width:1000px;margin:0 22px}
+.hm-video iframe{display:block;width:100%;height:100%;border:0}
+.hm-video>p{font-size:14px;color:#677f6d;line-height:1.8;margin:15px 22px 8px}
+.hm-video>a{display:block;margin:0 22px 22px}
+.hm-interpretation{border-top:1px solid #dce6d8;margin-top:23px;padding-top:19px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.hm-interpretation strong{font-size:16px;color:#254d37}
+.hm-interpretation p{margin:0;max-width:1080px;color:#5c765f;font-size:15px;line-height:1.82}
+.hm-interpretation small{font-size:12px;color:#7a8f7f;line-height:1.7;overflow-wrap:anywhere}
+@media(max-width:750px){
+ .hm-exhibit{padding:17px 14px;margin:18px -2px 28px;border-radius:16px}
+ .hm-exhibit h4{font-size:24px}
+ .hm-lead{font-size:16px}
+ .hm-gallery{grid-template-columns:1fr}
+ .hm-photo figcaption{padding:15px 14px}
+ .hm-photo-open>span{font-size:12px}
+ .hm-video>summary{padding:16px;gap:12px}
+ .hm-video>summary b{font-size:15px}
+ .hm-video>summary small{font-size:12px;line-height:1.5}
+ .hm-play{height:47px;width:47px;font-size:20px;border-radius:10px}
+ .hm-video>summary:after{font-size:11px}
+ .hm-video-frame{margin:0 10px}
+ .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
+ .hm-interpretation p{font-size:14px}
+}
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-chaldal">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / Chaldal</p><h1>一个顾客每天只买一包薯片，还要求免费送货：孟加拉这家生鲜公司后来为什么自己建仓库？</h1><p class="intro">达卡的一次小额订单，给创业者上了生动的一课。联合创始人 Zia Ashraf 后来回忆，2013—2014 年有名客户天天只订一包约 10 塔卡的薯片，要求免费送货；过了很久他又下了一张约 1 万塔卡的杂货订单，说是为了测试平台是否守信用。这是创始人在媒体采访中回忆的故事，没有订单流水供独立核验。真正长期的挑战不在讲好奇闻，而在让每一笔杂货配送既准时又有利润。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/chaldal-yc-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/chaldal-yc-20261114.webp" alt="第三方机构现行企业资料；2026 年 11 月 14 日公开网页截图，不是创业现场照片"><span>查看完整图片 ↗</span></a><figcaption><strong>Y Combinator 公开的 Chaldal 公司档案</strong><span>www.ycombinator.com · 2026-11-14整理</span><small>第三方机构来源，2026-11-14 采集时的网页截图，不是历史留影；不能证明独立财务数据或实际第一笔订单</small><a href="https://www.ycombinator.com/companies/chaldal" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>
 <figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/chaldal-founder-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/chaldal-founder-20261114.webp" alt="第三方记者第一手访谈网页；2026 年 11 月 14 日公开网页截图，不是创业现场照片"><span>查看完整图片 ↗</span></a><figcaption><strong>2014 年 Chaldal 创始人原始创业访谈</strong><span>futurestartup.com · 2026-11-14整理</span><small>第三方机构来源，2026-11-14 采集时的网页截图，不是历史留影；不能证明独立财务数据或实际第一笔订单</small><a href="https://futurestartup.com/2014/04/14/local-startup-chaldal/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（7个节点）</summary><ol><li><time>2013 年 7 月</time><div><p>2017 年 The Daily Star 报道：Chaldal 第一笔线上杂货订单完成配送，但客户身份和付款证明未公开。</p><a href="https://www.thedailystar.net/city/profiles-ict-awards-winners-1511428" target="_blank" rel="noopener noreferrer">首笔订单历史时间线 · 查看原文</a></div></li><li><time>2014 年 4 月</time><div><p>创始人接受访谈，自述个人积蓄启动、网上下单、送达时收现。</p><a href="https://futurestartup.com/2014/04/14/local-startup-chaldal/" target="_blank" rel="noopener noreferrer">早期获客与收款模式 · 查看原文</a></div></li><li><time>2013—2014 年（后来的回忆）</time><div><p>联合创始人讲述“每天一包低价薯片、免费配送”故事，后来用户下了一笔较大的杂货订单。</p><a href="https://www.tbsnews.net/features/panorama/chaldal-story-they-dreamt-serving-30-orders-day-now-they-are-eyeing-one-lakh-daily" target="_blank" rel="noopener noreferrer">创业轶事，非交易流水 · 查看原文</a></div></li><li><time>2015 年 7 月</time><div><p>记者实访：2 座仓库、4,000 多种商品、约日均 150 单。</p><a href="https://techcrunch.com/2015/07/30/chaldal/" target="_blank" rel="noopener noreferrer">2015 年媒体观察截面 · 查看原文</a></div></li><li><time>2018 年 10 月 24 日</time><div><p>企业官网记载启动母仓，通过补货支持分布式微仓体系。</p><a href="https://chaldal.com/t/MotherShip" target="_blank" rel="noopener noreferrer">官方供应链建设说明 · 查看原文</a></div></li><li><time>2021 年 9 月</time><div><p>媒体报道 27 座仓库和约 1,000 万美元 C 轮；公司自报约 4,000 万美元历史年度收入。融资和营收不是利润。</p><a href="https://techcrunch.com/2021/09/14/chaldal-bangladeshs-largest-grocery-delivery-platform-raises-10m-series-c/" target="_blank" rel="noopener noreferrer">2021 年企业披露与报道 · 查看原文</a></div></li><li><time>2026 年 11 月 14 日研究</time><div><p>独立核对历史原文与 YC 公司档案；当前 Chaldal 官网在研究机上加载超时，无法就实时库存与订单数据作断言。</p><a href="https://www.ycombinator.com/companies/chaldal" target="_blank" rel="noopener noreferrer">研究现场的访问边界 · 查看原文</a></div></li></ol></details><section class="era-sources"><h2>时代原始材料：不是后期想象画面</h2><p>以下是来源机构原址。网页快照可以证明彼时页面内容，历史摄制、后期复原和后来回顾各有不同证据等级。我们尚未获得自动下载、转载原始影音的许可，不将素材复制进本站。</p><details><summary>展开3份带年代和出处的原始材料</summary><ol class="era-list"><li><div><strong>2014年 · 2014 年 Chaldal 创始人的创业初期直接访谈</strong><p>Waseem Alim 在企业成立后的早期谈为什么在达卡做线上杂货，以及现金支付与配送。属于当时第一手口述，不等于已取得全部订单流水。</p><small>Future Startup · 来源发表/保存：2014-04-14 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://futurestartup.com/2014/04/14/local-startup-chaldal/" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2015年 · 2015 年 TechCrunch 采访：当时只有两座仓库</strong><p>2015 年记者记录公司储备约 4,000 种商品、每日约 150 笔配送，展示公司尚小的实际运营阶段。订单数量并不是净利润。</p><small>TechCrunch · 来源发表/保存：2015-07-30 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://techcrunch.com/2015/07/30/chaldal/" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2021年 · 国际金融公司对 Chaldal 仓储现场的真实配图</strong><p>IFC 2021 年文章包括 Chaldal 仓内货架、分拣工作场景的实际配图；照片具体拍摄日期没有独立核实，不能说一定摄于 2021 年。</p><small>世界银行集团 IFC · 来源发表/保存：2021 · PUBLISHED_PHOTO_DATE_UNCONFIRMED · 未转载原图</small></div><a href="https://www.ifc.org/en/stories/2021/digital-adoption-in-developing-countries" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li></ol></details></section><section class="chapter"><h2>从自己接单、买菜、送货开始</h2><p>2013 年，Waseem Alim、Zia Ashraf、Tejas Viswanath 在达卡启动线上杂货项目。2014 年创始人接受采访时说，初期主要用个人积蓄经营，客户在网上下单、货到付款。2017 年公开报道确认第一笔订单在 2013 年 7 月配送，但没有可复查的首位客户姓名或账单。创始人负责采购、打包、接热线和交付，不是一开始就有成熟配送网络。</p><p class="source">原文依据：<a href="https://futurestartup.com/2014/04/14/local-startup-chaldal/" rel="noopener noreferrer">2014 年创始人采访与 2017 年最早订单回顾</a></p></section>
 <section class="chapter"><h2>免费送货的困境：小订单为什么不等于好生意</h2><p>2022 年采访中 Zia 讲述过一个每天只买 10 塔卡薯片的客户。免费的最后一公里配送可能超过商品毛利，创始人必须持续投入人手来兑现承诺；后来客户一次订了 1 万塔卡商品，说明客户确实看重稳定性，但不能据此推断所有免费单都能转成大单。这个轶事仅是当事人回忆，不是可审核订单记录。</p><p class="source">原文依据：<a href="https://www.tbsnews.net/features/panorama/chaldal-story-they-dreamt-serving-30-orders-day-now-they-are-eyeing-one-lakh-daily" rel="noopener noreferrer">联合创始人于 2022 年讲述的历史案例</a></p></section>

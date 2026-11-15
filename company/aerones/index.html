@@ -209,6 +209,55 @@
  .people-era-list{gap:11px}
  .people-photo-credit{overflow-wrap:anywhere}
 }
+/* Contextual historical originals; no generic image carousel or fabricated 'retro' visuals. */
+.hm-exhibit{margin:24px 0 39px;padding:clamp(22px,2.3vw,38px);background:#f7f8f4;border-radius:20px;border:1px solid #dce6db;box-shadow:0 16px 38px rgba(25,58,42,.055);color:#274734;min-width:0}
+.hm-kicker{color:#41775a;font-size:12px;font-weight:830;letter-spacing:.12em;margin-bottom:8px}
+.hm-exhibit>h4{font-size:clamp(23px,1.95vw,33px);line-height:1.35;font-weight:840;color:#183f30;letter-spacing:-.02em;margin:0 0 11px;max-width:1150px}
+.hm-lead{font-size:clamp(16px,1.1vw,18px);line-height:1.85;max-width:1120px;color:#54715b;margin:0 0 22px}
+.hm-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.hm-gallery.hm-count-1{grid-template-columns:minmax(0,1fr);max-width:900px}
+.hm-photo{margin:0;background:#fff;border:1px solid #dce6dc;border-radius:14px;overflow:hidden;min-width:0}
+.hm-photo-open{position:relative;display:block;overflow:hidden;background:#e2ebdf;aspect-ratio:4/3}
+.hm-photo-open>img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .2s ease}
+.hm-photo-open:hover>img{transform:scale(1.015)}
+.hm-photo-open>span{display:block;position:absolute;right:12px;bottom:12px;background:#163e30e8;color:#fff;border-radius:9px;padding:9px 13px;font-size:14px;font-weight:800}
+.hm-photo figcaption{padding:18px 19px;display:grid;gap:8px;min-width:0}
+.hm-photo figcaption strong{color:#244a36;font-size:18px}
+.hm-photo figcaption small{line-height:1.75;color:#6d856f;font-size:13px}
+.hm-photo figcaption a,.hm-interpretation a,.hm-video>a{color:#21694b;font-weight:770;text-underline-offset:4px;font-size:14px}
+.hm-video{border:1px solid #d2e4d3;border-radius:15px;background:#fff;margin:18px 0 0;overflow:hidden}
+.hm-video>summary{cursor:pointer;display:flex;align-items:center;gap:18px;padding:20px 23px;list-style:none;color:#284e39}
+.hm-video>summary::-webkit-details-marker{display:none}
+.hm-video>summary:after{content:"展开 ▼";font-size:13px;color:#648b71;margin-left:auto;white-space:nowrap}
+.hm-video[open]>summary:after{content:"收起 ▲"}
+.hm-video>summary>span:last-of-type{display:grid;gap:6px}
+.hm-video>summary b{font-size:19px;color:#244a36}
+.hm-video>summary small{font-size:13px;color:#6c826e}
+.hm-play{width:60px;height:60px;border-radius:14px;display:grid;place-items:center;flex:0 0 auto;background:#244c3a;color:#fff;font-size:24px}
+.hm-video-frame{position:relative;aspect-ratio:16/9;background:#18382c;max-width:1000px;margin:0 22px}
+.hm-video iframe{display:block;width:100%;height:100%;border:0}
+.hm-video>p{font-size:14px;color:#677f6d;line-height:1.8;margin:15px 22px 8px}
+.hm-video>a{display:block;margin:0 22px 22px}
+.hm-interpretation{border-top:1px solid #dce6d8;margin-top:23px;padding-top:19px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.hm-interpretation strong{font-size:16px;color:#254d37}
+.hm-interpretation p{margin:0;max-width:1080px;color:#5c765f;font-size:15px;line-height:1.82}
+.hm-interpretation small{font-size:12px;color:#7a8f7f;line-height:1.7;overflow-wrap:anywhere}
+@media(max-width:750px){
+ .hm-exhibit{padding:17px 14px;margin:18px -2px 28px;border-radius:16px}
+ .hm-exhibit h4{font-size:24px}
+ .hm-lead{font-size:16px}
+ .hm-gallery{grid-template-columns:1fr}
+ .hm-photo figcaption{padding:15px 14px}
+ .hm-photo-open>span{font-size:12px}
+ .hm-video>summary{padding:16px;gap:12px}
+ .hm-video>summary b{font-size:15px}
+ .hm-video>summary small{font-size:12px;line-height:1.5}
+ .hm-play{height:47px;width:47px;font-size:20px;border-radius:10px}
+ .hm-video>summary:after{font-size:11px}
+ .hm-video-frame{margin:0 10px}
+ .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
+ .hm-interpretation p{font-size:14px}
+}
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-aerones">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / Aerones</p><h1>做无人机不够准，他们干脆造了能沿风机叶片爬行的机器人：一家工业服务公司怎样找到生意？</h1><p class="intro">从远处看，风力发电机不过是一根塔、一片叶子，实际运营时，叶片表面的脏污、涂层、受损部件都可能让设备停机。2015 年，拉脱维亚几名工程师试图找到重载无人机的商业用途。消防与救援等场景却遇到市场规模与监管限制。多年后他们回忆说，真正改变方向的是风电客户现场需求：无人机并不擅长精确接触式维护，于是团队弃用了原本最引以为傲的飞行路线，开发绳索滑轮配合机械臂的运维机器人。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/aerones-product-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/aerones-product-20261114.webp" alt="公司官网产品与服务资料；2026 年 11 月 14 日公开网页截图，不是创业现场照片"><span>查看完整图片 ↗</span></a><figcaption><strong>Aerones 官网当前风机运维服务入口</strong><span>aerones.com · 2026-11-14整理</span><small>公司官网来源，2026-11-14 采集时的网页截图，不是历史留影；不能证明独立财务数据或实际第一笔订单</small><a href="https://aerones.com/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>
 <figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/aerones-about-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/aerones-about-20261114.webp" alt="公司官网关于我们页面；2026 年 11 月 14 日公开网页截图，不是创业现场照片"><span>查看完整图片 ↗</span></a><figcaption><strong>Aerones 官网关于团队与机器人运维服务</strong><span>aerones.com · 2026-11-14整理</span><small>公司官网来源，2026-11-14 采集时的网页截图，不是历史留影；不能证明独立财务数据或实际第一笔订单</small><a href="https://aerones.com/about/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>
 <figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/aerones-gallery-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/aerones-gallery-20261114.webp" alt="公司公开作业相册页面；2026 年 11 月 14 日公开网页截图，不是创业现场照片"><span>查看完整图片 ↗</span></a><figcaption><strong>Aerones 官方真实机器人作业相册</strong><span>aerones.com · 2026-11-14整理</span><small>公司官网来源，2026-11-14 采集时的网页截图，不是历史留影；不能证明独立财务数据或实际第一笔订单</small><a href="https://aerones.com/our-gallery/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>

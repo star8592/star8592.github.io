@@ -209,6 +209,55 @@
  .people-era-list{gap:11px}
  .people-photo-credit{overflow-wrap:anywhere}
 }
+/* Contextual historical originals; no generic image carousel or fabricated 'retro' visuals. */
+.hm-exhibit{margin:24px 0 39px;padding:clamp(22px,2.3vw,38px);background:#f7f8f4;border-radius:20px;border:1px solid #dce6db;box-shadow:0 16px 38px rgba(25,58,42,.055);color:#274734;min-width:0}
+.hm-kicker{color:#41775a;font-size:12px;font-weight:830;letter-spacing:.12em;margin-bottom:8px}
+.hm-exhibit>h4{font-size:clamp(23px,1.95vw,33px);line-height:1.35;font-weight:840;color:#183f30;letter-spacing:-.02em;margin:0 0 11px;max-width:1150px}
+.hm-lead{font-size:clamp(16px,1.1vw,18px);line-height:1.85;max-width:1120px;color:#54715b;margin:0 0 22px}
+.hm-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.hm-gallery.hm-count-1{grid-template-columns:minmax(0,1fr);max-width:900px}
+.hm-photo{margin:0;background:#fff;border:1px solid #dce6dc;border-radius:14px;overflow:hidden;min-width:0}
+.hm-photo-open{position:relative;display:block;overflow:hidden;background:#e2ebdf;aspect-ratio:4/3}
+.hm-photo-open>img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .2s ease}
+.hm-photo-open:hover>img{transform:scale(1.015)}
+.hm-photo-open>span{display:block;position:absolute;right:12px;bottom:12px;background:#163e30e8;color:#fff;border-radius:9px;padding:9px 13px;font-size:14px;font-weight:800}
+.hm-photo figcaption{padding:18px 19px;display:grid;gap:8px;min-width:0}
+.hm-photo figcaption strong{color:#244a36;font-size:18px}
+.hm-photo figcaption small{line-height:1.75;color:#6d856f;font-size:13px}
+.hm-photo figcaption a,.hm-interpretation a,.hm-video>a{color:#21694b;font-weight:770;text-underline-offset:4px;font-size:14px}
+.hm-video{border:1px solid #d2e4d3;border-radius:15px;background:#fff;margin:18px 0 0;overflow:hidden}
+.hm-video>summary{cursor:pointer;display:flex;align-items:center;gap:18px;padding:20px 23px;list-style:none;color:#284e39}
+.hm-video>summary::-webkit-details-marker{display:none}
+.hm-video>summary:after{content:"展开 ▼";font-size:13px;color:#648b71;margin-left:auto;white-space:nowrap}
+.hm-video[open]>summary:after{content:"收起 ▲"}
+.hm-video>summary>span:last-of-type{display:grid;gap:6px}
+.hm-video>summary b{font-size:19px;color:#244a36}
+.hm-video>summary small{font-size:13px;color:#6c826e}
+.hm-play{width:60px;height:60px;border-radius:14px;display:grid;place-items:center;flex:0 0 auto;background:#244c3a;color:#fff;font-size:24px}
+.hm-video-frame{position:relative;aspect-ratio:16/9;background:#18382c;max-width:1000px;margin:0 22px}
+.hm-video iframe{display:block;width:100%;height:100%;border:0}
+.hm-video>p{font-size:14px;color:#677f6d;line-height:1.8;margin:15px 22px 8px}
+.hm-video>a{display:block;margin:0 22px 22px}
+.hm-interpretation{border-top:1px solid #dce6d8;margin-top:23px;padding-top:19px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.hm-interpretation strong{font-size:16px;color:#254d37}
+.hm-interpretation p{margin:0;max-width:1080px;color:#5c765f;font-size:15px;line-height:1.82}
+.hm-interpretation small{font-size:12px;color:#7a8f7f;line-height:1.7;overflow-wrap:anywhere}
+@media(max-width:750px){
+ .hm-exhibit{padding:17px 14px;margin:18px -2px 28px;border-radius:16px}
+ .hm-exhibit h4{font-size:24px}
+ .hm-lead{font-size:16px}
+ .hm-gallery{grid-template-columns:1fr}
+ .hm-photo figcaption{padding:15px 14px}
+ .hm-photo-open>span{font-size:12px}
+ .hm-video>summary{padding:16px;gap:12px}
+ .hm-video>summary b{font-size:15px}
+ .hm-video>summary small{font-size:12px;line-height:1.5}
+ .hm-play{height:47px;width:47px;font-size:20px;border-radius:10px}
+ .hm-video>summary:after{font-size:11px}
+ .hm-video-frame{margin:0 10px}
+ .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
+ .hm-interpretation p{font-size:14px}
+}
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-gummy">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / GummySearch</p><h1>超过 14 万人用过，为什么还是要停止卖了？</h1><p class="intro">GummySearch 把 Reddit 社区里的需求讨论整理成创业者愿意使用的研究工具。然而业务高度依赖第三方数据 API，最终面临不可绕开的商业授权问题。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/gummy-official-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/gummy-official-20261114.webp" alt="GummySearch 网站 Final Chapter 页面，解释停止新业务的背景（2026 年 11 月 14 日真实网页采集）"><span>查看完整图片 ↗</span></a><figcaption><strong>GummySearch 正式告别说明页</strong><span>gummysearch.com · 2026-11-14整理</span><small>2026-11-14 当前公开页面截图，不是历史留影；不证明企业收入、实际成交或利润</small><a href="https://gummysearch.com/final-chapter/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（3个节点）</summary><ol><li><time>2025 年 11 月 6 日</time><div><p>创始人正式公告：未谈成合规商业数据许可，宣布停业安排。</p><a href="https://gummysearch.com/final-chapter/" target="_blank" rel="noopener noreferrer">官方公告 · 查看原文</a></div></li><li><time>2025 年 11 月 30 日</time><div><p>停止接受新的注册和付款；公开称累计使用者超过 14 万。</p><a href="https://gummysearch.com/closing-time/" target="_blank" rel="noopener noreferrer">官方停业说明 · 查看原文</a></div></li><li><time>计划 2026 年 12 月 1 日</time><div><p>公告计划到这一日结束既有付费用户的过渡访问并删除用户数据；截至本研究日仍属未来安排。</p><a href="https://gummysearch.com/final-chapter/" target="_blank" rel="noopener noreferrer">已公布的未来安排 · 查看原文</a></div></li></ol></details><section class="chapter"><h2>它卖的是什么？</h2><p>让创业者在 Reddit 社区里更快发现用户抱怨、需求和话题，减少手动翻帖子的时间。这个价值主张是清楚的，但工具的核心体验建立在第三方平台数据上。</p><p class="source">原文依据：<a href="https://gummysearch.com/final-chapter/" rel="noopener noreferrer">产品与创始人公告</a></p></section>
 <section class="chapter"><h2>为什么人多却不继续卖？</h2><p>创始人 2025 年 11 月公开说明，曾尝试与 Reddit 达成允许商业使用数据 API 的授权，但未能取得符合政策的协议。于是停止新注册和续费，而不是继续以高风险方式经营。</p><p class="source">原文依据：<a href="https://gummysearch.com/final-chapter/" rel="noopener noreferrer">创始人正式公告</a></p></section>
 <section class="chapter"><h2>这次失败到底教会什么？</h2><p>创始人 2025 年 11 月 30 日的停业公告称，超过 14 万名创始人、营销人员和投资者用过该产品。这是累计使用者，不等于 14 万付费会员。它提醒我们：关键资源是否能合法持续获得，比某次增长截图更重要。</p><p class="source">原文依据：<a href="https://gummysearch.com/closing-time/" rel="noopener noreferrer">创始人停业公告</a></p></section><section><h2>第一批真正的客户在哪里？</h2><p>官方材料证实了产品用途和累计使用人数，但尚未查到经核对的第一批付费客户来源。不能用 Reddit 流量来源想当然地补出起家故事。</p></section>

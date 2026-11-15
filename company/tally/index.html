@@ -209,6 +209,55 @@
  .people-era-list{gap:11px}
  .people-photo-credit{overflow-wrap:anywhere}
 }
+/* Contextual historical originals; no generic image carousel or fabricated 'retro' visuals. */
+.hm-exhibit{margin:24px 0 39px;padding:clamp(22px,2.3vw,38px);background:#f7f8f4;border-radius:20px;border:1px solid #dce6db;box-shadow:0 16px 38px rgba(25,58,42,.055);color:#274734;min-width:0}
+.hm-kicker{color:#41775a;font-size:12px;font-weight:830;letter-spacing:.12em;margin-bottom:8px}
+.hm-exhibit>h4{font-size:clamp(23px,1.95vw,33px);line-height:1.35;font-weight:840;color:#183f30;letter-spacing:-.02em;margin:0 0 11px;max-width:1150px}
+.hm-lead{font-size:clamp(16px,1.1vw,18px);line-height:1.85;max-width:1120px;color:#54715b;margin:0 0 22px}
+.hm-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.hm-gallery.hm-count-1{grid-template-columns:minmax(0,1fr);max-width:900px}
+.hm-photo{margin:0;background:#fff;border:1px solid #dce6dc;border-radius:14px;overflow:hidden;min-width:0}
+.hm-photo-open{position:relative;display:block;overflow:hidden;background:#e2ebdf;aspect-ratio:4/3}
+.hm-photo-open>img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .2s ease}
+.hm-photo-open:hover>img{transform:scale(1.015)}
+.hm-photo-open>span{display:block;position:absolute;right:12px;bottom:12px;background:#163e30e8;color:#fff;border-radius:9px;padding:9px 13px;font-size:14px;font-weight:800}
+.hm-photo figcaption{padding:18px 19px;display:grid;gap:8px;min-width:0}
+.hm-photo figcaption strong{color:#244a36;font-size:18px}
+.hm-photo figcaption small{line-height:1.75;color:#6d856f;font-size:13px}
+.hm-photo figcaption a,.hm-interpretation a,.hm-video>a{color:#21694b;font-weight:770;text-underline-offset:4px;font-size:14px}
+.hm-video{border:1px solid #d2e4d3;border-radius:15px;background:#fff;margin:18px 0 0;overflow:hidden}
+.hm-video>summary{cursor:pointer;display:flex;align-items:center;gap:18px;padding:20px 23px;list-style:none;color:#284e39}
+.hm-video>summary::-webkit-details-marker{display:none}
+.hm-video>summary:after{content:"展开 ▼";font-size:13px;color:#648b71;margin-left:auto;white-space:nowrap}
+.hm-video[open]>summary:after{content:"收起 ▲"}
+.hm-video>summary>span:last-of-type{display:grid;gap:6px}
+.hm-video>summary b{font-size:19px;color:#244a36}
+.hm-video>summary small{font-size:13px;color:#6c826e}
+.hm-play{width:60px;height:60px;border-radius:14px;display:grid;place-items:center;flex:0 0 auto;background:#244c3a;color:#fff;font-size:24px}
+.hm-video-frame{position:relative;aspect-ratio:16/9;background:#18382c;max-width:1000px;margin:0 22px}
+.hm-video iframe{display:block;width:100%;height:100%;border:0}
+.hm-video>p{font-size:14px;color:#677f6d;line-height:1.8;margin:15px 22px 8px}
+.hm-video>a{display:block;margin:0 22px 22px}
+.hm-interpretation{border-top:1px solid #dce6d8;margin-top:23px;padding-top:19px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.hm-interpretation strong{font-size:16px;color:#254d37}
+.hm-interpretation p{margin:0;max-width:1080px;color:#5c765f;font-size:15px;line-height:1.82}
+.hm-interpretation small{font-size:12px;color:#7a8f7f;line-height:1.7;overflow-wrap:anywhere}
+@media(max-width:750px){
+ .hm-exhibit{padding:17px 14px;margin:18px -2px 28px;border-radius:16px}
+ .hm-exhibit h4{font-size:24px}
+ .hm-lead{font-size:16px}
+ .hm-gallery{grid-template-columns:1fr}
+ .hm-photo figcaption{padding:15px 14px}
+ .hm-photo-open>span{font-size:12px}
+ .hm-video>summary{padding:16px;gap:12px}
+ .hm-video>summary b{font-size:15px}
+ .hm-video>summary small{font-size:12px;line-height:1.5}
+ .hm-play{height:47px;width:47px;font-size:20px;border-radius:10px}
+ .hm-video>summary:after{font-size:11px}
+ .hm-video-frame{margin:0 10px}
+ .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
+ .hm-interpretation p{font-size:14px}
+}
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-tally">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / Tally</p><h1>疫情让第一家公司失去半数客户：他们转做免费表单，六年后自报年经常性收入 600 万美元。</h1><p class="intro">2020 年初，Marie Martens 和 Filip Minev 正为酒店与旅行博主合作平台 Hotspot 奔走。疫情发生后，创始人回忆原业务流失了约一半客户。办活动时，他们又一次被昂贵复杂的表单工具困扰，于是换了方向，开发一个像文档一样容易使用的在线表单工具 Tally。早期版本甚至无法发布表单，他们仍去找使用者，不是先砸钱买流量。2021 年十月自报 200 名付费用户和 5,000 美元 MRR；2026 年九月公布 600 万美元 ARR，背后同时有一场需要承担责任的数据泄露危机。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/tally-product-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/tally-product-20261114.webp" alt="Tally 官方网站当前表单产品主页（2026 年 11 月 14 日真实公开网页截图）"><span>查看完整图片 ↗</span></a><figcaption><strong>Tally 当前免费表单工具主页</strong><span>tally.so · 2026-11-14整理</span><small>当前公开页面，不是历史留影；不证明实际到账、独立审计或安全事件影响范围</small><a href="https://tally.so/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>
 <figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/tally-2021-founder-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/tally-2021-founder-20261114.webp" alt="Marie Martens 官方第一年复盘文章当前网页（2026 年 11 月 14 日真实公开网页截图）"><span>查看完整图片 ↗</span></a><figcaption><strong>Tally 2021 年首年经营复盘</strong><span>blog.tally.so · 2026-11-14整理</span><small>当前公开页面，不是历史留影；不证明实际到账、独立审计或安全事件影响范围</small><a href="https://blog.tally.so/year-1-how-we-bootstrapped-tally-to-11k-users-and-5k-mrr/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>
 <figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/tally-2026-founder-20261114.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/tally-2026-founder-20261114.webp" alt="2026 年 9 月创始人复盘，包含六百万 ARR 和第三方数据风险披露（2026 年 11 月 14 日真实公开网页截图）"><span>查看完整图片 ↗</span></a><figcaption><strong>Tally 2026 年六周年与风险事件复盘</strong><span>blog.tally.so · 2026-11-14整理</span><small>当前公开页面，不是历史留影；不证明实际到账、独立审计或安全事件影响范围</small><a href="https://blog.tally.so/6-years-in-6-million-far/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（9个节点）</summary><ol><li><time>2020 年 7 月</time><div><p>原旅行创业项目 Hotspot 受疫情冲击，创始人称约一半客户流失。</p><a href="https://blog.tally.so/how-we-quit-our-jobs-to-work-on-our-startup-lost-half-of-our-clients-decided-to-pivot-and-ended-up-building-a-no-code-tool/" target="_blank" rel="noopener noreferrer">此前业务失败与转型背景 · 查看原文</a></div></li><li><time>2020 年 8—9 月</time><div><p>开始研发 Tally，把不完整的 MVP 交给亲友及开发者社区试用。</p><a href="https://blog.tally.so/year-1-how-we-bootstrapped-tally-to-11k-users-and-5k-mrr/" target="_blank" rel="noopener noreferrer">早期原型与主动访谈 · 查看原文</a></div></li><li><time>2020 年 10 月</time><div><p>第一年官方复盘记录 184 名用户和 $64 MRR；首位付款客户的身份与准确成交日期未知。</p><a href="https://blog.tally.so/year-1-how-we-bootstrapped-tally-to-11k-users-and-5k-mrr/" target="_blank" rel="noopener noreferrer">早期营收自报 · 查看原文</a></div></li><li><time>2021 年 3 月</time><div><p>正式在 Product Hunt 展示产品；当时约 $380 MRR，已有约 1,500 名用户。</p><a href="https://blog.tally.so/year-1-how-we-bootstrapped-tally-to-11k-users-and-5k-mrr/" target="_blank" rel="noopener noreferrer">公开启动及社区渠道 · 查看原文</a></div></li><li><time>2021 年 10 月</time><div><p>官方披露约 11,000 用户、200 付费用户和 $5K MRR。</p><a href="https://blog.tally.so/year-1-how-we-bootstrapped-tally-to-11k-users-and-5k-mrr/" target="_blank" rel="noopener noreferrer">第一年经营里程碑 · 查看原文</a></div></li><li><time>2022 年 6 月 16 日</time><div><p>创始人披露 36,560 名注册用户、775 名付费用户与 $20,700 MRR。</p><a href="https://blog.tally.so/bootstrapping-our-saas-from-10k-to-20k-mrr/" target="_blank" rel="noopener noreferrer">付费转化基础数据 · 查看原文</a></div></li><li><time>2024 年 2—3 月</time><div><p>创始人宣布达到约 $100K MRR；仍为小团队、自筹资金。</p><a href="https://blog.tally.so/our-bootstrapped-journey-towards-100k-mrr/" target="_blank" rel="noopener noreferrer">历史 MRR 里程碑 · 查看原文</a></div></li><li><time>2026 年 8 月</time><div><p>创始人随后披露内部第三方分析工具遭零日漏洞利用，涉及账号邮箱和密码哈希；影响范围是公司自报。</p><a href="https://blog.tally.so/6-years-in-6-million-far/" target="_blank" rel="noopener noreferrer">风险事件，不是增长成绩 · 查看原文</a></div></li><li><time>2026 年 9 月 22 日</time><div><p>创始团队公布 ARR 超过 $6M、约 250 万用户及 10 人团队；并报告整改措施。</p><a href="https://blog.tally.so/6-years-in-6-million-far/" target="_blank" rel="noopener noreferrer">最近一次创始团队公开复盘 · 查看原文</a></div></li></ol></details><section class="chapter"><h2>第一门生意遭遇疫情，他们决定换题做</h2><p>创始人 2021 年回顾：原本的 Hotspot 为酒店和旅行内容创作者提供合作撮合，疫情中客户取消或暂停订阅，2020 年夏天流失约一半客户。此前在项目中使用 Google Forms 与收费表单服务的挫折，使两人看到了另一项更普遍的需求。2020 年 8 月决定转向制作 Tally，这不是一开始就认准了表单市场。</p><p class="source">原文依据：<a href="https://blog.tally.so/how-we-quit-our-jobs-to-work-on-our-startup-lost-half-of-our-clients-decided-to-pivot-and-ended-up-building-a-no-code-tool/" rel="noopener noreferrer">创始人关于转型前后的一手复盘</a></p></section>
