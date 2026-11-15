@@ -8,138 +8,138 @@
   "files": [
     {
       "path": "index.html",
-      "sha256": "f5a9d57fa672166b4366d416fc16f45a6082802e48a9d63a9928a4aafec8012e",
-      "bytes": 1216310
+      "sha256": "eb87651e433db0ff7c82fbe4a2721924ae9c5caf7f2a6f127c42b5c6eb93dcc8",
+      "bytes": 1221818
     },
     {
       "path": "company/advise/index.html",
-      "sha256": "821003cdad49df1826877a99ab4f077c49e7fa3645a0c2e64a5c6ff0a0524fa0",
-      "bytes": 31024
+      "sha256": "f985af8c76d6580febbd66732b000270c3736c788fde88f9585d523578b61489",
+      "bytes": 31128
     },
     {
       "path": "company/aerones/index.html",
-      "sha256": "fc94c70174701aa0f17f0faa53db36f21af8c01439c6f7598abc1ca10fcbe429",
-      "bytes": 41453
+      "sha256": "2dde3aaf521647053b6f7bf9d1b332f46f4b5dc43d860c07f00b0bfa1c939548",
+      "bytes": 41557
     },
     {
       "path": "company/aisdr/index.html",
-      "sha256": "f6e0b19598635dc759e6a3a93bbf69861ce6c549946737c686cdefbbaa92ae35",
-      "bytes": 32408
+      "sha256": "c3e8b09b4f20ad9370d4f36b9cda18e523a881394e6fe1310af9ba5621eeda9b",
+      "bytes": 32512
     },
     {
       "path": "company/apollo/index.html",
-      "sha256": "d3245329248d318489f9c1a097c945de9102d22aad90058ad5929a3c814e3076",
-      "bytes": 32687
+      "sha256": "ef5e1a768517ccfce2add3fa839000539b23b71bb29e689b05f9896db51b4a85",
+      "bytes": 32791
     },
     {
       "path": "company/autozone/index.html",
-      "sha256": "497d045e75fa15679e20d26f1744604a9f8528011a8006734ea06e7f00a17792",
-      "bytes": 46039
+      "sha256": "69e7daed2c608994f8f08afa6d5f363beceda498aef0bf8da4dc491be9a7eb5f",
+      "bytes": 46143
     },
     {
       "path": "company/bear/index.html",
-      "sha256": "ffbd34507f6dd54ec68a84d4f6f2671e93a0a376c486a84b46964d3764db95fc",
-      "bytes": 43125
+      "sha256": "0d1cdb070e4fcf019257f3023620245530dd6a662e960bac0b614e4b21873328",
+      "bytes": 43229
     },
     {
       "path": "company/bookoff/index.html",
-      "sha256": "47c542d1f34701259b2fd0081bab0a5f28d3b3f910620f6709b95ecdb12c8e4f",
-      "bytes": 53600
+      "sha256": "23e3edfa8f771d2f5545cf7410419a2514b3f8d75c190a17965eb7c328b738af",
+      "bytes": 55979
     },
     {
       "path": "company/buildpad/index.html",
-      "sha256": "543dda488acb6025a879481f54196922f6a3a5451d5db77cc38b8f5784199eae",
-      "bytes": 35819
+      "sha256": "d42981570196e13eef6d52853d414463b1bd2a9a8fa71744787f75a716b87f44",
+      "bytes": 35923
     },
     {
       "path": "company/chaldal/index.html",
-      "sha256": "774d9f1f041b5b8ab311135691f04d5862f14c547dba5a7c8f76fec49ed95001",
-      "bytes": 40947
+      "sha256": "842fee9c984ec2a48d4b9fa4ff1e048ac69b18461947a820cbbf7d24c22686eb",
+      "bytes": 41051
     },
     {
       "path": "company/datafa/index.html",
-      "sha256": "b44f0d7d9ce3c163ba81a08474ccf9a72ca4ca3f171e6cdb7f268c8af4399ccd",
-      "bytes": 32545
+      "sha256": "a3fd717c4b1f0d09cb35eca813824e25d8666ef0a50f01ca8389c5bbc3262939",
+      "bytes": 32649
     },
     {
       "path": "company/dollargeneral/index.html",
-      "sha256": "0744139aa1785b33c4a6d82a64b38b9f1be4e8d54f74fe0ab72076cc30ba97ee",
-      "bytes": 49029
+      "sha256": "5452feb59a75bf9c6adf34246e8283dc598ae8b1ee855d63715ed5e969499bd0",
+      "bytes": 49133
     },
     {
       "path": "company/ential/index.html",
-      "sha256": "e10cbddbac434ade95e2035316585ff91e6f6a72b045e7326a15e84d43422180",
-      "bytes": 32102
+      "sha256": "c1d7b0dfb0308478cfd26a632fd04fe22b17389e5b83d58e884a7f5b8dc60bdc",
+      "bytes": 32206
     },
     {
       "path": "company/figma/index.html",
-      "sha256": "3d61855c05f8b24ae17d2f73756819db29d78006076841b7f6058492395ed09e",
-      "bytes": 59972
+      "sha256": "dbedd21c9fa36bc9de2220c94270d0edaec9b0ef1a943b564871a43ed8ffbf3b",
+      "bytes": 60076
     },
     {
       "path": "company/google/index.html",
-      "sha256": "542714402a8e0c783e4b8a0d5647bc250d30ed0c56304ae3ba2c8387cefde2df",
-      "bytes": 43600
+      "sha256": "c7b9277cd18436444ef8124067f2f24d499cdd36b4e4df39771e20f121639397",
+      "bytes": 43704
     },
     {
       "path": "company/gummy/index.html",
-      "sha256": "97fcc6fdd1b350e70913f515f000ea651d288422328da6ca449449142fa02a9e",
-      "bytes": 31587
+      "sha256": "6e988573aea570176ea1fbcea52b428b2d3f9c2e9185a34f2616c2b73d16fbaf",
+      "bytes": 31691
     },
     {
       "path": "company/jd/index.html",
-      "sha256": "975d81ba308848c8c3ba1eb22d59d5d4a4af9bcea2c7098aa6a992bb3e73a529",
-      "bytes": 49895
+      "sha256": "c3dc800530ab951e27df7dcf9f5003bbc825f0e2176d94ba43f67ba808cd9da5",
+      "bytes": 49999
     },
     {
       "path": "company/lancer/index.html",
-      "sha256": "29238207827efc5b15b20cccd65602a3000e301892f2e5dc490c554367763618",
-      "bytes": 31687
+      "sha256": "9f6b382b15957020182ebdb483f6590a92921bee5846ab87f54287243e679eac",
+      "bytes": 31791
     },
     {
       "path": "company/nitori/index.html",
-      "sha256": "5b553ba4e09a29119ac4c88b6214a8f89fafc4624f9c8320e7df3ec4f5d8d245",
-      "bytes": 54147
+      "sha256": "14ac081e019b960a6ef262baa183761ff819ecb62c0d32d72528dfbc46193a3f",
+      "bytes": 56387
     },
     {
       "path": "company/onlyway/index.html",
-      "sha256": "80cfbe460c2fc290ce79e3cac9446c0ca6f292af163994d2735ec444ef699571",
-      "bytes": 42665
+      "sha256": "f2b8493b0f1bdecb616bc9c1a719a9dc97a717af3a3192d2bedb2d9ddea14814",
+      "bytes": 42769
     },
     {
       "path": "company/plausible/index.html",
-      "sha256": "422ee1acc0b277087f695f99da78b56d64d01f4dbac7037a7bc6e8ad7cdc9468",
-      "bytes": 37442
+      "sha256": "7b0575b9d2f8f68406fc88f2f78240e12938531d9ff025ffecabdec5f3aacb2a",
+      "bytes": 37546
     },
     {
       "path": "company/salesshortcut/index.html",
-      "sha256": "1df1e6601da8326d935278c0289b531edbf0f271aa03a8ff582e00d6297a82eb",
-      "bytes": 31933
+      "sha256": "6f2b2ff7f018dece0fd4985fd51ebff7588a27891638bc1365d1ab0b13d4efd7",
+      "bytes": 32037
     },
     {
       "path": "company/tally/index.html",
-      "sha256": "bd431fee701ad9d08751445dd264f169203a1d55d078c9eb75729a5c31cb3daf",
-      "bytes": 39993
+      "sha256": "5b1af15fe8f41bcc81884ee0c01458065d4e50369ffa6710be60d07d0e6e18c8",
+      "bytes": 40097
     },
     {
       "path": "company/threesquirrels/index.html",
-      "sha256": "7d6e87c27ef30b11fd47ad11b371cd01d534e0790a7c08f48805fdf9e37ba469",
-      "bytes": 44010
+      "sha256": "902c6bae4fa336b8b4f44e2b14ce26c975e5398b476503864a8e1196fbaf4f2d",
+      "bytes": 44114
     },
     {
       "path": "company/uniqlo/index.html",
-      "sha256": "48148258e5659cc4f7da62d825550ae604d6ae5fc5c1242dbde60a68e1042b9f",
-      "bytes": 70024
+      "sha256": "c93617dcee1f4cde88b67cee5bb6cab3b66b7413c4b8ef185055a55043186c3b",
+      "bytes": 70128
     },
     {
       "path": "company/wework/index.html",
-      "sha256": "243fbf67cc4e63c3b3ab7dc5fc5225ec1c6dcacaf8d3e858af0fa0983ec2404b",
-      "bytes": 67938
+      "sha256": "52d1e6f63ef5347a3694871f6a53841683552072e47bd98fc71a090c2a22bc46",
+      "bytes": 68042
     },
     {
       "path": "company/zamzar/index.html",
-      "sha256": "30a2f51dcb0eb23827faae1060eb611b952fb0de1b091b48504f79907db834ee",
-      "bytes": 36724
+      "sha256": "7181dd77f38d95ba7c3aceb1d0a7adf7809306ee64cf3e28514fd4800eea80e7",
+      "bytes": 36828
     },
     {
       "path": "evidence-media/advise-official-20261114.webp",
@@ -357,6 +357,16 @@
       "bytes": 12101
     },
     {
+      "path": "history-media/bookoff-store-2007.webp",
+      "sha256": "b3b0ab3819552289b5b02810ed34368ef85c7ca1588f737920d628689eb9e66b",
+      "bytes": 310116
+    },
+    {
+      "path": "history-media/nitori-ushiku-old-logo-2009.webp",
+      "sha256": "0a0330228e6c02862251edf3e864d386f5d2bbe5d7d564fd57e3daea38bd05ec",
+      "bytes": 100052
+    },
+    {
       "path": "history-media/uniqlo-first-store-1984.webp",
       "sha256": "5309ee10484f1ddd81bdc0fa4f74af9e4ec3aa6d2431c81b672b41dac30e8527",
       "bytes": 87624
@@ -397,5 +407,5 @@
       "bytes": 1844
     }
   ],
-  "release_id": "6a115809fb15fc53"
+  "release_id": "1545e371e4da18e5"
 }

@@ -216,6 +216,8 @@
 .hm-lead{font-size:clamp(16px,1.1vw,18px);line-height:1.85;max-width:1120px;color:#54715b;margin:0 0 22px}
 .hm-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .hm-gallery.hm-count-1{grid-template-columns:minmax(0,1fr);max-width:900px}
+.hm-gallery.hm-count-1:has(.hm-portrait){max-width:590px}
+.hm-portrait .hm-photo-open{aspect-ratio:3/4}
 .hm-photo{margin:0;background:#fff;border:1px solid #dce6dc;border-radius:14px;overflow:hidden;min-width:0}
 .hm-photo-open{position:relative;display:block;overflow:hidden;background:#e2ebdf;aspect-ratio:4/3}
 .hm-photo-open>img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .2s ease}
