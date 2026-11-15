@@ -8,138 +8,138 @@
   "files": [
     {
       "path": "index.html",
-      "sha256": "0a988076d8415c585cf4514d9296fc2a58c4779f8dee699d4d2fb254a7139e6f",
-      "bytes": 1116208
+      "sha256": "8577b32ea00c4ba7a952b895a4e7259cf2acbbebe44e87e746df4e6955c15973",
+      "bytes": 1125980
     },
     {
       "path": "company/advise/index.html",
-      "sha256": "2fc1a1d20a8a2f9cc15ff9cc45697f8ec0f6122a000d5456f5a464f2f37fea28",
-      "bytes": 9639
+      "sha256": "1915b116dce590f9b53236bba8694c4e662933266cac229398b994c4110942df",
+      "bytes": 10206
     },
     {
       "path": "company/aerones/index.html",
-      "sha256": "46fd97863b9fef100ff6cca647fe08be6b7267280aacb00c84b8adc37b9207d5",
-      "bytes": 19432
+      "sha256": "d0d400731526fb16b1e8a560f8fe5d167bddbafbb8226156fe257bd22e7f359c",
+      "bytes": 20635
     },
     {
       "path": "company/aisdr/index.html",
-      "sha256": "17579aa303df40909b7bdc4a2f3ab03c5a34e1524e1fdf740d32bb43e93f3f31",
-      "bytes": 11024
+      "sha256": "a882135d53f1ecce8facd4df46ed0df067fc477d37dcfc7bbf072f9b2bc98fbe",
+      "bytes": 11590
     },
     {
       "path": "company/apollo/index.html",
-      "sha256": "73b743c6ba3988b0c3503050ecae170043b1d21e8d746a1a31c2412aee70b074",
-      "bytes": 11302
+      "sha256": "5d092e4072ec626413b2cfa53535e6e177f7eb0a18e98c2783b539fad2bac2ad",
+      "bytes": 11869
     },
     {
       "path": "company/autozone/index.html",
-      "sha256": "2572c8ebfa935745a0394e7de16e4273aed259b2495f5d66dcf65bf2b2cc2cc4",
-      "bytes": 24644
+      "sha256": "f73362a9d027275ed0974692596d372f4c0d0f725bb4f7fa989b432f4fc7f83c",
+      "bytes": 25221
     },
     {
       "path": "company/bear/index.html",
-      "sha256": "4964ff019524b6c3dc89ab408b37f3e2f5dcedcd1c5933300f1d62bcac86378b",
-      "bytes": 21734
+      "sha256": "02e6a228d8d63d41b192094d83b4c09ec81e8376d966af87a5c315c3bd5609a2",
+      "bytes": 22307
     },
     {
       "path": "company/bookoff/index.html",
-      "sha256": "a22839f388211e2d519d4942b9709487704cc54a65e945646045414925521bc0",
-      "bytes": 28348
+      "sha256": "cd300bb60bb526a367f5f3e61779b853ed4750a14caad57b2986727b2ee24794",
+      "bytes": 29171
     },
     {
       "path": "company/buildpad/index.html",
-      "sha256": "7a9d8be7775a527b335e0a31095a8aface5c3a5267aaadbd7dfe8024a6b6ac89",
-      "bytes": 14230
+      "sha256": "81f09eebd281b3f5ae29203e1b05eb0dd0618664534b4ac5fa83d423aa86d3c1",
+      "bytes": 15001
     },
     {
       "path": "company/chaldal/index.html",
-      "sha256": "95307403ba20b78e28594f299519aeebe636d8f665197b77259130b21b2e5295",
-      "bytes": 19353
+      "sha256": "c2ec7c2f93feddad456fc5f13bd1574a9902576f0bc2e652c2c022b037e3dd62",
+      "bytes": 20129
     },
     {
       "path": "company/datafa/index.html",
-      "sha256": "f018a7d9bcaf5edfef0f2cd34be0e81a5367cf12eadbcf36c0b340896c507d0a",
-      "bytes": 11160
+      "sha256": "f459678417730f678b6d4baa057fa4d879521fd95e18ef249f74fb42277cfbee",
+      "bytes": 11727
     },
     {
       "path": "company/dollargeneral/index.html",
-      "sha256": "310c738636ad9e94bcac65560a6af34da88e6d61a5179c5f086b2a5730adc002",
-      "bytes": 23862
+      "sha256": "7bc4d23a629161f5cbf545c97b92c74ebb733969d7449a6413983ec6671f60d6",
+      "bytes": 24448
     },
     {
       "path": "company/ential/index.html",
-      "sha256": "96ff28b1cd42c812b770ab43a775b0ea3fea3dd65f0a5cfd2e2a81f253229d18",
-      "bytes": 10717
+      "sha256": "bd6ff0cd66473d64e4aa2b0031989e6cf8d8fc637edac97eb697bf244af79b97",
+      "bytes": 11284
     },
     {
       "path": "company/figma/index.html",
-      "sha256": "a64f7ea5c4f1ad47391aaad04c11c3461678cf6ecb1acdf9fdd1098c1fe6064f",
-      "bytes": 28693
+      "sha256": "c87a27d8b9832ecb7924af0577a3ab3c6e9928e6b129335fcf749512dd88ac9b",
+      "bytes": 29518
     },
     {
       "path": "company/google/index.html",
-      "sha256": "cd5b0ee559c96a9783ada4144c1a3241044f34d52b75c0fbb7bc50ab408e3e96",
-      "bytes": 22195
+      "sha256": "9a9f96a2d5c7dd8ffc6d148bc2a5468dcd59367343185f9e97e035dced06180f",
+      "bytes": 22782
     },
     {
       "path": "company/gummy/index.html",
-      "sha256": "f6a370f95b7da8e292019ccf06f877e0eabbe01c5c09ea06bd851870c4fceaaf",
-      "bytes": 10203
+      "sha256": "42e11871c46742c0745f265e8f83f8b07ed288373bb065eaf72bb9625d89238b",
+      "bytes": 10769
     },
     {
       "path": "company/jd/index.html",
-      "sha256": "15e809ba75d30983f000b97149d955c8e3a4a9ebc66c59a95effdd655a98c61a",
-      "bytes": 28495
+      "sha256": "4e4edce4623e56f5c16e11174a4d8742cbd82a4fb2ca07aa3822b5b5b01ce43d",
+      "bytes": 29077
     },
     {
       "path": "company/lancer/index.html",
-      "sha256": "b3cd099ae632267d7ad49b579f46c48587d84e4a372bedf096dffd8390caa8b4",
-      "bytes": 10302
+      "sha256": "ca433ba673529f18c8520993a4c5022be27839542e9cbc2bc47bfff11915ad2a",
+      "bytes": 10869
     },
     {
       "path": "company/nitori/index.html",
-      "sha256": "b59b3e2490838c2c15579123b6ed2e12288a6b4523a85ecc9e8e365617a7d2d2",
-      "bytes": 28839
+      "sha256": "6e1c84f708559f2edd0a73ccc340dad5e4e3143eed333151995606a7d9cab4f7",
+      "bytes": 29680
     },
     {
       "path": "company/onlyway/index.html",
-      "sha256": "6dce736809c82c2a4fd4eb865ee818dc86f47cdfef93a651c4e8c292d50c45ab",
-      "bytes": 21259
+      "sha256": "b2fa32c47a44151b3390b7f20fe89186a6c197b637be0e500a53db71ef44ba6c",
+      "bytes": 21847
     },
     {
       "path": "company/plausible/index.html",
-      "sha256": "4b6f7dcd1c7c86a63900b5b1f6807fd0ae9f57dda406f3ac3961abea07e81466",
-      "bytes": 15843
+      "sha256": "9778da08b814e8398ba9202d62362e1dc78bee003a8063353a5040dc099dc4bf",
+      "bytes": 16624
     },
     {
       "path": "company/salesshortcut/index.html",
-      "sha256": "5a9439ecd2a3de8702a8fc583b98d13a87e9fda00df523bd9105d809fb51d26d",
-      "bytes": 10541
+      "sha256": "cdd102bc0adc0fd1d02c2cd286e0ed54d16f76f07efb23044139feb61bc31fa4",
+      "bytes": 11115
     },
     {
       "path": "company/tally/index.html",
-      "sha256": "e5bce427b572a28e6c063547d27906d33fe614e23f885a5378d7a936cedf7ee2",
-      "bytes": 18176
+      "sha256": "2160512be683451c0249cca2ca051f98bf8927027bda1048100b8194f7d851ab",
+      "bytes": 19175
     },
     {
       "path": "company/threesquirrels/index.html",
-      "sha256": "ac783afa3dd54fe50c19b868a0393f2a8e86e9857e7cf575c64a910d7c0ac837",
-      "bytes": 22383
+      "sha256": "de69a3317f8580302511252dce8eb6a49d27c1e9feaf383d43990da993a340de",
+      "bytes": 23192
     },
     {
       "path": "company/uniqlo/index.html",
-      "sha256": "75035c328a51ba833570e9057d0c18a90b7615946e6c5a575a94ab2fbaa9b732",
-      "bytes": 33789
+      "sha256": "41730c17e1f3213a5483e273cca3740bd0b1d9d3d4328c3a2de59df9920c9f1e",
+      "bytes": 34882
     },
     {
       "path": "company/wework/index.html",
-      "sha256": "01d9f0984b6ca0a69fa98df6749823476be415411c06b3d9e4eeb7d0509be86e",
-      "bytes": 31175
+      "sha256": "f4ce55d532cb972224ad05640f4d07387014294b651a2284c210448ca1a945d7",
+      "bytes": 32010
     },
     {
       "path": "company/zamzar/index.html",
-      "sha256": "85aeb104e711780c31d7679dfd74d961641384324cec342039cdbcc4dc85f338",
-      "bytes": 15131
+      "sha256": "f0d6ec69e680b8accf22a2b74aa6946ba9a3250057c53ee0492df6c73b92a348",
+      "bytes": 15906
     },
     {
       "path": "evidence-media/advise-official-20261114.webp",
@@ -367,5 +367,5 @@
       "bytes": 1844
     }
   ],
-  "release_id": "59f5bbe7a6b69513"
+  "release_id": "4223be19c2477b96"
 }

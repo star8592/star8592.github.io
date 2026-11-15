@@ -229,7 +229,7 @@ body{font-size:16px;line-height:1.75}
 .evidence-status{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
 .evidence-status span{border:1px solid #dce7d7;background:#f5f8f1;border-radius:999px;padding:6px 11px;font-size:13px;font-weight:700;color:#4f725b}
 .proof-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:17px 0}
-.proof-photo{background:#f5f7f3;border:1px solid #dbe7d9;border-radius:13px;overflow:hidden;text-decoration:none;min-width:0;display:flex;flex-direction:column}
+.proof-photo{background:#f5f7f3;border:1px solid #dbe7d9;border-radius:13px;overflow:hidden;margin:0;min-width:0;display:flex;flex-direction:column}
 .proof-photo:hover{border-color:#669f77;box-shadow:0 8px 24px #2352391a}
 .proof-photo img{width:100%;aspect-ratio:1.85;object-fit:cover;object-position:top left;display:block;background:#eff4e9}
 .proof-photo-body{display:flex;flex-direction:column;gap:5px;padding:12px 14px}
@@ -514,7 +514,7 @@ body{font-size:16px;line-height:1.75}
 .viz-mrr-chart svg text{font:12px system-ui,sans-serif;fill:#718b79}
 .viz-mrr-chart svg .viz-mrr-number{font-weight:800;font-size:13px;fill:#315e42}
 .viz-finance-foot{font-size:11px;color:#728773;line-height:1.8;margin:5px 0 8px}
-.viz-date-rail{display:flex;gap:14px;overflow-x:auto;padding:8px 3px 18px;scroll-snap-type:x proximity;list-style:none}
+.viz-date-rail{display:flex;gap:14px;overflow-x:auto;padding:25px 3px 18px;scroll-snap-type:x proximity;list-style:none;position:relative}
 .viz-date-rail li{position:relative;flex:0 0 195px;min-height:230px;border-top:3px solid #b5cfb2;background:#f5f8f1;padding:15px 14px;border-radius:0 0 10px 10px;scroll-snap-align:start}
 .viz-date-dot{display:grid;place-items:center;border:2px solid #d6e8d2;background:white;color:#3d8457;border-radius:99px;width:29px;height:29px;margin-bottom:11px;font-weight:900;font-size:11px}
 .viz-date-rail time{display:block;font-size:13px;color:#336448;font-weight:850;margin-bottom:7px}
@@ -915,6 +915,49 @@ body{font-size:17px;line-height:1.8}
 .home-release-line b{font-size:18px;font-variant-numeric:tabular-nums}
 .spotlight-main h2{overflow-wrap:anywhere;text-wrap:pretty}
 .spotlight-small h3,.spotlight-small p{overflow-wrap:anywhere}
+
+/* The image and its original research source are two separate actions. */
+.proof-photo-image{display:block;position:relative;overflow:hidden;background:#e7ede7}
+.proof-photo-image:hover img{transform:scale(1.02)}
+.proof-photo-image img{transition:transform .18s ease}
+.proof-image-open{position:absolute;right:12px;bottom:12px;border-radius:8px;padding:7px 12px;background:#153d32de;color:#fff;font-size:14px;font-weight:750}
+.proof-photo-source{display:inline-block;align-self:flex-start;font-size:14px;font-style:normal;font-weight:750;color:#236e4d;text-decoration:underline}
+.viz-atlas-quant{display:grid;gap:8px;min-height:84px;padding:8px 0}
+.viz-atlas-bar-row{display:grid;grid-template-columns:54px minmax(0,1fr) 74px;gap:9px;align-items:center;font-size:12px}
+.viz-atlas-bar-row time{color:#58785f;font-variant-numeric:tabular-nums;white-space:nowrap}
+.viz-atlas-bar-row>span{height:10px;background:#eef3e8;border-radius:5px;overflow:hidden}
+.viz-atlas-bar-row i{display:block;height:100%;background:#478b67;border-radius:5px}
+.viz-atlas-bar-row b{font-size:12px;color:#2e6145;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.viz-atlas-quant>small{font-size:12px;color:#667e6c}
+.viz-atlas-timeline{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;position:relative;padding:24px 5px 8px;min-height:90px}
+.viz-atlas-timeline:before{content:"";position:absolute;left:10px;right:10px;top:31px;border-top:3px solid #84b695}
+.viz-atlas-timeline>span{display:flex;flex-direction:column;align-items:center;gap:8px;z-index:1;flex:1;min-width:0;text-align:center}
+.viz-atlas-timeline i{display:block;width:17px;height:17px;border-radius:50%;background:#fff;border:4px solid #438360}
+.viz-atlas-timeline small{font-size:12px;color:#4e7460;overflow-wrap:anywhere}
+.viz-library-nodes{position:relative}.viz-library-nodes:before{content:"";position:absolute;left:15%;right:15%;top:50%;border-top:2px dashed #8fb9a0}
+.viz-library-nodes>*{z-index:1}
+.viz-library-nodes b{border-radius:13px;max-width:55%;line-height:1.5;text-align:center}
+.viz-atlas-numeric-unknown i{font-size:12px}
+.viz-atlas-numeric-unknown i:not(:last-child):after{content:" → ";font-weight:800;color:#518265}
+.viz-date-rail li:after{content:"";position:absolute;right:-16px;top:-3px;width:16px;border-top:3px solid #b5cfb2}
+.viz-date-rail li:last-child:after{display:none}
+.viz-network-plot{max-width:1120px;margin-left:auto;margin-right:auto}
+@media(max-width:620px){
+ .viz-atlas-bar-row{grid-template-columns:48px minmax(0,1fr) 70px;gap:6px}
+ .proof-image-open{font-size:12px}
+}
+
+/* Actual source-derived vector diagrams, with mobile in-panel scrolling. */
+.viz-drawn-figure{margin:14px 0 22px;border:1px solid #d8e6d9;background:linear-gradient(135deg,#f6fbf5,#edf5ee);border-radius:15px;overflow:hidden}
+.viz-drawn-scroll{overflow-x:auto;max-width:100%;padding:10px 12px 0}
+.viz-drawn-svg{display:block;width:100%;min-width:820px;height:auto;max-height:235px}
+.viz-drawn-figure figcaption{padding:9px 15px 13px;font-size:14px;line-height:1.7;color:#53735b}
+.viz-actual-finance-label{padding:8px 14px;border-radius:9px;background:#e9f4e9;color:#286847;font-weight:750;font-size:14px;margin:15px 0}
+@media(max-width:700px){
+ .viz-drawn-scroll{padding:8px 8px 0}
+ .viz-drawn-svg{min-width:720px}
+ .viz-drawn-figure figcaption{font-size:13px}
+}
 </style>
 <meta name="public-site-origin" content="https://star8592.github.io">
 <link rel="canonical" href="https://star8592.github.io/">
@@ -1411,7 +1454,24 @@ function realEvidence(c,st){
     '<span>真实来源留图 '+captures.length+' 张</span>'+
     '<span>'+(c.entity_identity_status==='VERIFIED_PUBLIC_COMPANY_REGISTRY'?'经营主体有登记证据':c.entity_identity_status==='VERIFIED_CN_EXCHANGE_LISTING_NOTICE'?'证券发行主体已有交易所公告':c.entity_identity_status==='VERIFIED_US_SEC_HISTORICAL_FILING'?'Google历史发行主体有SEC申报':'经营主体仍待核对')+'</span>'+
     '<span>资料整理于 '+htmlEscape(c.curated_at)+' · 非实时</span><span>收入未独立审计</span></div>';
- const gallery=captures.map(item=>'<a class="proof-photo" href="'+htmlEscape(validLink(item.source_url))+'" target="_blank" rel="noopener noreferrer" title="打开原始公开网页"><img loading="eager" decoding="async" src="'+htmlEscape(item.asset_path)+'" alt="'+htmlEscape(item.alt)+'" referrerpolicy="no-referrer"/><span class="proof-photo-body"><b>'+htmlEscape(item.title)+'</b><small>'+(item.kind==='THIRD_PARTY_ARCHIVE'?'第三方机构资料 · ':item.kind==='REGULATORY_FILING_RENDER'?'官方招股书原始PDF · ':item.kind==='ORIGINAL_SEC_FINANCIAL_CHART'?'SEC历史财报 · 本站原创重绘 · ':item.kind==='ORIGINAL_DEVELOPER_DISCLOSURE_CHART'?'开发者披露数据 · 本站原创重绘 · ':item.kind==='ORIGINAL_JD_SEC_FINANCIAL_CHART'?'京东SEC历史财报 · 本站原创重绘 · ':item.kind==='ORIGINAL_DG_SEC_FINANCIAL_CHART'?'反周期SEC财报 · 本站原创重绘 · ':item.kind==='ORIGINAL_AUTOZONE_SEC_FINANCIAL_CHART'?'AutoZone SEC历史财报 · 本站原创重绘 · ':'公司官网资料 · ')+htmlEscape(item.attribution)+' · '+htmlEscape(item.captured_at)+' 采集</small><em>打开原始网页 ↗</em></span></a>').join('');
+ const gallery=captures.map(item=>{
+  const img=htmlEscape(item.asset_path);
+  const label={
+   THIRD_PARTY_ARCHIVE:'第三方机构资料',
+   REGULATORY_FILING_RENDER:'官方招股书原始PDF',
+   ORIGINAL_SEC_FINANCIAL_CHART:'SEC财报 · 本站原创重绘',
+   ORIGINAL_DEVELOPER_DISCLOSURE_CHART:'开发者披露 · 本站原创重绘',
+   ORIGINAL_JD_SEC_FINANCIAL_CHART:'京东SEC财报 · 本站原创重绘',
+   ORIGINAL_DG_SEC_FINANCIAL_CHART:'反周期SEC财报 · 本站原创重绘',
+   ORIGINAL_AUTOZONE_SEC_FINANCIAL_CHART:'AutoZone财报 · 本站原创重绘'
+  }[item.kind]||'公司公开资料';
+  return '<figure class="proof-photo"><a class="proof-photo-image" href="'+img+'" target="_blank" rel="noopener" aria-label="打开图片全尺寸：'+htmlEscape(item.title)+'" title="查看本站保存的完整图片">'+
+    '<img loading="eager" decoding="async" src="'+img+'" alt="'+htmlEscape(item.alt)+'"/>'+
+    '<span class="proof-image-open">查看原图 <b aria-hidden="true">↗</b></span></a>'+
+    '<figcaption class="proof-photo-body"><b>'+htmlEscape(item.title)+'</b>'+
+    '<small>'+label+' · '+htmlEscape(item.attribution)+' · '+htmlEscape(item.captured_at)+' 采集/绘制</small>'+
+    '<a class="proof-photo-source" href="'+htmlEscape(validLink(item.source_url))+'" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>';
+ }).join('');
  const docs=st.sources.slice(0,captures.length?3:4).map(source=>'<a class="proof-document" href="'+htmlEscape(validLink(source.url))+'" target="_blank" rel="noopener noreferrer"><span class="proof-doc-icon">↗</span><span><strong>'+htmlEscape(source.title)+'</strong><small>'+htmlEscape(evidenceKindLabel(source.source_type))+' · 原始材料</small></span></a>').join('');
  const quotes=(layer.quote_cards||[]).map(q=>'<figure class="proof-quote"><figcaption>创始人或企业的原话 · '+htmlEscape(evidenceKindLabel(q.source_type))+'</figcaption><blockquote lang="en">“'+htmlEscape(q.original)+'”</blockquote><p>'+htmlEscape(q.translation)+'</p><a href="'+htmlEscape(validLink(q.source_url))+'" target="_blank" rel="noopener noreferrer">'+htmlEscape(q.by)+' · 查看原文 ↗</a><small>'+htmlEscape(q.quote_scope)+'</small></figure>').join('');
  const flow=layer.money_path;
@@ -1448,6 +1508,30 @@ function vizSource(url,label='查看原始出处 ↗'){
 function vizSectionHead(kicker,title,desc){
  return '<div class="viz-pane-head"><span>'+htmlEscape(kicker)+'</span><h3>'+htmlEscape(title)+'</h3><p>'+htmlEscape(desc)+'</p></div>';
 }
+// These five source-grounded SVG diagrams are drawn from existing reviewed
+// mechanics and article source types. Purely structural drawings have equal
+// width arrows, not fabricated currency amounts, percentages or conversions.
+function vizSvgFigure(title,markup,caption,viewBox='0 0 1120 150'){
+ return '<figure class="viz-drawn-figure"><div class="viz-drawn-scroll">'+
+  '<svg xmlns="http://www.w3.org/2000/svg" class="viz-drawn-svg" viewBox="'+viewBox+
+  '" role="img" aria-label="'+htmlEscape(title)+'"><title>'+htmlEscape(title)+'</title>'+markup+'</svg></div>'+
+  '<figcaption>'+htmlEscape(caption)+'</figcaption></figure>';
+}
+function vizProcessDrawing(names,title,caption){
+ const links=names.slice(0,-1).map((_,i)=>{
+  const x=166+i*186;
+  return '<path d="M'+x+' 78 H'+(x+28)+'" stroke="#568b6d" stroke-width="3" fill="none"/>'+
+   '<path d="M'+(x+20)+' 71 L'+(x+28)+' 78 L'+(x+20)+' 85" stroke="#568b6d" stroke-width="3" fill="none"/>';
+ }).join('');
+ const nodes=names.map((name,i)=>{
+  const x=12+i*186;
+  return '<rect x="'+x+'" y="32" width="154" height="92" rx="15" fill="'+(i===names.length-1?'#e9f3dc':'#f0f7f1')+
+   '" stroke="'+(i===names.length-1?'#83b38c':'#c7dec9')+'" stroke-width="2"/>'+
+   '<text x="'+(x+14)+'" y="58" fill="#607c67" font-size="13" font-weight="700">'+String(i+1).padStart(2,'0')+'</text>'+
+   '<text x="'+(x+77)+'" y="95" font-size="18" font-weight="800" fill="#24553c" text-anchor="middle">'+htmlEscape(name)+'</text>';
+ }).join('');
+ return vizSvgFigure(title,links+nodes,caption,'0 0 '+(names.length*186+4)+' 155');
+}
 function vizFlow(c,st){
  const m=st.business_mechanics||{};
  const steps=[
@@ -1460,7 +1544,8 @@ function vizFlow(c,st){
  ];
  const cards=steps.map((x,i)=>'<li class="viz-flow-node"><small>'+String(i+1).padStart(2,'0')+' / '+htmlEscape(x.tag)+'</small><strong>'+htmlEscape(x.name)+'</strong><p>'+vizExcerpt(x.what,99)+'</p></li>').join('');
  return vizSectionHead('01 · BUSINESS ENGINE','这门生意是如何运转的？','六个环节反映从原始材料归纳的经营逻辑；没有把每步宽度冒充订单转化率。')+
-  '<ol class="viz-flow-chain">'+cards+'</ol>'+
+vizProcessDrawing(steps.map(x=>x.name),'真实经营闭环的六个环节','定性结构图：箭头表示业务顺序，不代表真实转换率或金额。')+
+   '<ol class="viz-flow-chain">'+cards+'</ol>'+
   '<div class="viz-evidence-foot"><span>定性示意 · 所有环节等宽；暂无经过审计的转化率。</span>'+
   vizSource(m.source_url||c.source_url,'核对商业模式原文 ↗')+'</div>';
 }
@@ -1476,7 +1561,7 @@ function vizNetwork(c,st){
   '<p>'+vizExcerpt(x.text,105)+'</p></div>').join('');
  return vizSectionHead('02 · RELATIONSHIP MAP','公司、顾客、渠道与交付方如何关联？',
     '这是基于来源归纳的业务角色关系，不是股权结构图、现金流 Sankey 或真实采购合同图。')+
-  '<div class="viz-network-plot"><svg viewBox="0 0 760 316" aria-hidden="true" focusable="false" preserveAspectRatio="none">'+
+  '<div class="viz-network-plot"><svg viewBox="0 0 760 316" role="img" aria-label="顾客、渠道、交付与企业经营主体关系图" focusable="false" preserveAspectRatio="none">'+
   '<defs><marker id="viz-arrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#719b83" stroke-width="1.8"/></marker></defs>'+
   '<path d="M194 80 C245 90 266 123 330 153 M194 235 C256 235 270 185 330 165 M566 79 C525 91 509 124 444 152 M566 235 C516 225 503 187 444 166" fill="none" stroke="#94ae9b" stroke-width="2.3" stroke-dasharray="6 6" marker-end="url(#viz-arrow)"/></svg>'+
   '<div class="viz-network-company"><span>经营主体</span><strong>'+vizExcerpt(c.name,22)+'</strong><small>业务中心 · 非资金比例</small></div>'+
@@ -1566,17 +1651,32 @@ function vizFinance(c,st){
  return vizSectionHead('03 · UNIT ECONOMICS','卖了多少钱，最终能留下多少？',
    annual?'以不同颜色与独立刻度展示历史营业收入和会计净利润；不填补2017年的资料空缺。':
    numeric?'只有可比、同一币种、同一MRR口径的历史月份才绘增长曲线。':'缺少完整可靠成本明细时，只展示成本去向，不制造饼图、毛利率或瀑布柱。')+
-   annual+
-   (numeric?'<h4 class="viz-finance-title">已核对来源的历史经营趋势（非利润）</h4>'+numeric:'')+
-   '<h4 class="viz-finance-title">收入到利润：目前能确认哪些环节？</h4>'+
+(annual||numeric?'<div class="viz-actual-finance-label">已取得可核对的历史数值图（以图注和具体原始来源为准）</div>':'')+
+    annual+
+    (numeric?'<h4 class="viz-finance-title">已核对来源的历史经营趋势（非利润）</h4>'+numeric:'')+
+'<h4 class="viz-finance-title">收入到利润：目前能确认哪些环节？</h4>'+
+    vizProcessDrawing(['客户付款','营业收入','交付成本','渠道与税费','利润待核'],'真实收入与成本核算路径','这是一张定性流程图。方框宽度和箭头不表示金额、比例或真实利润。')+
    '<div class="viz-cost-rail">'+labels+'</div>'+
-   '<div class="viz-unknown-revenue"><strong>无法绘制准确的成本瀑布图</strong><span>因为这家企业尚未提供足够的同期间营收、成本与费用分项。最终净利润保持“未知/未经独立核账”。</span></div>'+
+   '<div class="viz-unknown-revenue"><strong>无法绘制准确的成本瀑布图</strong><span>'+
+     (annual||numeric?'上面是有来源的历史财务图，但不是完整成本瀑布；尚不能用其推断所有成本与最终现金收益。':
+      '本篇没有同期间、同口径的收入、成本与利润数值，所以上面明确显示的是定性收支路径，不是伪造的财务曲线。')+
+     '</span></div>'+
    '<div class="viz-evidence-foot"><span>上方阶段无比例意义。收费价≠营收，融资额≠利润。</span>'+vizSource(st.hero_fact?.source_url||m.source_url||c.source_url,'核对故事中的数字 ↗')+'</div>';
 }
 function vizTimeline(c,st){
  const entries=(st.timeline||[]).slice(0,10);
+ const dates=entries.slice(0,6);
+ const chart=dates.length?vizSvgFigure('企业历史事件节点示意：'+c.name,
+    '<path d="M78 74 H1045" stroke="#9fc5a7" stroke-width="5" fill="none"/>'+
+    dates.map((e,i)=>{const x=78+i*(967/Math.max(1,dates.length-1));return
+     '<circle cx="'+x.toFixed(1)+'" cy="74" r="13" fill="#2e815a" stroke="#ffffff" stroke-width="4"/>'+
+     '<text x="'+x.toFixed(1)+'" y="43" text-anchor="middle" font-size="17" fill="#276548" font-weight="750">'+vizExcerpt(e.when,15)+'</text>'+
+     '<text x="'+x.toFixed(1)+'" y="115" text-anchor="middle" font-size="14" fill="#607c67">'+String(i+1).padStart(2,'0')+'</text>';
+    }).join(''),
+    '节点按发生顺序等距排布，仅作为阅读导航；间距不是实际年数。逐条证据请看下方。'):' ';
  return vizSectionHead('04 · EARLY DAYS','从哪一年开始，生意出现转折？','节点来自各自公开报道，绝不将回忆录的刊登年等同创业事件发生年。')+
-  '<ol class="viz-date-rail">'+entries.map((e,i)=>'<li><span class="viz-date-dot">'+String(i+1).padStart(2,'0')+'</span>'+
+chart+
+   '<ol class="viz-date-rail">'+entries.map((e,i)=>'<li><span class="viz-date-dot">'+String(i+1).padStart(2,'0')+'</span>'+
     '<time>'+vizExcerpt(e.when,28)+'</time><p>'+vizExcerpt(e.fact,145)+'</p>'+
     vizSource(e.source_url,'核对这个节点 ↗')+'</li>').join('')+'</ol>'+
   '<div class="viz-evidence-foot"><span>滚动查看全部节点；每个节点独立连接出处。日期精度以原文为准。</span></div>';
@@ -1591,12 +1691,22 @@ function vizEvidence(c,st){
  ];
  const count=groups.map(g=>({...g,rows:sources.filter(s=>g.types.includes(s.source_type))}));
  const max=Math.max(1,...count.map(x=>x.rows.length));
- const cols=count.map(x=>'<li class="viz-evidence-item"><div><strong>'+x.label+'</strong><span>'+x.rows.length+' 份</span></div>'+
+const svgRows=count.map((x,i)=>{
+    const y=24+i*52,barW=570*x.rows.length/max;
+    return '<text x="12" y="'+(y+23)+'" fill="#305b43" font-size="16" font-weight="750">'+htmlEscape(x.label)+'</text>'+
+      '<rect x="290" y="'+y+'" width="570" height="29" rx="8" fill="#edf3ec"/>'+
+      (x.rows.length?'<rect x="290" y="'+y+'" width="'+barW.toFixed(1)+'" height="29" rx="8" fill="#4f9370"/>':'')+
+      '<text x="878" y="'+(y+22)+'" fill="#285e42" font-size="18" font-weight="800">'+x.rows.length+' 份</text>';
+  }).join('');
+  const sourceFigure=vizSvgFigure('可核查来源数量分布：'+c.name,svgRows,
+    '条形长度只表示同篇故事内各类原始来源的实际份数，不代表可信度百分比。','0 0 1020 242');
+  const cols=count.map(x=>'<li class="viz-evidence-item"><div><strong>'+x.label+'</strong><span>'+x.rows.length+' 份</span></div>'+
     '<div class="viz-evidence-track"><i style="width:'+(x.rows.length?Math.max(4,x.rows.length/max*100):0)+'%"></i></div>'+
     (x.rows.length?'<ul>'+x.rows.slice(0,4).map(a=>'<li>'+vizSource(a.url,String(a.title).slice(0,64))+'</li>').join('')+'</ul>':
       '<small>当前没有此类来源</small>')+'</li>').join('');
  return vizSectionHead('05 · TRACE THE CLAIM','这一篇的证据来自哪里？','下方是每类来源的数量，不代表真实性百分比；公司自述、创始人采访与真实付款凭证的证明力不同。')+
-  '<ol class="viz-evidence-list">'+cols+'</ol>'+
+sourceFigure+
+   '<ol class="viz-evidence-list">'+cols+'</ol>'+
   '<div class="viz-caution-block"><strong>有来源，不等于所有财务事实都已核账</strong><p>'+vizExcerpt(st.caution,320)+'</p></div>'+
   '<div class="viz-evidence-foot"><span>每条可打开原始页面；报道真实性和独立付款证明仍需分别核对。</span></div>';
 }
@@ -1607,8 +1717,8 @@ function storyVisualDashboard(c,st){
  const panes=VIZ_TABS.map(([key],i)=>'<section class="viz-pane" role="tabpanel" data-viz-pane="'+key+'" '+(i?'hidden':'')+'>'+parts[key](c,st)+'</section>').join('');
  return '<section class="viz-dashboard" aria-label="'+htmlEscape(c.name)+'的真实商业分析图谱">'+
   '<div class="viz-dashboard-head"><span class="viz-overline">HOW THIS BUSINESS WORKS · 有来源的图谱</span>'+
-  '<h2>五张图，看懂 '+htmlEscape(c.name)+' 如何做成生意</h2>'+
-  '<p>生意路径、业务关系、费用去向、创业时间线和证据出处。<strong>图表只绘有据可查的数据，不用想象补齐缺失的数字。</strong></p></div>'+
+  '<h2>五个可查看的商业图谱：'+htmlEscape(c.name)+'</h2>'+
+  '<p>真实需求和交付流程、顾客关系、收入与成本路径、时间节点、证据结构。<strong>五种不同的可视化；没有原始数值的公司不会冒充有财务走势图。</strong></p></div>'+
   '<div class="viz-tabbar" role="tablist" aria-label="切换商业分析图谱">'+tabs+'</div>'+panes+
   '<div class="viz-dashboard-footnote">本研究是对公开材料的结构化解释，不构成保证收益或独立财务审计。图的布局、连线和卡片面积均不代表金额或比例。</div></section>';
 }
@@ -1617,10 +1727,62 @@ function vizHomeTeaser(){
  '<div><span>REAL DATA · BUSINESS MAP</span>'+
  '<h2>以前读赚钱故事，现在一眼看懂它怎么赚钱。</h2>'+
  '<p>把“谁找到第一批顾客、钱从哪里来、怎么交付、哪些成本不能忽略”画成真正的图谱。没有证据的数据，宁可不画。</p>'+
- '<button type="button" data-route="visuals">打开 8 种真实商业图谱 →</button></div>'+
+ '<button type="button" data-route="visuals">查看 8 个可核对的商业图谱示例 →</button></div>'+
  '<div class="viz-home-promo-visual" aria-hidden="true">'+
  '<div class="viz-promo-nodes"><i>真实需求</i><i>产品与获客</i><i>收费</i><i>利润？</i></div>'+
  '<div class="viz-promo-source">原始资料 → 经营关系 → 可核对的图表</div></div></section>';
+}
+
+function vizAtlasPreview(tab,c,st){
+ const timeline=Array.isArray(st?.timeline)?st.timeline:[];
+ const evidence=Array.isArray(st?.sources)?st.sources:[];
+ const layer=st?.evidence_layer||{};
+ const money=layer.financial_milestones;
+ const annual=layer.annual_financial_series;
+ if(tab==='finance'&&annual?.points?.length===4){
+  const rows=annual.points;
+  const max=Math.max(...rows.map(x=>x.revenue_wan_cny),1);
+  return '<div class="viz-atlas-quant" role="img" aria-label="来源数据：各年实际营业收入，相对同图最大值缩放">'+
+   rows.map(p=>'<div class="viz-atlas-bar-row"><time>'+htmlEscape(p.year)+'</time><span><i style="width:'+Math.max(2,100*p.revenue_wan_cny/max).toFixed(1)+'%"></i></span>'+
+    '<b>'+(p.revenue_wan_cny/10000).toFixed(1)+'亿</b></div>').join('')+
+   '<small>历史收入（人民币），不是净利润</small></div>';
+ }
+ if(tab==='finance'&&money?.metric==='MRR'&&money.currency==='USD'&&money.points?.length>=2){
+  const rows=money.points.slice(-4);
+  const max=Math.max(...rows.map(p=>p.amount_usd),1);
+  return '<div class="viz-atlas-quant" role="img" aria-label="创始人披露的真实MRR节点，相对最大值缩放">'+
+   rows.map(p=>'<div class="viz-atlas-bar-row"><time>'+htmlEscape(p.period.slice(2))+'</time><span><i style="width:'+Math.max(2,100*p.amount_usd/max).toFixed(1)+'%"></i></span>'+
+    '<b>$'+Number(p.amount_usd).toLocaleString('en-US')+'</b></div>').join('')+
+   '<small>MRR · 创始人自报，未经独立审计</small></div>';
+ }
+ if(tab==='finance'){
+  return '<div class="viz-library-steps viz-atlas-numeric-unknown" role="img" aria-label="定性成本路径；该公司暂无可信数值曲线">'+
+   '<i>客户付款</i><i>交付成本</i><i>渠道费用</i><i>利润未知</i></div>';
+ }
+ if(tab==='timeline'){
+  const dates=timeline.slice(0,4);
+  return '<div class="viz-atlas-timeline" role="img" aria-label="按原始企业时间线绘制的历史节点">'+
+   dates.map((p,i)=>'<span><i></i><small>'+htmlEscape(String(p.when).slice(0,13))+'</small></span>').join('')+'</div>';
+ }
+ if(tab==='evidence'){
+  const grouped=[
+   evidence.filter(x=>['COMPANY_STATEMENT','OFFICIAL_PRICING','OFFICIAL_PUBLIC_PRICE','OFFICIAL_REGISTRY'].includes(x.source_type)).length,
+   evidence.filter(x=>x.source_type==='FOUNDER_ACCOUNT').length,
+   evidence.filter(x=>x.source_type==='THIRD_PARTY_ANALYSIS').length,
+   evidence.filter(x=>x.source_type==='COMPANY_TESTIMONIAL').length
+  ];
+  const max=Math.max(1,...grouped);
+  return '<div class="viz-atlas-quant" role="img" aria-label="按公司/创始人/第三方/客户来源类型的真实份数绘制">'+
+    grouped.map((n,i)=>'<div class="viz-atlas-bar-row"><time>'+['公司','创始人','第三方','客户'][i]+'</time>'+
+    '<span><i style="width:'+(n?100*n/max:0).toFixed(1)+'%"></i></span><b>'+n+'份</b></div>').join('')+
+    '<small>来源数量，不代表可信度得分</small></div>';
+ }
+ if(tab==='network'){
+  return '<div class="viz-library-nodes" role="img" aria-label="客户与渠道、企业经营主体及交付关系示意">'+
+   '<i></i><i></i><b>'+htmlEscape(c.name.slice(0,8))+'</b><i></i><i></i></div>';
+ }
+ return '<div class="viz-library-steps" role="img" aria-label="源材料归纳的经营闭环，不代表成本比例">'+
+  '<i>真实需求</i><i>产品/服务</i><i>客户付费</i><i>利润待核</i></div>';
 }
 
 function vizLibrary(){
@@ -1632,23 +1794,12 @@ function vizLibrary(){
   ['finance','中国企业营收与净利润','2014—2018：并列收入与利润，展示亏损转盈利、留下2017缺口','c-threesquirrels','中国财报'],
   ['timeline','创业关键时间线','把产品转向、首位客户与收入里程碑按时期串起来','c-buildpad','历史'],
   ['evidence','证据数量与出处','创始人自述、公司声明、第三方报道按来源展示','c-tally','证据'],
-  ['flow','用户价值与履约','理解实体生意如何从真实需求走到交付','c-chaldal','实体'],
-  ['network','可复制与不能复制','结合原文识别行业经验、资本、客户关系等难复制要素','c-zamzar','策略']
+  ['flow','用户价值与履约','理解实体生意如何从真实需求走到交付','c-chaldal','实体']
  ];
  const cards=templates.map(([tab,title,description,id,group],i)=>{
   const c=companyIndex.get(id);
   if(!c)return '';
-  const graphic=tab==='finance'&&id==='c-threesquirrels'?
-   '<div class="viz-library-china"><strong>营收 vs 利润</strong>'+
-   '<div><span>2014</span><i class="viz-library-annual-revenue" style="width:12%"></i><b class="viz-library-loss">亏损</b></div>'+
-   '<div><span>2018</span><i class="viz-library-annual-revenue" style="width:90%"></i><b>盈利</b></div>'+
-   '<small>仅作视觉索引，准确数字在原图内</small></div>':
-   tab==='finance'&&id==='c-plausible'?
-   '<svg class="viz-library-spark" viewBox="0 0 240 78" aria-hidden="true"><polyline points="4,67 70,63 132,57 225,9" fill="none" stroke="#3d8560" stroke-width="4"/><circle cx="225" cy="9" r="5" fill="#3d8560"/></svg>':
-   tab==='network'?'<div class="viz-library-nodes"><i></i><i></i><b>企业</b><i></i><i></i></div>':
-   tab==='timeline'?'<div class="viz-library-dots"><i></i><i></i><i></i><i></i><i></i></div>':
-   tab==='evidence'?'<div class="viz-library-bars"><i style="width:78%"></i><i style="width:54%"></i><i style="width:28%"></i></div>':
-   '<div class="viz-library-steps"><i>需求</i><i>价值</i><i>付费</i><i>利润?</i></div>';
+   const graphic=vizAtlasPreview(tab,c,EDITORIAL.get(c.id));
   return '<article class="viz-library-card"><div class="viz-library-meta"><span>'+String(i+1).padStart(2,'0')+'</span><small>'+htmlEscape(group)+'</small></div>'+
    '<h3>'+htmlEscape(title)+'</h3><p>'+htmlEscape(description)+'</p>'+graphic+
    '<div class="viz-library-bottom"><small>真实案例：'+htmlEscape(c.name)+'</small>'+
@@ -1658,7 +1809,7 @@ function vizLibrary(){
   '<h1>商业图谱：把赚钱的逻辑真正画清楚</h1><p>不只读文字。用交互式生意路径、真实企业关系、历史收入曲线和源材料地图，理解复杂的商业故事。</p>'+
   '<div class="viz-library-warning">数据原则：没有同口径收入结构，不画饼图；没有实收成本与净利润，不画伪造的瀑布图；历史网页的截图不是当年摄影。</div></section>'+
   '<div class="viz-library-grid">'+cards+'</div>'+
-  '<div class="viz-library-last"><strong>这不是示意设计稿。</strong>每张卡片可打开现有公司的实际图谱。真实数值以该公司原始来源为准。</div>';
+  '<div class="viz-library-last"><strong>缩略图也是来源数据或明确标注的定性示意。</strong>点击卡片进入对应企业的完整图谱；原始数值和证据链接可在内页核对。</div>';
 }
 
 function editorialStory(c){
