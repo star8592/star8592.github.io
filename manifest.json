@@ -8,8 +8,8 @@
   "files": [
     {
       "path": "index.html",
-      "sha256": "52e0956dae20c653337bad9c2347a9e4277fcab8841834e76456c6ea569e494c",
-      "bytes": 1113862
+      "sha256": "42f0d0024cf8dd6561d7cd49ca26abdef35856effb0ba4301f800727f264996c",
+      "bytes": 1116065
     },
     {
       "path": "company/advise/index.html",
@@ -367,5 +367,5 @@
       "bytes": 1844
     }
   ],
-  "release_id": "540104ae1e0a331b"
+  "release_id": "796b6b3038e21091"
 }

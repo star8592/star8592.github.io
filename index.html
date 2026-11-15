@@ -910,6 +910,11 @@ body{font-size:17px;line-height:1.8}
 .lifecycle-home-grid small{color:#667c70;font-size:14px}.lifecycle-home-grid strong{font-size:23px}.lifecycle-home-grid span{font-size:17px;line-height:1.65}
 .lifecycle-home-grid em{font-size:16px;color:#216c48;font-style:normal;font-weight:750}
 @media(max-width:780px){.cc-home-teaser{display:block}.cc-home-teaser button{margin-top:15px;min-width:unset;width:100%}}
+/* Dynamic home: data-derived lead and visible current-publication receipt. */
+.home-release-line{display:inline-block;margin-top:12px;padding:9px 13px;border-radius:9px;background:#eef3e9;color:#355c43;font-size:14px;line-height:1.6;font-weight:650}
+.home-release-line b{font-size:18px;font-variant-numeric:tabular-nums}
+.spotlight-main h2{overflow-wrap:anywhere;text-wrap:pretty}
+.spotlight-small h3,.spotlight-small p{overflow-wrap:anywhere}
 </style>
 <meta name="public-site-origin" content="https://star8592.github.io">
 <link rel="canonical" href="https://star8592.github.io/">
@@ -1034,18 +1039,31 @@ function feedTag(c){
  if(c.reported_monthly_revenue_usd!=null)return '有收入线索';
  return '值得研究';
 }
+// Publish order is derived from the reviewed corpus, never an evergreen brand list.
+// The end of companies.json is the tie-breaker for several articles on one day.
+// A lead without EDITORIAL_SOURCE_CHECK_PASSED must never appear on the homepage.
+const companyInsertIndex=new Map(COMPANY.map((c,i)=>[c.id,i]));
+function latestPublishedStories(){
+ return COMPANY.filter(c=>{
+   const story=EDITORIAL.get(c.id);
+   // Eight original published stories predate the explicit editorial gate.
+   // They are part of the reviewed published corpus, not research leads.
+   const gate=story?.editorial_review?.publication_gate;
+   return !!story&&(gate==null||gate==='EDITORIAL_SOURCE_CHECK_PASSED');
+  })
+  .sort((a,b)=>(b.curated_at||'').localeCompare(a.curated_at||'')||
+   companyInsertIndex.get(b.id)-companyInsertIndex.get(a.id));
+}
 function feedRanked(){
- // Curated diversity first. Once a reader opens a story, related business
- // models rise in the feed during this page session only; no personal data is sent.
- const priority=['c-chaldal','c-aerones','c-apollo','c-tally','c-aisdr','c-gummy','c-zamzar','c-plausible','c-buildpad','c-datafa','c-salesshortcut','c-advise','c-lancer','c-ential'];
- const stories=priority.map(id=>companyIndex.get(id)).filter(Boolean)
-   .concat(COMPANY.filter(c=>!priority.includes(c.id)));
+ const stories=latestPublishedStories();
  const recentlyRead=companyIndex.get(lastOpenedStoryId);
  if(!recentlyRead)return stories;
  const score=c=>(c.id===recentlyRead.id?-100:0)+
    (c.category===recentlyRead.category?40:0)+
    (c.business_model===recentlyRead.business_model?20:0);
- return stories.sort((a,b)=>score(b)-score(a)||priority.indexOf(a.id)-priority.indexOf(b.id));
+ return stories.sort((a,b)=>score(b)-score(a)||
+   (b.curated_at||'').localeCompare(a.curated_at||'')||
+   companyInsertIndex.get(b.id)-companyInsertIndex.get(a.id));
 }
 function feedMatches(c,topic){
  if(topic==='reported'){
@@ -1126,13 +1144,13 @@ function storyHighlight(c){
  return '<strong class="feed-money-number">'+htmlEscape(st.hero_fact.value)+'</strong><span class="feed-money-unit">'+htmlEscape(st.hero_fact.label)+'</span>';
 }
 function freshStories(){
- const found=COMPANY.filter(c=>EDITORIAL.get(c.id)?.editorial_review?.publication_gate==='EDITORIAL_SOURCE_CHECK_PASSED')
-   .sort((a,b)=>(b.curated_at||'').localeCompare(a.curated_at||'')||a.name.localeCompare(b.name)).slice(0,4);
+ // The first three stories already feature above; never duplicate fixed cards.
+ const found=latestPublishedStories().slice(3,7);
  if(!found.length)return '';
- return '<section class="fresh-story" aria-label="新核查的真实创业故事"><div class="fresh-header"><span class="fresh-kicker">故事探头新发现 · 已核查来源</span><h2>他们究竟怎么找到第一笔钱？</h2><p>持续新增真实案例，所有数字注明发生日期和真实口径。</p></div><div class="fresh-story-grid">'+found.map(c=>{
-  const story=EDITORIAL.get(c.id);
-  return '<button type="button" data-company="'+htmlEscape(c.id)+'"><span class="fresh-label">'+htmlEscape(c.name)+'</span><strong>'+htmlEscape(story.headline)+'</strong><span>'+htmlEscape(story.hero_fact.value)+' · '+htmlEscape(story.hero_fact.label)+'</span><b>看完整故事 →</b></button>';
- }).join('')+'</div></section>';
+ return '<section class="fresh-story" aria-label="最近发表的完整企业调查"><div class="fresh-header"><span class="fresh-kicker">近期发表 · 编辑核查通过</span><h2>再看几篇新入库的完整故事</h2><p>按文章入库日期排列；同一天新增的文章按实际入库顺序展示。</p></div><div class="fresh-story-grid">'+found.map(c=>{
+   const story=EDITORIAL.get(c.id);
+   return '<button type="button" data-company="'+htmlEscape(c.id)+'"><span class="fresh-label">'+htmlEscape(c.name)+' · '+htmlEscape(c.curated_at)+'</span><strong>'+htmlEscape(story.headline)+'</strong><span>'+htmlEscape(story.hero_fact.value)+' · '+htmlEscape(story.hero_fact.label)+'</span><b>看完整故事 →</b></button>';
+  }).join('')+'</div></section>';
 }
 
 const bulkKindLabels={
@@ -1296,21 +1314,26 @@ function recentLifecycleTeaser(){
   +'<span>'+htmlEscape(x.headline)+'</span><em>看它后来怎样了 →</em></button>').join('')+'</div></section>';
 }
 function home(){
- const lead=companyIndex.get('c-apollo'),second=companyIndex.get('c-aisdr'),third=companyIndex.get('c-gummy');
- if(!lead||!second||!third||![lead,second,third].every(c=>EDITORIAL.has(c.id)))return '<div class="empty-state">故事正在核对来源，稍后再看。</div>';
+ const published=latestPublishedStories();
+ const [lead,second,third]=published;
+ if(!lead)return '<div class="empty-state">故事正在核对来源，尚未发表完整文章。</div>';
  const topics=feedTopics.map(([id,title])=>'<button type="button" data-feed-topic="'+id+'" class="feed-topic'+(activeFeedTopic===id?' selected':'')+'" aria-pressed="'+String(activeFeedTopic===id)+'">'+title+'</button>').join('');
- return '<section class="feed-intro"><div><div class="feed-eyebrow"><span class="pulse-dot"></span> 打开就刷，不用搜</div><h1>别人到底怎么<em>赚钱</em>？<br/>有没有一招，我也能试？</h1><p>第一批客户怎么找来的？钱到底收到了没有？有据可查的故事，点开直接看。</p></div><div class="feed-date">所有数字均保留原始出处<br/><b>ARR ≠ 利润 · 合同金额 ≠ 到账 · 价格 ≠ 收入</b></div></section>'+
- '<section class="spotlight-layout" aria-label="率先推荐的真实赚钱故事">'+
- '<button class="spotlight-main" type="button" data-company="'+htmlEscape(lead.id)+'"><span class="spotlight-overline"><i></i> 第一条 · 从卖不出去到找到新生意</span><span class="spotlight-brand">'+htmlEscape(lead.name)+'</span><h2>上一家公司卡在 5,000 用户，<br/>后来做出一门大生意。</h2><div class="spotlight-money"><span>2025 年 5 月公司披露的 ARR</span>'+storyHighlight(lead)+'</div><div class="spotlight-footer"><span>年经常性收入，不是老板净利润</span><b>点开看它怎么做 →</b></div></button>'+
- '<div class="spotlight-side">'+
- '<button class="spotlight-small saffron" type="button" data-company="'+htmlEscape(second.id)+'"><span class="mini-kicker">02 · 代码没写完，先谈客户</span><h3>'+htmlEscape(second.name)+'</h3><p>为什么有人愿意为 AI 原型先签约？</p><div class="mini-money">'+storyHighlight(second)+'</div><span class="mini-open">看先卖后做怎么回事 ↗</span></button>'+
- '<button class="spotlight-small cream" type="button" data-company="'+htmlEscape(third.id)+'"><span class="mini-kicker">03 · 用户不少，却不得不关停</span><h3>'+htmlEscape(third.name)+'</h3><p>平台授权出了问题，再多人用也撑不住？</p><div class="mini-money">'+storyHighlight(third)+'</div><span class="mini-open">看这个失败教训 ↗</span></button>'+
- '</div></section>'+
- '<div class="feed-source-notice">以上分别是<strong>公司自报的 ARR、付费试点数量、累计使用者人数</strong>，不是同一种指标，更不是可比较的老板利润。点击原文查证，所有故事都列出无法确认的地方。</div>'+
- freshStories()+countercycleHomeTeaser()+recentLifecycleTeaser()+vizHomeTeaser()+bulkArchiveSummary()+investigationPreviewHtml('all')+
-'<section class="feed-section" id="feed-section"><div class="feed-section-heading"><div><span>继续刷，继续看</span><h2>不同的人，究竟靠什么生意收钱？</h2><p>'+(lastOpenedStoryId?'根据刚读过的故事，把相似的商业模式放在前面。':COMPANY.length+' 个有来源的企业故事，从收入模式与细分赛道来选。')+'</p></div><button type="button" class="feed-more-link" data-route="library">看全部 →</button></div>'+
- '<div class="feed-topics" aria-label="按生意类型看故事">'+topics+'</div><div id="feed-list" aria-live="polite">'+feedListHtml(activeFeedTopic)+'</div></section>'+
- '<section class="feed-bottom-question"><span>读完别人的，就该想想自己。</span><strong>重点不是复制他的收入，是学会他找到客户的那一步。</strong><button type="button" data-route="library">再看一个故事 →</button></section>';
+ const spotlight=c=>EDITORIAL.get(c.id);
+ const smallSpotlight=(c,num,style)=>{
+  if(!c)return '';
+  const st=spotlight(c);
+  return '<button class="spotlight-small '+style+'" type="button" data-company="'+htmlEscape(c.id)+'"><span class="mini-kicker">'+num+' · '+htmlEscape(c.curated_at)+' · 最近发表</span><h3>'+htmlEscape(c.name)+'</h3><p>'+htmlEscape(st.headline)+'</p><div class="mini-money">'+storyHighlight(c)+'</div><span class="mini-open">看完整调查及证据 ↗</span></button>';
+ };
+ const leadStory=spotlight(lead);
+ return '<section class="feed-intro"><div><div class="feed-eyebrow"><span class="pulse-dot"></span> 打开就刷，不用搜</div><h1>别人到底怎么<em>赚钱</em>？<br/>有没有一招，我也能试？</h1><p>第一批客户怎么找来的？钱到底收到了没有？有据可查的故事，点开直接看。</p><div class="home-release-line" aria-label="当前公开故事库版本">已发表 <b>'+published.length+'</b> 篇完整故事 · 最新入库 <time>'+htmlEscape(lead.curated_at)+'</time> · 新故事自动进入首页</div></div><div class="feed-date">所有数字均保留原始出处<br/><b>ARR ≠ 利润 · 合同金额 ≠ 到账 · 价格 ≠ 收入</b></div></section>'+
+ '<section class="spotlight-layout" aria-label="根据新发表故事自动生成的推荐">'
+ +'<button class="spotlight-main" type="button" data-company="'+htmlEscape(lead.id)+'"><span class="spotlight-overline"><i></i> 最新完整调查 · '+htmlEscape(lead.curated_at)+'</span><span class="spotlight-brand">'+htmlEscape(lead.name)+'</span><h2>'+htmlEscape(leadStory.headline)+'</h2><div class="spotlight-money"><span>原始资料核查 · 关键事实（不等于净利润）</span>'+storyHighlight(lead)+'</div><div class="spotlight-footer"><span>原始来源、时期及财务口径详见文章</span><b>阅读完整调查 →</b></div></button>'
+ +'<div class="spotlight-side">'+smallSpotlight(second,'02','saffron')+smallSpotlight(third,'03','cream')+'</div></section>'
+ +'<div class="feed-source-notice">以上展示的是<strong>最近发表的三篇完整企业故事</strong>，不是按收益或热度排名；关键数字可能分别属于收入、经营指标、亏损或非财务事件，均需根据原始资料单独核对。</div>'
+ +freshStories()+countercycleHomeTeaser()+recentLifecycleTeaser()+vizHomeTeaser()+bulkArchiveSummary()+investigationPreviewHtml('all')
+ +'<section class="feed-section" id="feed-section"><div class="feed-section-heading"><div><span>继续刷，继续看</span><h2>不同的人，究竟靠什么生意收钱？</h2><p>'+(lastOpenedStoryId?'根据刚读过的故事，把相似的商业模式放在前面。':published.length+' 篇正式完整故事，按最近发表优先展示。')+'</p></div><button type="button" class="feed-more-link" data-route="library">看全部 →</button></div>'
+ +'<div class="feed-topics" aria-label="按生意类型看故事">'+topics+'</div><div id="feed-list" aria-live="polite">'+feedListHtml(activeFeedTopic)+'</div></section>'
+ +'<section class="feed-bottom-question"><span>读完别人的，就该想想自己。</span><strong>重点不是复制他的收入，是学会他找到客户的那一步。</strong><button type="button" data-route="library">再看一个故事 →</button></section>';
 }
 function library(theme='all'){
  // One shared enterprise story list, one card, one detail and one video/evidence pipeline.
@@ -1930,6 +1953,32 @@ document.addEventListener('change',e=>{
  if(!e.target.matches('[data-compare]'))return;const id=e.target.dataset.compare;if(e.target.checked){if(compareSet.size>=3){e.target.checked=false;return;}compareSet.add(id)}else compareSet.delete(id);renderRoute()});
 window.addEventListener('hashchange',renderRoute);
 renderRoute();
+// The served HTML is a versioned static artifact, not a live database query.
+// Check the public release manifest on return to an existing tab. If a new
+// full story was deployed, reload just the homepage using its release ID to
+// avoid leaving an old static homepage in a long-lived Chrome tab.
+let lastManifestCheck=0;
+async function checkNewPublicStories(){
+ if(document.visibilityState==='hidden'||stateRoute()!=='home')return;
+ if(Date.now()-lastManifestCheck<30000)return;
+ lastManifestCheck=Date.now();
+ try{
+  const manifestUrl=new URL('manifest.json',location.href);
+  manifestUrl.searchParams.set('check',String(Date.now()));
+  const response=await fetch(manifestUrl.toString(),{cache:'no-store',credentials:'omit'});
+  if(!response.ok)return;
+  const release=await response.json();
+  if(!release||!release.release_id||!Number.isInteger(release.public_stories)||release.public_stories<=COMPANY.length)return;
+  const target=new URL(location.href);
+  if(target.searchParams.get('release')===release.release_id)return;
+  target.searchParams.set('release',release.release_id);
+  location.replace(target.toString());
+ }catch(_error){/* Local preview may be offline; never fail the story UI. */}
+}
+document.addEventListener('visibilitychange',checkNewPublicStories);
+window.addEventListener('focus',checkNewPublicStories);
+setInterval(checkNewPublicStories,120000);
+
 </script>
 </body>
 </html>
