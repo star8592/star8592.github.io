@@ -1,15 +1,15 @@
 {
   "schema_version": "company_stories.public_release.v0.1",
   "source_as_of": "2026-11-14",
-  "latest_editorial_reviewed_at": "2026-11-15",
+  "latest_editorial_reviewed_at": "2026-11-16",
   "file_policy": "ONLY_REVIEWED_WEBP_AND_GENERATED_PUBLIC_SEO",
-  "public_stories": 26,
+  "public_stories": 28,
   "source_provenance": "Screenshots show websites at their capture date; not independent financial audits",
   "files": [
     {
       "path": "index.html",
-      "sha256": "eb87651e433db0ff7c82fbe4a2721924ae9c5caf7f2a6f127c42b5c6eb93dcc8",
-      "bytes": 1221818
+      "sha256": "18621930dd828307aa8a6e27c8f9a3dc51cb03a05b9a85917f255da6ebab6fe7",
+      "bytes": 1262398
     },
     {
       "path": "company/advise/index.html",
@@ -50,6 +50,11 @@
       "path": "company/buildpad/index.html",
       "sha256": "d42981570196e13eef6d52853d414463b1bd2a9a8fa71744787f75a716b87f44",
       "bytes": 35923
+    },
+    {
+      "path": "company/bull/index.html",
+      "sha256": "2f35fa507978758e9b11b4337197821ac0c00f720de8afded8c70964c201b9b3",
+      "bytes": 43016
     },
     {
       "path": "company/chaldal/index.html",
@@ -95,6 +100,11 @@
       "path": "company/lancer/index.html",
       "sha256": "9f6b382b15957020182ebdb483f6590a92921bee5846ab87f54287243e679eac",
       "bytes": 31791
+    },
+    {
+      "path": "company/mixue/index.html",
+      "sha256": "142ba8549816b47d905e51c440840f36da9e64e64d323b5ef54db3a9c220f46a",
+      "bytes": 44759
     },
     {
       "path": "company/nitori/index.html",
@@ -207,6 +217,11 @@
       "bytes": 11114
     },
     {
+      "path": "evidence-media/bull-2020-ipo-page156-document-20261116.webp",
+      "sha256": "aa83e4744bd82bd41b5918e4aac37da9ef7469e3a1112216eb28fcf94cdc335f",
+      "bytes": 50678
+    },
+    {
       "path": "evidence-media/chaldal-founder-20261114.webp",
       "sha256": "7b0835aac1e67a8d801c4026e75cb2b242c948e38bb50ebf4b8038a332ca0dfc",
       "bytes": 62018
@@ -260,6 +275,11 @@
       "path": "evidence-media/lancer-official-20261114.webp",
       "sha256": "f3f30c2f26d2e99ba3ea802b6e8d75f0ec9287adb0a5d86ecb54740c42d951de",
       "bytes": 18676
+    },
+    {
+      "path": "evidence-media/mixue-2025-revenue-page23-original-20261116.webp",
+      "sha256": "34567b095f807e9636f21545911158f875bee8d7f2897eda93914f4ff2d6db6d",
+      "bytes": 46954
     },
     {
       "path": "evidence-media/nitori-fy2025-fy2026-ifrs-revenue-profit-original-chart.webp",
@@ -353,8 +373,8 @@
     },
     {
       "path": "feed.xml",
-      "sha256": "6e5f53980d42f236ab88f583b0b448c7bac33253e65f77fe73acc00ea19c740b",
-      "bytes": 12101
+      "sha256": "5418527ed19ac9b11f074857c1dcd578f234a40f823c1ac97f8ac9b3c21f3783",
+      "bytes": 13013
     },
     {
       "path": "history-media/bookoff-store-2007.webp",
@@ -403,9 +423,9 @@
     },
     {
       "path": "sitemap.xml",
-      "sha256": "904cbdfd04519023d2dc72991672a3190ae86f83a204e7df3dae71fd05541270",
-      "bytes": 1844
+      "sha256": "1ee1ecaa187bf32e712652100d993d8c9c7470c3567f3b3f91dfd856421b4768",
+      "bytes": 1969
     }
   ],
-  "release_id": "1545e371e4da18e5"
+  "release_id": "3f91c21b0cefea53"
 }
