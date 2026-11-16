@@ -129,6 +129,113 @@
  .pf-chart-scroll svg{min-width:720px}
  .pf-caption{font-size:13px}
 }
+
+/* Editorial Figure v2 — contextual financial charts, not decorative UI graphs. */
+.pf-share-overview{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px 24px;margin:0 0 26px;padding:22px 26px;border-radius:14px;background:#234f3c;color:#e9f3e7}
+.pf-share-overview>span{font-weight:750;font-size:17px}
+.pf-share-overview strong{font-variant-numeric:tabular-nums;font-weight:900;letter-spacing:-.05em;color:#f6e6b7;font-size:clamp(42px,4.3vw,76px)}
+.pf-share-overview small{color:#c3d8c6;font-size:14px}
+.pf-share-list{display:grid;gap:19px}
+.pf-share-row{display:grid;grid-template-columns:90px minmax(0,1fr) 98px;align-items:center;gap:16px}
+.pf-share-row time{font-size:18px;font-weight:850;color:#234c3b}
+.pf-share-row strong{font-size:25px;font-weight:850;letter-spacing:-.04em;color:#244f3b;text-align:right;font-variant-numeric:tabular-nums}
+.pf-share-track{height:38px;overflow:hidden;border-radius:8px;background:#edf0ea;box-shadow:inset 0 0 0 1px #e1e6df}
+.pf-share-track span{height:100%;display:block;background:linear-gradient(90deg,#246b4e,#5fa781);border-radius:8px 0 0 8px}
+.pf-under-note{font-size:13px;color:#718172;margin:18px 0 0;line-height:1.7}
+.pf-break-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.pf-break-head>div{display:flex;flex-direction:column;gap:3px}
+.pf-break-head span{font-weight:750;color:#628270;font-size:15px}
+.pf-break-head strong{font-variant-numeric:tabular-nums;font-size:clamp(38px,3.8vw,72px);font-weight:890;color:#184a34;letter-spacing:-.06em}
+.pf-break-head>div:last-child strong{color:#b17456}
+.pf-breaktrack{width:100%;height:65px;display:flex;overflow:hidden;border-radius:13px;gap:2px;background:#eef2ee;box-shadow:0 7px 23px rgba(26,64,44,.12)}
+.pf-breaktrack>span{display:block;min-width:7px;height:100%}
+.pf-break-supply{background:#276c50}
+.pf-break-equipment{background:#7fa986}
+.pf-break-franchise{background:#d3a169}
+.pf-breaklist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.pf-breaklist article{padding:17px;border:1px solid #e2e9e0;border-radius:12px;background:#f7f9f5;display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.pf-breaklist .pf-break-dot{width:13px;min-width:13px;height:13px;border-radius:3px;margin-top:6px}
+.pf-breaklist article div{min-width:0;display:grid;gap:5px;flex:1}
+.pf-breaklist article small{font-size:13px;color:#66806c}
+.pf-breaklist article strong{font-size:18px;font-weight:850;color:#234d3a;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pf-breaklist article b{font-size:19px;color:#315d43;letter-spacing:-.02em}
+.pf-waterfall-math{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;font-size:clamp(18px,2vw,30px);color:#254d3a;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0 15px}
+.pf-waterfall-math em{font-size:22px;color:#ba8066;font-weight:800;font-style:normal}
+.pf-waterfall-math strong{font-size:clamp(23px,2.4vw,37px);color:#116145;border-bottom:3px solid #aad1af}
+.pf-waterfall svg{min-width:780px}
+@media(max-width:760px){
+ .pf-share-overview{padding:18px 18px}
+ .pf-share-row{grid-template-columns:52px minmax(0,1fr) 67px;gap:9px}
+ .pf-share-row time{font-size:15px}
+ .pf-share-row strong{font-size:18px}
+ .pf-share-track{height:29px}
+ .pf-breaktrack{height:48px}
+ .pf-breaklist{grid-template-columns:1fr}
+ .pf-breaklist article{padding:12px 15px}
+ .pf-break-head{gap:9px}
+ .pf-break-head span{font-size:13px}
+ .pf-break-head strong{font-size:35px}
+ .pf-waterfall-math{font-size:17px;gap:5px}
+ .pf-waterfall-math strong{font-size:21px}
+}
+
+/* DAISO: a deliberate editorial distribution graphic with explicit scale and source units. */
+.pf-store-total{display:flex;flex-direction:column;gap:5px;align-items:flex-start;margin-bottom:23px}
+.pf-store-total small{color:#698572;font-size:15px;font-weight:780}
+.pf-store-total strong{color:#173f2d;font-size:clamp(46px,5vw,78px);font-weight:900;letter-spacing:-.07em;line-height:1.15;font-variant-numeric:tabular-nums}
+.pf-store-total em{font-size:18px;letter-spacing:0;font-style:normal;margin-left:8px;color:#5a7b66}
+.pf-store-track{display:flex;gap:3px;height:68px;border-radius:13px;overflow:hidden;background:#e9efe8;box-shadow:0 7px 20px rgba(37,85,49,.12)}
+.pf-store-track span{display:block;height:100%;min-width:7px}
+.pf-store-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:17px}
+.pf-store-label{display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:#f5f9f4;border:1px solid #dce8dc;padding:18px;border-radius:13px;min-width:0}
+.pf-store-label i{display:block;width:22px;height:7px;border-radius:4px}
+.pf-store-label b{font-size:16px;color:#426b4b}
+.pf-store-label strong{font-size:clamp(22px,2vw,29px);color:#234b36;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-store-label span{font-size:16px;color:#777c67;font-weight:750}
+@media(max-width:760px){
+ .pf-store-track{height:46px}
+ .pf-store-list{grid-template-columns:1fr}
+ .pf-store-label{flex-direction:row;align-items:center;gap:12px;padding:14px}
+ .pf-store-label i{width:10px;height:20px}
+ .pf-store-label b{flex:1}
+ .pf-store-label strong{font-size:22px}
+ .pf-store-label span{font-size:14px}
+}
+
+/* Anker 2025 independently reported channel revenue, not retail GMV. */
+.pf-channel-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 20px;margin:3px 0 22px}
+.pf-channel-head>div{display:grid;gap:5px}
+.pf-channel-head small{font-size:16px;color:#67836c;font-weight:760}
+.pf-channel-head strong{font-size:clamp(44px,4.4vw,74px);font-weight:900;color:#214c37;letter-spacing:-.045em;line-height:1.1;font-variant-numeric:tabular-nums}
+.pf-channel-head>span{font-size:14px;color:#8d7559;max-width:260px;line-height:1.6}
+.pf-channel-track{display:flex;width:100%;height:62px;gap:3px;border-radius:11px;overflow:hidden;background:#edf3ed;box-shadow:0 8px 18px rgba(40,70,43,.1)}
+.pf-channel-track span{display:block;height:100%;min-width:5px}
+.pf-channel-list{margin-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.pf-channel-item{padding:16px 18px;border-radius:10px;background:#f5f8f3;border:1px solid #dfe7dc;display:flex;align-items:center;gap:13px}
+.pf-channel-item>span{display:block;min-width:12px;width:12px;height:32px;border-radius:5px}
+.pf-channel-item>div{flex:1;min-width:0;display:grid;gap:4px}
+.pf-channel-item b{font-size:14px;color:#55745d}
+.pf-channel-item strong{font-size:20px;color:#275641;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-channel-item em{font-size:20px;font-weight:800;color:#4d7059;font-style:normal;font-variant-numeric:tabular-nums}
+@media(max-width:700px){
+ .pf-channel-track{height:42px}
+ .pf-channel-list{grid-template-columns:1fr}
+ .pf-channel-item{padding:12px 13px}
+ .pf-channel-item strong{font-size:18px}
+ .pf-channel-item em{font-size:18px}
+}
+
+/* Five founder-published MRR checkpoints — log vertical scale and elapsed-month horizontal scale. */
+.pf-mrr-axes{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px 22px;align-items:center;padding:4px 0 12px}
+.pf-mrr-axes strong{font-size:18px;font-weight:840;color:#31573e}
+.pf-mrr-axes span{font-size:13px;font-weight:760;color:#987555}
+.pf-mrr-chart{padding:8px 0;background:linear-gradient(180deg,#fff 0%,#fbfdf9 100%);border-radius:12px}
+.pf-mrr-chart svg{min-width:790px;width:100%;height:auto}
+.pf-mrr-chart svg circle{filter:drop-shadow(0px 2px 3px rgba(30,71,48,.14))}
+@media (max-width:710px){
+ .pf-mrr-axes strong{font-size:16px}
+ .pf-mrr-chart svg{min-width:750px}
+}
 /* Source-grounded biography: editorial human history, not avatar decoration. */
 .people-archive{background:#f8faf6;border:1px solid #d8e5d8;border-radius:22px;padding:clamp(22px,2.4vw,42px);margin:25px 0 39px;color:#294837;box-shadow:0 15px 36px rgba(18,52,37,.055)}
 .people-section-head{max-width:1150px;margin-bottom:25px}
@@ -259,6 +366,29 @@
  .hm-video-frame{margin:0 10px}
  .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
  .hm-interpretation p{font-size:14px}
+}
+
+/* Publisher-origin reportage images are hotlinked, not copied into the project.
+ * The separate Commons picture is downloaded with author and CC BY-SA attribution. */
+.hm-press-excerpt{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(280px,1.15fr);gap:0;margin:19px 0 0;border-radius:15px;overflow:hidden;border:1px solid #d7e4d7;background:#fff;max-width:1170px}
+.hm-press-image{display:block;background:#e8eee6;min-height:235px;max-height:360px;overflow:hidden}
+.hm-press-image img{width:100%;height:100%;max-height:360px;min-height:235px;object-fit:contain;display:block}
+.hm-press-excerpt figcaption{padding:clamp(17px,1.9vw,28px);display:flex;flex-direction:column;gap:8px;justify-content:center;min-width:0}
+.hm-press-excerpt .hm-press-eyebrow{font-size:12px;color:#987c56;font-weight:850;letter-spacing:.07em}
+.hm-press-excerpt figcaption strong{font-size:21px;line-height:1.5;color:#244731}
+.hm-press-excerpt figcaption small{font-size:14px;color:#627f69;line-height:1.73}
+.hm-press-excerpt figcaption a{font-weight:800;color:#216947;font-size:14px;margin-top:6px;text-underline-offset:4px}
+.hm-more-reports{margin-top:19px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hm-more-reports>strong{grid-column:1/-1;font-size:15px;color:#43644b}
+.hm-more-reports>a{background:#eff5ee;border-radius:10px;border:1px solid #dbe7da;padding:15px;color:#215f45;font-weight:800;font-size:15px;line-height:1.5;text-decoration:none;display:grid;gap:8px}
+.hm-more-reports>a:hover{border-color:#71a58a;background:#e7f3e8}
+.hm-more-reports a small{font-size:13px;font-weight:450;line-height:1.68;color:#67836f}
+@media(max-width:760px){
+ .hm-press-excerpt{grid-template-columns:1fr}
+ .hm-press-image{min-height:180px;max-height:330px}
+ .hm-press-image img{min-height:180px;max-height:330px}
+ .hm-press-excerpt figcaption{padding:16px}
+ .hm-more-reports{grid-template-columns:1fr}
 }
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-bookoff">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / BOOKOFF（日本二手书与循环零售）</p><h1>日本泡沫破裂前后，一家二手书店为何长成千亿日元集团？</h1><p class="intro">1990年，50岁的坂本孝在相模原开了一家并不大的二手书店。1999年，另一位消费者走进明亮整齐的店面，看到标价100日元的书。新书卖得越来越慢，BOOKOFF门店却在增加——这是经济低迷催生的财富神话，还是一种把鉴定、收购、库存、加盟全都重新设计的零售模式？沿着1998和1999年的同期采访、创始人的2000年讲述，以及2026年真实财报，我们重新拆开这个生意。故事到2026年也没有结束：除了增长，会员信息安全事故提醒所有规模化连锁企业，它还要回答新的问题。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/bookoff-1997-2001-jpf-contrast-original-chart.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/bookoff-1997-2001-jpf-contrast-original-chart.webp" alt="1997—2001年，日本新书市场销售额十亿日元分别为1073.0、1010.0、993.6、970.6、945.6；BOOKOFF连锁店分别为237、294、371、477、567家。两组单位不同。"><span>查看完整图片 ↗</span></a><figcaption><strong>BOOKOFF门店与日本新书销售市场1997—2001同期双口径对照（原创重绘）</strong><span>日本国际交流基金 Book News 第37期（2002） · 本站2026原创数据重绘 · 2026-11-15整理</span><small>2026年根据日本国际交流基金2002年第37期原始数据原创重绘；不是历史留影、不是2002出版物原图；没有证据证明新书销售减少因BOOKOFF导致或BOOKOFF净利润增长，本站未经独立审计。</small><a href="https://www.bookmark.jpf.go.jp/media/2024/10/JBNPDF37.pdf" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>
 <figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/bookoff-fy2025-fy2026-gaap-jpy-original-chart.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/bookoff-fy2025-fy2026-gaap-jpy-original-chart.webp" alt="BOOKOFF集团FY2025/FY2026百万円数据：销售119205、130123；营业利润3448、4405；归母净利2101、2763；经营现金流3062、4894。不同财务指标分别列明。"><span>查看完整图片 ↗</span></a><figcaption><strong>BOOKOFF集团FY2025/FY2026销售额、营业利润、归母净利与经营现金流（原创重绘）</strong><span>BOOKOFF GROUP HOLDINGS LIMITED FY2026原始决算短信 · 本站2026原创重绘 · 2026-11-15整理</span><small>2026年根据BOOKOFF集团2026年7月13日FY2026合并决算数据原创重绘；不是历史留影、并非公司原图。上市公司财报属于发布者披露数据，本站未经独立审计，2025/26年度收入不可混同2027 Q1数值。</small><a href="https://ssl4.eir-parts.net/doc/9278/tdnet/2850837/00.pdf" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（14个节点）</summary><ol><li><time>1990-05-04</time><div><p>第一家BOOKOFF直营店在神奈川相模原开业；官方IR FAQ明确到日。</p><a href="https://www.bookoffgroup.co.jp/en/our-company/top-en/about-us/" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>1991-08</time><div><p>BOOKOFF经营公司设立，法律主体与1990年首店须分开。</p><a href="https://www.bookoffgroup.co.jp/en/our-company/top-en/about-us/" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>1991-10—11</time><div><p>日本加盟连锁启动、首家加盟店开业。</p><a href="https://www.bookoffgroup.co.jp/en/our-company/top-en/about-us/" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>1998-06-30</time><div><p>Japan Times在日本本地实地报道将估价训练标准化的业务差异。</p><a href="https://www.japantimes.co.jp/news/1998/06/30/national/enterprise-spirit-secondhand-book-vendor-prices-to-sell/" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>1999-09-07</time><div><p>Web Japan同期报道价格档位：1000日元图书收购约100、标卖约500、积压后100。</p><a href="https://web-japan.org/trends00/honbun/tj990907.html" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2000-10</time><div><p>坂本孝本人讲述50岁创业、品相估价与直营加盟制度。</p><a href="https://v-tsushin.jp/interview/bookoff_2/" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2002</time><div><p>日本国际交流基金刊物收录1997—2001新书市场和中古书连锁店数数据。</p><a href="https://www.bookmark.jpf.go.jp/media/2024/10/JBNPDF37.pdf" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2004-03</time><div><p>旧BOOKOFF Corporation挂牌东京交易所第二部，之后改变上市市场。</p><a href="https://www.bookoffgroup.co.jp/en/our-company/top-en/about-us/" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2007-08</time><div><p>推出BOOKOFF Online，从纯线下向互联网延伸。</p><a href="https://www.bookoffgroup.co.jp/en/our-company/top-en/about-us/" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2014-04-24</time><div><p>Yahoo Japan公告双方资本业务合作，二手流转平台化。</p><a href="https://www.lycorp.co.jp/en/ir/news/news6165211803142178200/main/0/link/en20140424.pdf" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2018-10</time><div><p>现时上市控股主体通过股份转移成立；不能回溯认作1990初创公司。</p><a href="https://www.bookoffgroup.co.jp/our-company/top/about-us/" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2026-07-13</time><div><p>发布FY2026全年财报：销售1,301.23亿、营业利润44.05亿日元。</p><a href="https://ssl4.eir-parts.net/doc/9278/tdnet/2850837/00.pdf" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2026-10-13</time><div><p>发布FY2027 Q1（实际2026年6至8月）同比营收+10.5%、营业利润+80.6%。</p><a href="https://ssl4.eir-parts.net/doc/9278/tdnet/2894118/00.pdf" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li><li><time>2026-11-06</time><div><p>会员系统事件第三次报告：确认受影响638.33万人，经营仍继续；事项持续跟踪。</p><a href="https://ssl4.eir-parts.net/doc/9278/tdnet/2906882/00.pdf" target="_blank" rel="noopener noreferrer">查看当期/官方原始记录 · 查看原文</a></div></li></ol></details><section class="era-sources"><h2>时代原始材料：不是后期想象画面</h2><p>以下是来源机构原址。网页快照可以证明彼时页面内容，历史摄制、后期复原和后来回顾各有不同证据等级。我们尚未获得自动下载、转载原始影音的许可，不将素材复制进本站。</p><details><summary>展开6份带年代和出处的原始材料</summary><ol class="era-list"><li><div><strong>1998年 · 1998日本同期记者采访，估价训练简化</strong><p>只链接原出版者的同期文本或公司后期公告；2026原创图标明其绘制日，不把现代历史回顾当1990年现场照片。</p><small>原始发行机构、创始人访谈媒体或BOOKOFF集团IR · 来源发表/保存：1998-06-30 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://www.japantimes.co.jp/news/1998/06/30/national/enterprise-spirit-secondhand-book-vendor-prices-to-sell/" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>1999年 · 1999同期Web Japan：店面明亮与单件旧书买卖机制</strong><p>只链接原出版者的同期文本或公司后期公告；2026原创图标明其绘制日，不把现代历史回顾当1990年现场照片。</p><small>原始发行机构、创始人访谈媒体或BOOKOFF集团IR · 来源发表/保存：1999-09-07 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://web-japan.org/trends00/honbun/tj990907.html" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2000年 · 2000坂本孝创始人访谈：品相分级和加盟</strong><p>只链接原出版者的同期文本或公司后期公告；2026原创图标明其绘制日，不把现代历史回顾当1990年现场照片。</p><small>原始发行机构、创始人访谈媒体或BOOKOFF集团IR · 来源发表/保存：2000 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://v-tsushin.jp/interview/bookoff_2/" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2001年 · 2002日本国际交流基金原始刊物：1997—2001店数与新书市场</strong><p>只链接原出版者的同期文本或公司后期公告；2026原创图标明其绘制日，不把现代历史回顾当1990年现场照片。</p><small>原始发行机构、创始人访谈媒体或BOOKOFF集团IR · 来源发表/保存：2002 · ARCHIVAL_ORIGINAL_RELEASED_LATER · 未转载原图</small></div><a href="https://www.bookmark.jpf.go.jp/media/2024/10/JBNPDF37.pdf" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2026年 · 2026财年BOOKOFF集团官方连结财报</strong><p>只链接原出版者的同期文本或公司后期公告；2026原创图标明其绘制日，不把现代历史回顾当1990年现场照片。</p><small>原始发行机构、创始人访谈媒体或BOOKOFF集团IR · 来源发表/保存：2026-07-13 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://ssl4.eir-parts.net/doc/9278/tdnet/2850837/00.pdf" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2026年 · BOOKOFF集团官方隐私事故调查第3报</strong><p>只链接原出版者的同期文本或公司后期公告；2026原创图标明其绘制日，不把现代历史回顾当1990年现场照片。</p><small>原始发行机构、创始人访谈媒体或BOOKOFF集团IR · 来源发表/保存：2026-11-06 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://ssl4.eir-parts.net/doc/9278/tdnet/2906882/00.pdf" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li></ol></details></section><section class="chapter"><h2>第一幕：50岁再次创业，不是一个从零发明“二手书”的故事</h2><p>1990年5月4日，神奈川相模原的第一家直营BOOKOFF开业，面积约115平方米。2000年创始人坂本孝在专访中称，自己50岁开始这家连锁书店，之前的创业道路屡经挫折。官方历史明确记载1991年8月成立BOOKOFF经营公司、同年10月加盟体系启动。1999报道说1991年起步，但在核对官方首店日期后，不能把1990首店误写成1991年才开张。</p><p class="source">原文依据：<a href="https://v-tsushin.jp/interview/bookoff_2/" rel="noopener noreferrer">查看原始出处及财报口径</a></p></section>

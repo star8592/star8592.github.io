@@ -129,6 +129,113 @@
  .pf-chart-scroll svg{min-width:720px}
  .pf-caption{font-size:13px}
 }
+
+/* Editorial Figure v2 — contextual financial charts, not decorative UI graphs. */
+.pf-share-overview{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px 24px;margin:0 0 26px;padding:22px 26px;border-radius:14px;background:#234f3c;color:#e9f3e7}
+.pf-share-overview>span{font-weight:750;font-size:17px}
+.pf-share-overview strong{font-variant-numeric:tabular-nums;font-weight:900;letter-spacing:-.05em;color:#f6e6b7;font-size:clamp(42px,4.3vw,76px)}
+.pf-share-overview small{color:#c3d8c6;font-size:14px}
+.pf-share-list{display:grid;gap:19px}
+.pf-share-row{display:grid;grid-template-columns:90px minmax(0,1fr) 98px;align-items:center;gap:16px}
+.pf-share-row time{font-size:18px;font-weight:850;color:#234c3b}
+.pf-share-row strong{font-size:25px;font-weight:850;letter-spacing:-.04em;color:#244f3b;text-align:right;font-variant-numeric:tabular-nums}
+.pf-share-track{height:38px;overflow:hidden;border-radius:8px;background:#edf0ea;box-shadow:inset 0 0 0 1px #e1e6df}
+.pf-share-track span{height:100%;display:block;background:linear-gradient(90deg,#246b4e,#5fa781);border-radius:8px 0 0 8px}
+.pf-under-note{font-size:13px;color:#718172;margin:18px 0 0;line-height:1.7}
+.pf-break-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.pf-break-head>div{display:flex;flex-direction:column;gap:3px}
+.pf-break-head span{font-weight:750;color:#628270;font-size:15px}
+.pf-break-head strong{font-variant-numeric:tabular-nums;font-size:clamp(38px,3.8vw,72px);font-weight:890;color:#184a34;letter-spacing:-.06em}
+.pf-break-head>div:last-child strong{color:#b17456}
+.pf-breaktrack{width:100%;height:65px;display:flex;overflow:hidden;border-radius:13px;gap:2px;background:#eef2ee;box-shadow:0 7px 23px rgba(26,64,44,.12)}
+.pf-breaktrack>span{display:block;min-width:7px;height:100%}
+.pf-break-supply{background:#276c50}
+.pf-break-equipment{background:#7fa986}
+.pf-break-franchise{background:#d3a169}
+.pf-breaklist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.pf-breaklist article{padding:17px;border:1px solid #e2e9e0;border-radius:12px;background:#f7f9f5;display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.pf-breaklist .pf-break-dot{width:13px;min-width:13px;height:13px;border-radius:3px;margin-top:6px}
+.pf-breaklist article div{min-width:0;display:grid;gap:5px;flex:1}
+.pf-breaklist article small{font-size:13px;color:#66806c}
+.pf-breaklist article strong{font-size:18px;font-weight:850;color:#234d3a;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pf-breaklist article b{font-size:19px;color:#315d43;letter-spacing:-.02em}
+.pf-waterfall-math{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;font-size:clamp(18px,2vw,30px);color:#254d3a;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0 15px}
+.pf-waterfall-math em{font-size:22px;color:#ba8066;font-weight:800;font-style:normal}
+.pf-waterfall-math strong{font-size:clamp(23px,2.4vw,37px);color:#116145;border-bottom:3px solid #aad1af}
+.pf-waterfall svg{min-width:780px}
+@media(max-width:760px){
+ .pf-share-overview{padding:18px 18px}
+ .pf-share-row{grid-template-columns:52px minmax(0,1fr) 67px;gap:9px}
+ .pf-share-row time{font-size:15px}
+ .pf-share-row strong{font-size:18px}
+ .pf-share-track{height:29px}
+ .pf-breaktrack{height:48px}
+ .pf-breaklist{grid-template-columns:1fr}
+ .pf-breaklist article{padding:12px 15px}
+ .pf-break-head{gap:9px}
+ .pf-break-head span{font-size:13px}
+ .pf-break-head strong{font-size:35px}
+ .pf-waterfall-math{font-size:17px;gap:5px}
+ .pf-waterfall-math strong{font-size:21px}
+}
+
+/* DAISO: a deliberate editorial distribution graphic with explicit scale and source units. */
+.pf-store-total{display:flex;flex-direction:column;gap:5px;align-items:flex-start;margin-bottom:23px}
+.pf-store-total small{color:#698572;font-size:15px;font-weight:780}
+.pf-store-total strong{color:#173f2d;font-size:clamp(46px,5vw,78px);font-weight:900;letter-spacing:-.07em;line-height:1.15;font-variant-numeric:tabular-nums}
+.pf-store-total em{font-size:18px;letter-spacing:0;font-style:normal;margin-left:8px;color:#5a7b66}
+.pf-store-track{display:flex;gap:3px;height:68px;border-radius:13px;overflow:hidden;background:#e9efe8;box-shadow:0 7px 20px rgba(37,85,49,.12)}
+.pf-store-track span{display:block;height:100%;min-width:7px}
+.pf-store-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:17px}
+.pf-store-label{display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:#f5f9f4;border:1px solid #dce8dc;padding:18px;border-radius:13px;min-width:0}
+.pf-store-label i{display:block;width:22px;height:7px;border-radius:4px}
+.pf-store-label b{font-size:16px;color:#426b4b}
+.pf-store-label strong{font-size:clamp(22px,2vw,29px);color:#234b36;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-store-label span{font-size:16px;color:#777c67;font-weight:750}
+@media(max-width:760px){
+ .pf-store-track{height:46px}
+ .pf-store-list{grid-template-columns:1fr}
+ .pf-store-label{flex-direction:row;align-items:center;gap:12px;padding:14px}
+ .pf-store-label i{width:10px;height:20px}
+ .pf-store-label b{flex:1}
+ .pf-store-label strong{font-size:22px}
+ .pf-store-label span{font-size:14px}
+}
+
+/* Anker 2025 independently reported channel revenue, not retail GMV. */
+.pf-channel-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 20px;margin:3px 0 22px}
+.pf-channel-head>div{display:grid;gap:5px}
+.pf-channel-head small{font-size:16px;color:#67836c;font-weight:760}
+.pf-channel-head strong{font-size:clamp(44px,4.4vw,74px);font-weight:900;color:#214c37;letter-spacing:-.045em;line-height:1.1;font-variant-numeric:tabular-nums}
+.pf-channel-head>span{font-size:14px;color:#8d7559;max-width:260px;line-height:1.6}
+.pf-channel-track{display:flex;width:100%;height:62px;gap:3px;border-radius:11px;overflow:hidden;background:#edf3ed;box-shadow:0 8px 18px rgba(40,70,43,.1)}
+.pf-channel-track span{display:block;height:100%;min-width:5px}
+.pf-channel-list{margin-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.pf-channel-item{padding:16px 18px;border-radius:10px;background:#f5f8f3;border:1px solid #dfe7dc;display:flex;align-items:center;gap:13px}
+.pf-channel-item>span{display:block;min-width:12px;width:12px;height:32px;border-radius:5px}
+.pf-channel-item>div{flex:1;min-width:0;display:grid;gap:4px}
+.pf-channel-item b{font-size:14px;color:#55745d}
+.pf-channel-item strong{font-size:20px;color:#275641;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-channel-item em{font-size:20px;font-weight:800;color:#4d7059;font-style:normal;font-variant-numeric:tabular-nums}
+@media(max-width:700px){
+ .pf-channel-track{height:42px}
+ .pf-channel-list{grid-template-columns:1fr}
+ .pf-channel-item{padding:12px 13px}
+ .pf-channel-item strong{font-size:18px}
+ .pf-channel-item em{font-size:18px}
+}
+
+/* Five founder-published MRR checkpoints — log vertical scale and elapsed-month horizontal scale. */
+.pf-mrr-axes{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px 22px;align-items:center;padding:4px 0 12px}
+.pf-mrr-axes strong{font-size:18px;font-weight:840;color:#31573e}
+.pf-mrr-axes span{font-size:13px;font-weight:760;color:#987555}
+.pf-mrr-chart{padding:8px 0;background:linear-gradient(180deg,#fff 0%,#fbfdf9 100%);border-radius:12px}
+.pf-mrr-chart svg{min-width:790px;width:100%;height:auto}
+.pf-mrr-chart svg circle{filter:drop-shadow(0px 2px 3px rgba(30,71,48,.14))}
+@media (max-width:710px){
+ .pf-mrr-axes strong{font-size:16px}
+ .pf-mrr-chart svg{min-width:750px}
+}
 /* Source-grounded biography: editorial human history, not avatar decoration. */
 .people-archive{background:#f8faf6;border:1px solid #d8e5d8;border-radius:22px;padding:clamp(22px,2.4vw,42px);margin:25px 0 39px;color:#294837;box-shadow:0 15px 36px rgba(18,52,37,.055)}
 .people-section-head{max-width:1150px;margin-bottom:25px}
@@ -260,14 +367,41 @@
  .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
  .hm-interpretation p{font-size:14px}
 }
+
+/* Publisher-origin reportage images are hotlinked, not copied into the project.
+ * The separate Commons picture is downloaded with author and CC BY-SA attribution. */
+.hm-press-excerpt{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(280px,1.15fr);gap:0;margin:19px 0 0;border-radius:15px;overflow:hidden;border:1px solid #d7e4d7;background:#fff;max-width:1170px}
+.hm-press-image{display:block;background:#e8eee6;min-height:235px;max-height:360px;overflow:hidden}
+.hm-press-image img{width:100%;height:100%;max-height:360px;min-height:235px;object-fit:contain;display:block}
+.hm-press-excerpt figcaption{padding:clamp(17px,1.9vw,28px);display:flex;flex-direction:column;gap:8px;justify-content:center;min-width:0}
+.hm-press-excerpt .hm-press-eyebrow{font-size:12px;color:#987c56;font-weight:850;letter-spacing:.07em}
+.hm-press-excerpt figcaption strong{font-size:21px;line-height:1.5;color:#244731}
+.hm-press-excerpt figcaption small{font-size:14px;color:#627f69;line-height:1.73}
+.hm-press-excerpt figcaption a{font-weight:800;color:#216947;font-size:14px;margin-top:6px;text-underline-offset:4px}
+.hm-more-reports{margin-top:19px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hm-more-reports>strong{grid-column:1/-1;font-size:15px;color:#43644b}
+.hm-more-reports>a{background:#eff5ee;border-radius:10px;border:1px solid #dbe7da;padding:15px;color:#215f45;font-weight:800;font-size:15px;line-height:1.5;text-decoration:none;display:grid;gap:8px}
+.hm-more-reports>a:hover{border-color:#71a58a;background:#e7f3e8}
+.hm-more-reports a small{font-size:13px;font-weight:450;line-height:1.68;color:#67836f}
+@media(max-width:760px){
+ .hm-press-excerpt{grid-template-columns:1fr}
+ .hm-press-image{min-height:180px;max-height:330px}
+ .hm-press-image img{min-height:180px;max-height:330px}
+ .hm-press-excerpt figcaption{padding:16px}
+ .hm-more-reports{grid-template-columns:1fr}
+}
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-mixue">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / 蜜雪冰城（1997—2026加盟供应链的真实收入）</p><h1>蜜雪冰城：加盟费只占2.4%，一家饮品巨头真正靠什么赚钱？</h1><p class="intro">一家门店售价几元钱的冰淇淋公司，怎么做到一年营收335.6亿元？多数人会猜：收加盟费。可港交所2025年年度业绩公告揭示，加盟与相关服务只占集团收入约2.37%，其余大部分是食材包材和设备卖给加盟商。1997年的刨冰摊、2005年的一元冰淇淋、2007年的门店复制、2012年的工厂和2014年的专属物流，合起来才是一台赚钱机器。但它并不是一个只有好消息的神话：2025年同时开店、关店，并且境外门店数下降；集团59亿元利润也不等于加盟商赚的钱。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/mixue-2025-revenue-page23-original-20261116.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/mixue-2025-revenue-page23-original-20261116.webp" alt="蜜雪冰城2025年度业绩公告PDF第23页，集团人民币千元披露三类收入，2026年11月16日从原始文件渲染的真文档，不是1997年刨冰摊照片"><span>查看完整图片 ↗</span></a><figcaption><strong>蜜雪冰城2025年度业绩公告第23页：商品、设备、加盟服务收入原始三分表</strong><span>蜜雪冰城股份有限公司2025年度业绩公告，港交所HKEXnews，PDF第23页 · 2026-11-16整理</span><small>2026年11月16日从港交所2025年度业绩公告第23页原始PDF渲染，单位是人民币千元；不是历史留影，不是1997创业现场，也不证明加盟商净利润或1997首次收款</small><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（14个节点）</summary><ol><li><time>1997</time><div><p>张红超在郑州开出“寒流刨冰”，起点为公司后来披露的历史；首单证据未知。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>1999</time><div><p>正式启用蜜雪冰城品牌名。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2005</time><div><p>公司IPO认定一元新鲜冰淇淋正式成为标志性产品。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2007</time><div><p>张红甫加入，推动标准化门店与加盟复制。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2012</time><div><p>设立首个中央工厂，开始深入控制门店物料供应。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2013</time><div><p>推出冰鲜柠檬水并扩展采购体系。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2014</time><div><p>开始建立专属物流体系，为跨区域加盟配送奠定条件。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2017</time><div><p>推出幸运咖现磨咖啡品牌。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2018</time><div><p>越南河内首家境外门店及雪王IP出现。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2020</time><div><p>集团门店数突破一万家（招股书历史时间线）。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2025-03-03</time><div><p>蜜雪冰城股份有限公司在香港联交所上市，代码2097。</p><a href="https://m.thepaper.cn/newsDetail_forward_30297450" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2025-12-31</time><div><p>集团报告总门店59,823家；商品与设备销售约327.66亿元，加盟服务约7.94亿元。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2026-03</time><div><p>张红甫卸任CEO并转任联席董事长；以2025年度报告披露为准。</p><a href="https://static.cninfo.com.cn/finalpage/2026-04-23/1225172558.PDF" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li><li><time>2026-03-24</time><div><p>披露2025年年度业绩公告，年内利润59.27亿元；非加盟商单店净利。</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" target="_blank" rel="noopener noreferrer">查证时间与披露口径 · 查看原文</a></div></li></ol></details><section class="chapter"><h2>第一幕：1997年，先卖一杯刨冰而不是卖加盟体系</h2><p>港交所2025年正式招股书回溯，张红超于1997年在郑州开设“寒流刨冰”，使用自制刨冰机。1999年开始使用“蜜雪冰城”品牌名。这个成立年份是现时上市主体对历史起点的追述，不能据此推出1997年首日顾客姓名、日流水或店主净利；首位顾客收据至今没有在已审材料中公开。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
+<section class="hm-exhibit" data-history-exhibit="mixue-2021-published-early-shop-and-real-store"><div class="hm-kicker">REAL HISTORY · 真实场景与影像</div><h4>真正的门店是什么样？旧照片与2021年有日期的实拍必须区分</h4><p class="hm-lead">第一财经商业数据中心2021年的报道转载公司公众号“早期门店和产品”旧图；另一张由独立摄影者于2021年7月拍摄于北京街头，可核对原始拍摄时间。</p><div class="hm-gallery hm-count-1"><figure class="hm-photo"><a class="hm-photo-open" href="/history-media/mixue-beijing-qingnian-2021.webp" target="_blank" rel="noopener" aria-label="查看本地真实高清历史照片"><img loading="lazy" decoding="async" src="/history-media/mixue-beijing-qingnian-2021.webp" alt="2021年7月5日北京青年路蜜雪冰城门店纪实摄影；不是1997年寒流刨冰首店，也不是2007年初期加盟店" width="1200" height="800"><span>查看完整照片 ↗</span></a><figcaption><strong>2021年7月5日门店实拍</strong><small>2021年7月5日北京青年路蜜雪冰城门店纪实摄影；不是1997年寒流刨冰首店，也不是2007年初期加盟店</small><small>照片：N509FZ（Wikimedia Commons 2021年原始上传） · Creative Commons CC BY-SA 4.0；压缩和缩放改动已注明，署名N509FZ</small><a href="https://commons.wikimedia.org/wiki/File:Mixue_Ice_Cream_%26_Tea_shop_at_Qingnian_Lu_(20210705095144).jpg" rel="noopener noreferrer" target="_blank">核对原图及出处 ↗</a></figcaption></figure></div><figure class="hm-press-excerpt"><a class="hm-press-image" href="https://www.cbndata.com/information/127673" target="_blank" rel="noopener noreferrer" aria-label="打开源新闻报道核对原图"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://cf.dtcj.com/richeditor/39e9e08f-f594-4eb2-b964-59c7ce924314.png" alt="2021年报道所载“早期门店和产品”图片；摄影年份尚无直接证据，原图由原出版方提供，本站未重新托管"></a><figcaption><div class="hm-press-eyebrow">原媒体刊载图片 · 2021-01-15</div><strong>CBNData转载红餐网／蜜雪冰城公众号历史图</strong><small>2021年报道所载“早期门店和产品”图片；摄影年份尚无直接证据，原图由原出版方提供，本站未重新托管</small><small>原来源署名：原公众号摄影者未公开 · 图片原始摄影日期未独立核实</small><a href="https://www.cbndata.com/information/127673" target="_blank" rel="noopener noreferrer">打开原始报道与图片 ↗</a></figcaption></figure><div class="hm-more-reports"><strong>同期报道和人物资料原文</strong><a href="https://m.jiemian.com/article/4436232.html" target="_blank" rel="noopener noreferrer">2020年界面新闻：旧店照片和摄影记者现场门店照片<small>2020年公开稿另展示2000年代门店旧图，署名张红甫简书；原始拍摄年份未独立校准</small></a><a href="https://hn.cnr.cn/cj/20200624/t20200624_525143418.shtml" target="_blank" rel="noopener noreferrer">2020年央广网：万店节点当期报道<small>2020年6月行业与扩店节点的同期报道；并非1997年现场</small></a></div><div class="hm-interpretation"><strong>图片与事实的边界</strong><p>左侧转载旧图为2021-01-15商业报道所收录，最早摄影年、具体门店位置不能独立证实，所以不能写成1997年寒流刨冰首店照；另一张有明确2021拍摄日期和作者许可，真实反映当时标准化门店，而不是2007年的第一家加盟店。</p><a href="https://www.cbndata.com/information/127673" target="_blank" rel="noopener noreferrer">2021年商业报道：早期门店及产品的图片来源说明 ↗</a><small>旧照只可作后来的企业历史叙述插图，不可凭这张图证明1997创业现场、最早顾客和利润</small></div></section>
 <section class="chapter"><h2>第二幕：一元冰淇淋不是价格传说，先有可重复的低价单品</h2><p>公司IPO时间线将2005年研发并推出一元新鲜冰淇淋列作关键节点，它不是所有年份所有门店都只卖1元。2025前的创业采访常把产品爆发落在2005至2006之间，早期具体首次销售日期、配方试错和销量无法从同期POS逐笔重建。真正可核实的是公司随后将低价产品标准化并推广连锁网络，而不是创始人单次“灵机一动”就立即发财。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
 <section class="chapter"><h2>第三幕：张红甫2007年加入，把哥哥的一家店变成可复制的门店</h2><p>2025招股书记录张红甫于2007年加入，基于自己经营门店的经验将操作管理标准化，再通过加盟复制。张红甫的早年创业自述在2022年经笔记侠摘录、凤凰网转载，提到创业前十年长期困顿和加盟体系并非一步到位。该自述是经过编辑删减的第一人称材料，可证明他后来的经营解释，不等于1997年同步纪录，也不能证实“前十年只有一家”在每一个月份都精确成立。</p><p class="source">原文依据：<a href="https://i.ifeng.com/c/8Ih5HNBLqpV" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
 <section class="chapter"><h2>第四幕：真正卖的是什么？一杯柠檬水还是每天的原料补货？</h2><p>2025业绩公告写得非常直白：集团收入主要来自向加盟商销售商品和设备，其次来自加盟及相关服务。2025商品销售31,439,469千元、设备销售1,326,564千元、加盟及相关服务793,890千元，合计33,559,923千元。按人民币计算分别约314.39亿、13.27亿和7.94亿元。商品与设备两项合计约327.66亿元，占集团收入97.63%；加盟服务约2.37%。所以“蜜雪冰城主要靠收加盟费赚钱”是错误的公司收入描述，消费者到店支付给加盟商也不是集团全部收入。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
+<figure class="premium-figure" data-premium-figure="mixue-2025-revenue-mosaic" data-after-chapter="3"><div class="pf-heading"><div class="pf-overline"><span>FIGURE 01</span><span class="pf-dot">●</span><span>商业故事的关键证据</span></div><h4>谁在给蜜雪冰城集团付款？97.63%来自商品与设备</h4><p class="pf-insight">蜜雪冰城更像一家具备品牌和加盟渠道的食品供应链公司，而不只是出售加盟资格。</p></div><div class="pf-visual"><div class="pf-break-head"><div><span>商品与设备收入合计</span><strong>97.63%</strong></div><div><span>加盟及相关服务</span><strong>2.37%</strong></div></div><div class="pf-breaktrack" role="img" aria-label="三类收入占比合计百分之百"><span class="pf-break-supply" style="width:93.68159%" title="商品（原料与包材） 93.68%"></span><span class="pf-break-equipment" style="width:3.95282%" title="设备销售 3.95%"></span><span class="pf-break-franchise" style="width:2.36559%" title="加盟及相关服务 2.37%"></span></div><div class="pf-breaklist"><article><span class="pf-break-dot pf-break-supply"></span><div><small>商品（原料与包材）</small><strong>314.39 亿元</strong></div><b>93.68%</b></article><article><span class="pf-break-dot pf-break-equipment"></span><div><small>设备销售</small><strong>13.27 亿元</strong></div><b>3.95%</b></article><article><span class="pf-break-dot pf-break-franchise"></span><div><small>加盟及相关服务</small><strong>7.94 亿元</strong></div><b>2.37%</b></article></div></div><figcaption class="pf-caption"><div class="pf-caption-note"><b>图注 / 证据边界</b> 2025财年上市集团收入，原始单位人民币千元；不是单店营业额或外卖GMV。三个分项之和等于集团收入33,559,923千元。</div><div class="pf-sources"><b>原始来源</b><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" target="_blank" rel="noopener noreferrer">蜜雪冰城2025年度业绩公告·收入分类表第23页 ↗</a></div></figcaption></figure>
 <section class="chapter"><h2>第五幕：2012年中央工厂、2014年自建物流，供应链才是扩张的慢变量</h2><p>公司IPO说明2012年建设首座中央工厂、2014年开始自建专属物流体系，并将采购、生产、研发、质量控制、包装与运输整合为端到端的加盟配送服务。2021年中欧商学院采访的两位蜜雪冰城当时运营高管，也把快速开店背后的经营管理和标准化作为难题讨论。只有当供给稳定、复购订单和配送效率可控时，低价商品才可能为集团形成可持续毛利；但这仍无法单独证明每个加盟商都盈利。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0221/2025022100010_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
-<section class="chapter"><h2>第六幕：2025利润很大，但要知道是哪一层利润</h2><p>上市主体2025年全年收入33,559,923千元（335.59923亿元）、毛利10,451,762千元（104.51762亿元）、年内利润5,927,077千元（59.27077亿元），分别比2024年收入+35.2%、毛利+29.7%、年内利润+33.1%。商品设备销售的毛利率从31.2%降至29.9%，而加盟及相关服务毛利率从80.4%升至82.6%；这是不同分类的集团毛利率，不是加盟商单店利润率。材料同时披露部分原料采购成本上涨及收入结构变化，不能只展示利润增速不讲成本。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
+<section class="chapter"><h2>第六幕：2025利润很大，但要知道是哪一层利润</h2><p>上市主体2025年全年收入33,559,923千元（335.59923亿元）、毛利10,451,762千元（104.51762亿元）、年内利润5,927,077千元（59.27077亿元），分别比2024年收入+35.2%、毛利+29.7%、年内利润+33.1%。商品设备销售的毛利率从31.2%降至29.9%，而加盟及相关服务毛利率从80.4%升至82.6%；这是不同分类的集团毛利率，不是加盟商单店利润率。材料同时披露部分原料采购成本上涨及收入结构变化，不能只展示利润增速不讲成本。 2024年同口径集团收入24,828,874千元、年内利润4,454,203千元；以上为集团披露，不能用于估计某家加盟门店盈利。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
+<figure class="premium-figure" data-premium-figure="mixue-2024-2025-income-profit" data-after-chapter="5"><div class="pf-heading"><div class="pf-overline"><span>FIGURE 02</span><span class="pf-dot">●</span><span>商业故事的关键证据</span></div><h4>集团赚钱变多，但商品毛利率并没有同步上升</h4><p class="pf-insight">2025集团收入+35.2%、年内利润+33.1%；商品与设备毛利率从31.2%回落到29.9%。</p></div><div class="pf-visual"><div class="pf-paired" role="group" aria-label="两个指标按各自刻度比较"><section class="pf-metric"><header><span>集团收入</span><span class="pf-trend pf-up">+35.2%</span></header><div class="pf-units">亿元 · 各图独立刻度</div><div class="pf-bar-row"><time>2024全年</time><div class="pf-bar-track"><span style="width:73.98%" aria-hidden="true"></span></div><strong>248.3</strong></div><div class="pf-bar-row"><time>2025全年</time><div class="pf-bar-track"><span style="width:100.00%" aria-hidden="true"></span></div><strong>335.6</strong></div></section><section class="pf-metric"><header><span>集团年内利润</span><span class="pf-trend pf-up">+33.1%</span></header><div class="pf-units">亿元 · 各图独立刻度</div><div class="pf-bar-row"><time>2024全年</time><div class="pf-bar-track"><span style="width:75.15%" aria-hidden="true"></span></div><strong>44.5</strong></div><div class="pf-bar-row"><time>2025全年</time><div class="pf-bar-track"><span style="width:100.00%" aria-hidden="true"></span></div><strong>59.3</strong></div></section></div></div><figcaption class="pf-caption"><div class="pf-caption-note"><b>图注 / 证据边界</b> 2024/2025完整年度、金额按人民币千元披露并换算亿元；年内利润不是加盟商单店收益，且不能和商品毛利率当成同一指标。</div><div class="pf-sources"><b>原始来源</b><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" target="_blank" rel="noopener noreferrer">蜜雪冰城2025年度业绩公告·全年可比数字 ↗</a></div></figcaption></figure>
 <section class="chapter"><h2>第七幕：59,823家门店，是集团的直营店数吗？</h2><p>2025年底网络总门店59,823家，2024年底46,479家；其中2025中国大陆55,356家、境外4,467家。2025加盟店59,785家，因此门店总数和加盟店数不是同一个数字。门店覆盖属于品牌网络，集团营业收入是原料设备和服务销售，零售终端GMV又是另一项。55,356家国内门店中三线及以下城市32,119家、占58.0%，这是下沉市场覆盖，不证明所有县城加盟店单店回本速度。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
 <section class="chapter"><h2>第八幕：只看开店不看关店，会误读真实净增长</h2><p>2025公司公布加盟门店期初46,462家、新开14,496家、因并购增加1,354家、关闭2,527家、期末59,785家。这四项的时间及口径必须一起列，14,496家新开并非净增14,496家。其中国外门店由2024年底4,895家降至2025年底4,467家，管理层解释对印尼与越南部分存量门店调整优化；这不能凭门店减少就断言公司境外业务亏损，但它是“全球开店只增不减”叙事的明确反证。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
+<figure class="premium-figure" data-premium-figure="mixue-2025-franchise-waterfall" data-after-chapter="7"><div class="pf-heading"><div class="pf-overline"><span>FIGURE 03</span><span class="pf-dot">●</span><span>商业故事的关键证据</span></div><h4>14,496家新开店，为什么年末只净增13,323家加盟店？</h4><p class="pf-insight">开店增长需要同时扣掉关店、加上并购。2025年关店2,527家，单报新开数量会夸大净增长。</p></div><div class="pf-visual"><div class="pf-waterfall-math">46,462 <em>+</em> 14,496 <em>+</em> 1,354 <em>−</em> 2,527 <em>=</em> <strong>59,785</strong></div><div class="pf-chart-scroll pf-waterfall"><svg viewBox="0 0 1000 365" role="img" aria-label="2025年加盟门店期初、新开、并购、关闭与期末的加减瀑布图"><title>14,496家新开店，为什么年末只净增13,323家加盟店？</title><line x1="200" x2="282" y1="144.0" y2="144.0" stroke="#9cb4a5" stroke-width="1.5" stroke-dasharray="5 6"/><line x1="370" x2="452" y1="95.6" y2="95.6" stroke="#9cb4a5" stroke-width="1.5" stroke-dasharray="5 6"/><line x1="540" x2="622" y1="91.1" y2="91.1" stroke="#9cb4a5" stroke-width="1.5" stroke-dasharray="5 6"/><line x1="710" x2="792" y1="99.5" y2="99.5" stroke="#9cb4a5" stroke-width="1.5" stroke-dasharray="5 6"/><rect x="112" y="144.0" width="88" height="155.0" rx="7" fill="#235a46"/><text x="156.0" y="131.0" text-anchor="middle" font-size="21" font-weight="800" fill="#214735">46,462</text><text x="156.0" y="328" text-anchor="middle" font-size="18" fill="#365745">2024年末</text><rect x="282" y="95.6" width="88" height="48.4" rx="7" fill="#438e68"/><text x="326.0" y="82.6" text-anchor="middle" font-size="21" font-weight="800" fill="#214735">+14,496</text><text x="326.0" y="328" text-anchor="middle" font-size="18" fill="#365745">当年新开</text><rect x="452" y="91.1" width="88" height="4.5" rx="7" fill="#438e68"/><text x="496.0" y="78.1" text-anchor="middle" font-size="21" font-weight="800" fill="#214735">+1,354</text><text x="496.0" y="328" text-anchor="middle" font-size="18" fill="#365745">并购并入</text><rect x="622" y="91.1" width="88" height="8.4" rx="7" fill="#c67f70"/><text x="666.0" y="78.1" text-anchor="middle" font-size="21" font-weight="800" fill="#214735">−2,527</text><text x="666.0" y="328" text-anchor="middle" font-size="18" fill="#365745">当年关店</text><rect x="792" y="99.5" width="88" height="199.5" rx="7" fill="#235a46"/><text x="836.0" y="86.5" text-anchor="middle" font-size="21" font-weight="800" fill="#214735">59,785</text><text x="836.0" y="328" text-anchor="middle" font-size="18" fill="#365745">2025年末</text></svg></div><p class="pf-under-note">所有柱子的上、下边缘按累计加盟门店数定位，绿色为增加，珊瑚色为减少；不是收入图。</p></div><figcaption class="pf-caption"><div class="pf-caption-note"><b>图注 / 证据边界</b> 2025年加盟门店期初46,462＋新开14,496＋收购并入1,354−关闭2,527＝期末59,785；该加盟口径不等于全部59,823家门店。</div><div class="pf-sources"><b>原始来源</b><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" target="_blank" rel="noopener noreferrer">蜜雪冰城2025年度业绩公告·加盟门店变动表 ↗</a></div></figcaption></figure>
 <section class="chapter"><h2>第九幕：2026年管理层变化，兄弟创始人各自负责什么？</h2><p>IPO文件把张红超列为创始人及董事长、张红甫为联合创始人及首席执行官，二人都对历史标准化经营具有决定性影响。2025年度报告进一步披露，张红甫于2026年3月转任联席董事长并卸任首席执行官，侧重长期发展战略。这一人事变动不能未经证据解释为创始人内斗或业绩恶化。真正值得持续观察的是管理分工调整后，供应链、门店质量和海外运营指标是否改善。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2026-04-23/1225172558.PDF" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section>
 <section class="chapter"><h2>第十幕：低价是竞争力，也可能转化为食品安全与加盟商利润压力</h2><p>极致低价要求供应链大批量采购、快速运输、标准操作和门店管理。公司2025年度业绩报告称投入食品安全培训、数字化门店系统和智能出液设备，并承认海外两国部分门店减少。公司经营利润和加盟商利润属于两个主体，门店租金、人工、加盟商商品采购价、配送成本和消费密度都会影响门店回本。下一阶段的关键研究，不是再数多少门店，而是寻找加盟商真实支付收据、稳定经营数据、食品安全公开监督记录及退出样本。</p><p class="source">原文依据：<a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0324/2026032400180_c.pdf" rel="noopener noreferrer">港交所原始财报、管理层一手自述与对照</a></p></section><section><h2>第一批真正的客户在哪里？</h2><p>招股书确认1997年郑州“寒流刨冰”开业，但尚未核查第一位真实付款消费者及首张交易收据、现金流水、首日销售额。2007年张红甫加盟早期经营可查创始人后述，却不等于最早加盟商的付款合同或逐店净利证明；首笔真实付款金额仍未知。</p></section>
 <section><h2>哪些可以借鉴？</h2><p>产品低价与加盟扩张必须由供应链履约支持：先测真实消费者复购，再测试跨店原料采购、标准化作业、批量包材、物流与食品安全巡检的单位经济性；分清品牌总店收入和每家加盟商独立经营收入。</p></section>

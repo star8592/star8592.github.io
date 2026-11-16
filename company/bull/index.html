@@ -129,6 +129,113 @@
  .pf-chart-scroll svg{min-width:720px}
  .pf-caption{font-size:13px}
 }
+
+/* Editorial Figure v2 — contextual financial charts, not decorative UI graphs. */
+.pf-share-overview{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px 24px;margin:0 0 26px;padding:22px 26px;border-radius:14px;background:#234f3c;color:#e9f3e7}
+.pf-share-overview>span{font-weight:750;font-size:17px}
+.pf-share-overview strong{font-variant-numeric:tabular-nums;font-weight:900;letter-spacing:-.05em;color:#f6e6b7;font-size:clamp(42px,4.3vw,76px)}
+.pf-share-overview small{color:#c3d8c6;font-size:14px}
+.pf-share-list{display:grid;gap:19px}
+.pf-share-row{display:grid;grid-template-columns:90px minmax(0,1fr) 98px;align-items:center;gap:16px}
+.pf-share-row time{font-size:18px;font-weight:850;color:#234c3b}
+.pf-share-row strong{font-size:25px;font-weight:850;letter-spacing:-.04em;color:#244f3b;text-align:right;font-variant-numeric:tabular-nums}
+.pf-share-track{height:38px;overflow:hidden;border-radius:8px;background:#edf0ea;box-shadow:inset 0 0 0 1px #e1e6df}
+.pf-share-track span{height:100%;display:block;background:linear-gradient(90deg,#246b4e,#5fa781);border-radius:8px 0 0 8px}
+.pf-under-note{font-size:13px;color:#718172;margin:18px 0 0;line-height:1.7}
+.pf-break-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.pf-break-head>div{display:flex;flex-direction:column;gap:3px}
+.pf-break-head span{font-weight:750;color:#628270;font-size:15px}
+.pf-break-head strong{font-variant-numeric:tabular-nums;font-size:clamp(38px,3.8vw,72px);font-weight:890;color:#184a34;letter-spacing:-.06em}
+.pf-break-head>div:last-child strong{color:#b17456}
+.pf-breaktrack{width:100%;height:65px;display:flex;overflow:hidden;border-radius:13px;gap:2px;background:#eef2ee;box-shadow:0 7px 23px rgba(26,64,44,.12)}
+.pf-breaktrack>span{display:block;min-width:7px;height:100%}
+.pf-break-supply{background:#276c50}
+.pf-break-equipment{background:#7fa986}
+.pf-break-franchise{background:#d3a169}
+.pf-breaklist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.pf-breaklist article{padding:17px;border:1px solid #e2e9e0;border-radius:12px;background:#f7f9f5;display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.pf-breaklist .pf-break-dot{width:13px;min-width:13px;height:13px;border-radius:3px;margin-top:6px}
+.pf-breaklist article div{min-width:0;display:grid;gap:5px;flex:1}
+.pf-breaklist article small{font-size:13px;color:#66806c}
+.pf-breaklist article strong{font-size:18px;font-weight:850;color:#234d3a;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pf-breaklist article b{font-size:19px;color:#315d43;letter-spacing:-.02em}
+.pf-waterfall-math{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;font-size:clamp(18px,2vw,30px);color:#254d3a;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0 15px}
+.pf-waterfall-math em{font-size:22px;color:#ba8066;font-weight:800;font-style:normal}
+.pf-waterfall-math strong{font-size:clamp(23px,2.4vw,37px);color:#116145;border-bottom:3px solid #aad1af}
+.pf-waterfall svg{min-width:780px}
+@media(max-width:760px){
+ .pf-share-overview{padding:18px 18px}
+ .pf-share-row{grid-template-columns:52px minmax(0,1fr) 67px;gap:9px}
+ .pf-share-row time{font-size:15px}
+ .pf-share-row strong{font-size:18px}
+ .pf-share-track{height:29px}
+ .pf-breaktrack{height:48px}
+ .pf-breaklist{grid-template-columns:1fr}
+ .pf-breaklist article{padding:12px 15px}
+ .pf-break-head{gap:9px}
+ .pf-break-head span{font-size:13px}
+ .pf-break-head strong{font-size:35px}
+ .pf-waterfall-math{font-size:17px;gap:5px}
+ .pf-waterfall-math strong{font-size:21px}
+}
+
+/* DAISO: a deliberate editorial distribution graphic with explicit scale and source units. */
+.pf-store-total{display:flex;flex-direction:column;gap:5px;align-items:flex-start;margin-bottom:23px}
+.pf-store-total small{color:#698572;font-size:15px;font-weight:780}
+.pf-store-total strong{color:#173f2d;font-size:clamp(46px,5vw,78px);font-weight:900;letter-spacing:-.07em;line-height:1.15;font-variant-numeric:tabular-nums}
+.pf-store-total em{font-size:18px;letter-spacing:0;font-style:normal;margin-left:8px;color:#5a7b66}
+.pf-store-track{display:flex;gap:3px;height:68px;border-radius:13px;overflow:hidden;background:#e9efe8;box-shadow:0 7px 20px rgba(37,85,49,.12)}
+.pf-store-track span{display:block;height:100%;min-width:7px}
+.pf-store-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:17px}
+.pf-store-label{display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:#f5f9f4;border:1px solid #dce8dc;padding:18px;border-radius:13px;min-width:0}
+.pf-store-label i{display:block;width:22px;height:7px;border-radius:4px}
+.pf-store-label b{font-size:16px;color:#426b4b}
+.pf-store-label strong{font-size:clamp(22px,2vw,29px);color:#234b36;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-store-label span{font-size:16px;color:#777c67;font-weight:750}
+@media(max-width:760px){
+ .pf-store-track{height:46px}
+ .pf-store-list{grid-template-columns:1fr}
+ .pf-store-label{flex-direction:row;align-items:center;gap:12px;padding:14px}
+ .pf-store-label i{width:10px;height:20px}
+ .pf-store-label b{flex:1}
+ .pf-store-label strong{font-size:22px}
+ .pf-store-label span{font-size:14px}
+}
+
+/* Anker 2025 independently reported channel revenue, not retail GMV. */
+.pf-channel-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 20px;margin:3px 0 22px}
+.pf-channel-head>div{display:grid;gap:5px}
+.pf-channel-head small{font-size:16px;color:#67836c;font-weight:760}
+.pf-channel-head strong{font-size:clamp(44px,4.4vw,74px);font-weight:900;color:#214c37;letter-spacing:-.045em;line-height:1.1;font-variant-numeric:tabular-nums}
+.pf-channel-head>span{font-size:14px;color:#8d7559;max-width:260px;line-height:1.6}
+.pf-channel-track{display:flex;width:100%;height:62px;gap:3px;border-radius:11px;overflow:hidden;background:#edf3ed;box-shadow:0 8px 18px rgba(40,70,43,.1)}
+.pf-channel-track span{display:block;height:100%;min-width:5px}
+.pf-channel-list{margin-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.pf-channel-item{padding:16px 18px;border-radius:10px;background:#f5f8f3;border:1px solid #dfe7dc;display:flex;align-items:center;gap:13px}
+.pf-channel-item>span{display:block;min-width:12px;width:12px;height:32px;border-radius:5px}
+.pf-channel-item>div{flex:1;min-width:0;display:grid;gap:4px}
+.pf-channel-item b{font-size:14px;color:#55745d}
+.pf-channel-item strong{font-size:20px;color:#275641;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-channel-item em{font-size:20px;font-weight:800;color:#4d7059;font-style:normal;font-variant-numeric:tabular-nums}
+@media(max-width:700px){
+ .pf-channel-track{height:42px}
+ .pf-channel-list{grid-template-columns:1fr}
+ .pf-channel-item{padding:12px 13px}
+ .pf-channel-item strong{font-size:18px}
+ .pf-channel-item em{font-size:18px}
+}
+
+/* Five founder-published MRR checkpoints — log vertical scale and elapsed-month horizontal scale. */
+.pf-mrr-axes{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px 22px;align-items:center;padding:4px 0 12px}
+.pf-mrr-axes strong{font-size:18px;font-weight:840;color:#31573e}
+.pf-mrr-axes span{font-size:13px;font-weight:760;color:#987555}
+.pf-mrr-chart{padding:8px 0;background:linear-gradient(180deg,#fff 0%,#fbfdf9 100%);border-radius:12px}
+.pf-mrr-chart svg{min-width:790px;width:100%;height:auto}
+.pf-mrr-chart svg circle{filter:drop-shadow(0px 2px 3px rgba(30,71,48,.14))}
+@media (max-width:710px){
+ .pf-mrr-axes strong{font-size:16px}
+ .pf-mrr-chart svg{min-width:750px}
+}
 /* Source-grounded biography: editorial human history, not avatar decoration. */
 .people-archive{background:#f8faf6;border:1px solid #d8e5d8;border-radius:22px;padding:clamp(22px,2.4vw,42px);margin:25px 0 39px;color:#294837;box-shadow:0 15px 36px rgba(18,52,37,.055)}
 .people-section-head{max-width:1150px;margin-bottom:25px}
@@ -260,14 +367,41 @@
  .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
  .hm-interpretation p{font-size:14px}
 }
+
+/* Publisher-origin reportage images are hotlinked, not copied into the project.
+ * The separate Commons picture is downloaded with author and CC BY-SA attribution. */
+.hm-press-excerpt{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(280px,1.15fr);gap:0;margin:19px 0 0;border-radius:15px;overflow:hidden;border:1px solid #d7e4d7;background:#fff;max-width:1170px}
+.hm-press-image{display:block;background:#e8eee6;min-height:235px;max-height:360px;overflow:hidden}
+.hm-press-image img{width:100%;height:100%;max-height:360px;min-height:235px;object-fit:contain;display:block}
+.hm-press-excerpt figcaption{padding:clamp(17px,1.9vw,28px);display:flex;flex-direction:column;gap:8px;justify-content:center;min-width:0}
+.hm-press-excerpt .hm-press-eyebrow{font-size:12px;color:#987c56;font-weight:850;letter-spacing:.07em}
+.hm-press-excerpt figcaption strong{font-size:21px;line-height:1.5;color:#244731}
+.hm-press-excerpt figcaption small{font-size:14px;color:#627f69;line-height:1.73}
+.hm-press-excerpt figcaption a{font-weight:800;color:#216947;font-size:14px;margin-top:6px;text-underline-offset:4px}
+.hm-more-reports{margin-top:19px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hm-more-reports>strong{grid-column:1/-1;font-size:15px;color:#43644b}
+.hm-more-reports>a{background:#eff5ee;border-radius:10px;border:1px solid #dbe7da;padding:15px;color:#215f45;font-weight:800;font-size:15px;line-height:1.5;text-decoration:none;display:grid;gap:8px}
+.hm-more-reports>a:hover{border-color:#71a58a;background:#e7f3e8}
+.hm-more-reports a small{font-size:13px;font-weight:450;line-height:1.68;color:#67836f}
+@media(max-width:760px){
+ .hm-press-excerpt{grid-template-columns:1fr}
+ .hm-press-image{min-height:180px;max-height:330px}
+ .hm-press-image img{min-height:180px;max-height:330px}
+ .hm-press-excerpt figcaption{padding:16px}
+ .hm-more-reports{grid-template-columns:1fr}
+}
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-bull">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / 公牛集团（1995—2026：插座、渠道与增长压力）</p><h1>公牛：五个人做插座，怎么把一百万家小店变成渠道？</h1><p class="intro">1995年，慈溪一家做插座的小厂开门。30年后，公牛2025年年报披露覆盖全国城乡110多万个终端网点；当年的营业收入约160亿元，归母净利润约41亿元。难道是把插座做得足够安全，所有人自然就会买？真正的故事发生在家门口不起眼的五金店、经销商的货车和一个个长期补货的线路里。但2021年的行政处罚、2025年下滑及2026年现金流转弱告诉我们：一道强大的渠道护城河，也可能带来新的经营和合规风险。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/bull-2020-ipo-page156-document-20261116.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/bull-2020-ipo-page156-document-20261116.webp" alt="公牛集团2020年IPO招股书PDF第156页介绍经销与渠道收入占比，2026年11月16日从原始公开文件渲染；不是1995年创业历史现场照片"><span>查看完整图片 ↗</span></a><figcaption><strong>公牛集团2020年招股说明书：买断式经销与渠道比例原始披露</strong><span>公牛集团股份有限公司2020年首次公开发行股票招股说明书，巨潮资讯PDF第156页 · 2026-11-16整理</span><small>巨潮资讯公牛集团2020年IPO真实监管披露PDF第156页在2026-11-16渲染；不是历史留影，不证明1995年真实首位付款买家或2016—2018年公司净利润，财报和同期人像不得混同</small><a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（12个节点）</summary><ol><li><time>1995年</time><div><p>慈溪市公牛电器有限公司成立，集团招股书所述早期主体；首笔收款未知。</p><a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>1995—2007年</time><div><p>阮立平自述专注插座12年；属于创始人回忆并有2020招股资料覆盖。</p><a href="https://www.dazhaoming.com/index.php?article_id=970&amp;s=%2Fcms%2Farticleclassinfo" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2007年</time><div><p>开始发展墙壁开关插座业务，创始人本人访谈回顾。</p><a href="https://www.dazhaoming.com/index.php?article_id=970&amp;s=%2Fcms%2Farticleclassinfo" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2009年及之后</time><div><p>配送访销方式逐步形成覆盖全国城乡终端网点的经销网络，具体各地起始日未统一公开。</p><a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2014年</time><div><p>创始人自述进入家装照明业务；应区别其他品类上市时间。</p><a href="https://www.dazhaoming.com/index.php?article_id=970&amp;s=%2Fcms%2Farticleclassinfo" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2014—2020年</time><div><p>市场监管行政处罚决定涉及的经销转售价格限制行为期间。</p><a href="https://www.cqn.com.cn/zj/content/2021-09/28/content_8737298.htm" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2016—2018年</time><div><p>招股书披露经销占主营业务收入86.09%、84.81%、84.76%。</p><a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2020年</time><div><p>公牛集团股份有限公司A股上市，证券代码603195。</p><a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2021-09</time><div><p>浙江省市场监管部门反垄断行政处罚约2.9481亿元。</p><a href="https://www.cqn.com.cn/zj/content/2021-09/28/content_8737298.htm" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2022-10</time><div><p>阮立平本人媒体访谈回顾1995—2020品类扩展与制造经营选择。</p><a href="https://www.dazhaoming.com/index.php?article_id=970&amp;s=%2Fcms%2Farticleclassinfo" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2025年度</time><div><p>营业收入160.26亿元、归母净利润40.71亿元，分别同比下降4.78%与4.72%。</p><a href="https://static.cninfo.com.cn/finalpage/2026-04-30/1225265197.PDF" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li><li><time>2026-10-30</time><div><p>发布2026年三季报，1—9月营业收入122.09亿元，归母净利润28.31亿元。</p><a href="https://static.cninfo.com.cn/finalpage/2026-10-30/1225639118.PDF" target="_blank" rel="noopener noreferrer">日期与来源 · 查看原文</a></div></li></ol></details><section class="chapter"><h2>一、1995年：不是先讲商业模式，而是先造一只安全插座</h2><p>公牛集团2020年招股说明书把前身慈溪市公牛电器有限公司成立时间明确写为1995年。创始人阮立平在2022年受访时回忆：1995至2007年这12年专注插座，一直没有急于跨行业。2018年武汉企业家演讲报道提到创业时是约五人的家庭工厂。独立证据证明起点与创始团队，但没有提供首台插座的准确型号、首位付款客户姓名及首张收款票据。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
+<section class="hm-exhibit" data-history-exhibit="bull-2018-real-founder-report"><div class="hm-kicker">REAL HISTORY · 真实场景与影像</div><h4>2018年的真实人物报道：听创始人自己讲“只做插座”</h4><p class="hm-lead">这是2018年8月10日长江日报署名报道中的人物照片。报道记录阮立平在武汉8月2日面对企业家演讲，而不是用AI拼凑的1995年创业现场。</p><figure class="hm-press-excerpt"><a class="hm-press-image" href="https://hb.cri.cn/2018-08-10/1bf6363d-9fb5-e313-ef3b-44268a7222e2.html" target="_blank" rel="noopener noreferrer" aria-label="打开源新闻报道核对原图"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://p2.cri.cn/M00/BE/B5/CqgNOlttF0mAVk_QAAAAAAAAAAA169.400x266.jpg" alt="2018年报道配发的企业创始人人物实像；原图由原出版方直接提供，本站未重新托管"></a><figcaption><div class="hm-press-eyebrow">原媒体刊载图片 · 2018-08-10</div><strong>长江日报现场报道（国际在线转载）</strong><small>2018年报道配发的企业创始人人物实像；原图由原出版方直接提供，本站未重新托管</small><small>原来源署名：通讯员龚友浪 · 图片原始摄影日期未独立核实</small><a href="https://hb.cri.cn/2018-08-10/1bf6363d-9fb5-e313-ef3b-44268a7222e2.html" target="_blank" rel="noopener noreferrer">打开原始报道与图片 ↗</a></figcaption></figure><details class="hm-video"><summary><span class="hm-play">▶</span><span><b>展开原始视频</b><small>新华网《时代摘要》：与公牛集团阮立平的对话 · 古镇灯饰传媒（2022年转发新华网采访）</small></span></summary><div class="hm-video-frame"><iframe loading="lazy" title="新华网《时代摘要》：与公牛集团阮立平的对话" src="https://player.bilibili.com/player.html?bvid=BV1qd4y117oD&amp;page=1" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen allow="accelerometer; autoplay; encrypted-media; picture-in-picture"></iframe></div><p>2022-10-13 · 2022年录制或发布的当事人经营回顾影像；不是1995年创办工厂的原始录像；B站账号为内容转载方，不等同新华网官方账号。</p><a href="https://www.bilibili.com/video/BV1qd4y117oD/" rel="noopener noreferrer" target="_blank">如无法播放，打开B站原始发布页面 ↗</a></details><div class="hm-more-reports"><strong>同期报道和人物资料原文</strong><a href="https://www.dazhaoming.com/index.php?article_id=970&amp;s=%2Fcms%2Farticleclassinfo" target="_blank" rel="noopener noreferrer">2022年阮立平受访原话摘录<small>当事人在2022年回忆1995—2007专注插座及后续扩品；不是1995年同期采访</small></a></div><div class="hm-interpretation"><strong>图片与事实的边界</strong><p>2018-08-10记者发布了2018年8月2日演讲内容及摄影者署名；照片具体摄影日期不由图片文件单独证明。1995起家及“五人小厂”的细节属于2018年的事后回忆，不能冒充1995年同期录像。</p><a href="https://hb.cri.cn/2018-08-10/1bf6363d-9fb5-e313-ef3b-44268a7222e2.html" target="_blank" rel="noopener noreferrer">2018年长江日报现场文字报道及原始图片 ↗</a><small>发表日期真实且人物有摄影署名；与2020证券招股书核对创业年份和实际渠道</small></div></section>
 <section class="chapter"><h2>二、第一批客户从何而来：制造商先把商品卖给谁？</h2><p>对低单价、复购与补货频繁的转换器，分散的五金店、杂货店和办公用品店是关键渠道。公司招股说明书明确采取买断式经销：经销商先向公牛采购，线下经销商再卖给终端网点，终端网点卖给最终消费者。因此公司财报确认的商品收入不等于最终消费者零售额，终端网点也不等于一名独立付款买家。早期1995—1996年最初真实合同及净利无法核实，需继续追查。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
 <section class="chapter"><h2>三、改变传统渠道的是一辆定期进店的配送车</h2><p>招股说明书把“配送访销”定义为沿固定路线以专车定期配货、送货、拜访与上门销售。对小五金门店而言，稳定补货和售后支持可能比一次性的广告更值钱；对厂家而言，它把高度分散的乡镇零售点变成可执行的服务网络。这是渠道服务体系而不是纯电商流量。IPO披露2016、2017、2018年经销收入占主营业务的86.09%、84.81%、84.76%，并不是公牛赚取的净利率。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
+<figure class="premium-figure" data-premium-figure="bull-distributor-share-2016-2018" data-after-chapter="2"><div class="pf-heading"><div class="pf-overline"><span>FIGURE 01</span><span class="pf-dot">●</span><span>商业故事的关键证据</span></div><h4>一只插座卖出去之前，近85%的收入先经过经销商</h4><p class="pf-insight">连续三年经销收入占主营业务收入约85%，说明配送与库存渠道是一项长期组织能力，并非单纯广告。</p></div><div class="pf-visual"><div class="pf-share-overview"><span>经销收入占主营收入</span><strong>≈85%</strong><small>2016—2018年的稳定比例，而不是利润率</small></div><div class="pf-share-list"><div class="pf-share-row"><time>2016</time><div class="pf-share-track" role="img" aria-label="2016：经销占比86.09%"><span style="width:86.09%"></span></div><strong>86.09%</strong></div><div class="pf-share-row"><time>2017</time><div class="pf-share-track" role="img" aria-label="2017：经销占比84.81%"><span style="width:84.81%"></span></div><strong>84.81%</strong></div><div class="pf-share-row"><time>2018</time><div class="pf-share-track" role="img" aria-label="2018：经销占比84.76%"><span style="width:84.76%"></span></div><strong>84.76%</strong></div></div><p class="pf-under-note">每根条形的完整宽度=100%主营业务收入；绿色部分才是经销收入。</p></div><figcaption class="pf-caption"><div class="pf-caption-note"><b>图注 / 证据边界</b> 招股书2016至2018年经销收入占主营收入的比例；不是渠道毛利、净利润、直营占比或零售用户数。</div><div class="pf-sources"><b>原始来源</b><a href="https://static.cninfo.com.cn/finalpage/2020-01-15/1207251246.PDF" target="_blank" rel="noopener noreferrer">公牛2020招股书·经销模式 ↗</a></div></figcaption></figure>
 <section class="chapter"><h2>四、阮立平为什么2007年才做墙壁开关？</h2><p>阮立平在2022年公开访谈中亲自分期：1995—2007年专注插座，2007年进入墙壁开关，并强调让较高设计感产品通过规模制造达到大众可承受的价格；2014年进入家装照明，2020上市后进一步布局智能家居相关品类。这是当事人的经营选择和自述，不能以此单独证明各条产品线此后都获得行业第一或更高利润。</p><p class="source">原文依据：<a href="https://www.dazhaoming.com/index.php?article_id=970&amp;s=%2Fcms%2Farticleclassinfo" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
 <section class="chapter"><h2>五、一个容易混淆的数字：百万网点不是百万位付费客户</h2><p>2025年度报告写的是公司覆盖全国城乡“110多万家终端网点”的线下销售网络。它衡量覆盖范围，并不意味着110万经销商、110万独立付款客户或110万直营门店。与2020招股书中“近100万家网点”的历史覆盖描述比较时，也不能直接把网点增量等同真实新增订单、单店效率或当年营业收入增长。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2026-04-30/1225265197.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
-<section class="chapter"><h2>六、2025年度：卖了多少钱，又留下多少钱？</h2><p>2025年度审计年报列报营业收入16,026,312,556.45元、营业成本9,113,186,646.36元、归属于上市公司股东净利润4,070,632,747.77元。换算为约160.26亿元收入、91.13亿元营业成本和40.71亿元归母净利。收入减营业成本是毛利空间，不是公司净利润：其后仍有销售费用、管理费用、研发、税等项目。2025收入同比下降4.78%，净利同比下降4.72%，这是真正的增长放缓而非“仍在高速增长”。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2026-04-30/1225265197.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
+<section class="chapter"><h2>六、2025年度：卖了多少钱，又留下多少钱？</h2><p>2025年度审计年报列报营业收入16,026,312,556.45元、营业成本9,113,186,646.36元、归属于上市公司股东净利润4,070,632,747.77元。换算为约160.26亿元收入、91.13亿元营业成本和40.71亿元归母净利。收入减营业成本是毛利空间，不是公司净利润：其后仍有销售费用、管理费用、研发、税等项目。2025收入同比下降4.78%，净利同比下降4.72%，这是真正的增长放缓而非“仍在高速增长”。 2024年年报比较数据的营业收入16,830,541,086.13元、归母净利润4,272,204,565.03元，与2025全年数据属于同一会计报表和年度口径。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2026-04-30/1225265197.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
+<figure class="premium-figure" data-premium-figure="bull-2024-2025-revenue-profit" data-after-chapter="5"><div class="pf-heading"><div class="pf-overline"><span>FIGURE 02</span><span class="pf-dot">●</span><span>商业故事的关键证据</span></div><h4>2025：营业收入下行，归母利润也在收缩</h4><p class="pf-insight">公牛2025收入下降4.78%、归母净利下降4.72%；经营质量不能只看覆盖网点数量。</p></div><div class="pf-visual"><div class="pf-paired" role="group" aria-label="两个指标按各自刻度比较"><section class="pf-metric"><header><span>营业收入</span><span class="pf-trend pf-down">−4.78%</span></header><div class="pf-units">亿元 · 各图独立刻度</div><div class="pf-bar-row"><time>2024全年</time><div class="pf-bar-track"><span style="width:100.00%" aria-hidden="true"></span></div><strong>168.3</strong></div><div class="pf-bar-row"><time>2025全年</time><div class="pf-bar-track"><span style="width:95.22%" aria-hidden="true"></span></div><strong>160.3</strong></div></section><section class="pf-metric"><header><span>归母净利润</span><span class="pf-trend pf-down">−4.72%</span></header><div class="pf-units">亿元 · 各图独立刻度</div><div class="pf-bar-row"><time>2024全年</time><div class="pf-bar-track"><span style="width:100.00%" aria-hidden="true"></span></div><strong>42.7</strong></div><div class="pf-bar-row"><time>2025全年</time><div class="pf-bar-track"><span style="width:95.28%" aria-hidden="true"></span></div><strong>40.7</strong></div></section></div></div><figcaption class="pf-caption"><div class="pf-caption-note"><b>图注 / 证据边界</b> 两个完整财年、单位人民币元；收入与归母净利润分开独立刻度，不把二者混合画在同一比例尺上；金额显示换算为亿元。</div><div class="pf-sources"><b>原始来源</b><a href="https://static.cninfo.com.cn/finalpage/2026-04-30/1225265197.PDF" target="_blank" rel="noopener noreferrer">公牛2025年度报告·主要会计数据 ↗</a></div></figcaption></figure>
 <section class="chapter"><h2>七、2021年处罚：渠道优势能否变成定价权的滥用？</h2><p>浙江省市场监管部门2021年行政处罚认定，公牛集团在2014—2020年与交易相对方实施固定、限定转售价格的行为，对其处以人民币2.9481亿元罚款，按2020年中国境内销售额98.27亿元的3%计算。这是历史监管结论，不等于2026年仍在持续同类行为；但它提醒读者，覆盖广泛的经销网络既有服务效率，也有竞争法边界，不能把约束零售价格美化为普通品牌管理。</p><p class="source">原文依据：<a href="https://www.cqn.com.cn/zj/content/2021-09/28/content_8737298.htm" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
-<section class="chapter"><h2>八、2026年前九个月：销售几乎持平，利润和现金流转弱</h2><p>2026年第三季度报告披露1—9月营业收入12,209,147,834.24元，同比仅增长0.09%；归母净利润2,831,187,096.90元，同比下降4.96%。经营活动现金流量净额2,217,837,933.35元，上年同期3,621,486,874.87元，下降约38.76%。这些是2026年1—9月累计值，不能冒称2026全年度；季报未经审计，也不能以归母净利润和经营现金流互相替代。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2026-10-30/1225639118.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
+<section class="chapter"><h2>八、2026年前九个月：销售几乎持平，利润和现金流转弱</h2><p>2026年第三季度报告披露1—9月营业收入12,209,147,834.24元，同比仅增长0.09%；归母净利润2,831,187,096.90元，同比下降4.96%。经营活动现金流量净额2,217,837,933.35元，上年同期3,621,486,874.87元，下降约38.76%。这些是2026年1—9月累计值，不能冒称2026全年度；季报未经审计，也不能以归母净利润和经营现金流互相替代。 2025年1—9月同期营业收入12,197,681,954.69元；不要把2025年前三季度和2025全年相比来计算增长率。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2026-10-30/1225639118.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section>
+<figure class="premium-figure" data-premium-figure="bull-2026-9m-cash-vs-sales" data-after-chapter="7"><div class="pf-heading"><div class="pf-overline"><span>FIGURE 03</span><span class="pf-dot">●</span><span>商业故事的关键证据</span></div><h4>销售几乎没变，经营现金流却少了约四成</h4><p class="pf-insight">2026年前九个月营业收入同比微增0.09%，经营活动现金流净额同比下降约38.76%。</p></div><div class="pf-visual"><div class="pf-paired" role="group" aria-label="两个指标按各自刻度比较"><section class="pf-metric"><header><span>营业收入</span><span class="pf-trend pf-up">+0.09%</span></header><div class="pf-units">亿元 · 各图独立刻度</div><div class="pf-bar-row"><time>2025前9月</time><div class="pf-bar-track"><span style="width:99.91%" aria-hidden="true"></span></div><strong>122.0</strong></div><div class="pf-bar-row"><time>2026前9月</time><div class="pf-bar-track"><span style="width:100.00%" aria-hidden="true"></span></div><strong>122.1</strong></div></section><section class="pf-metric"><header><span>经营活动现金流净额</span><span class="pf-trend pf-down">−38.76%</span></header><div class="pf-units">亿元 · 各图独立刻度</div><div class="pf-bar-row"><time>2025前9月</time><div class="pf-bar-track"><span style="width:100.00%" aria-hidden="true"></span></div><strong>36.2</strong></div><div class="pf-bar-row"><time>2026前9月</time><div class="pf-bar-track"><span style="width:61.24%" aria-hidden="true"></span></div><strong>22.2</strong></div></section></div></div><figcaption class="pf-caption"><div class="pf-caption-note"><b>图注 / 证据边界</b> 2025与2026年1—9月累计数据；现金流不是利润，现金流收缩不直接等于财务造假；未经审计季报，数值为人民币元、显示为亿元。</div><div class="pf-sources"><b>原始来源</b><a href="https://static.cninfo.com.cn/finalpage/2026-10-30/1225639118.PDF" target="_blank" rel="noopener noreferrer">公牛2026年三季度报告·累计利润及现金流 ↗</a></div></figcaption></figure>
 <section class="chapter"><h2>九、需要持续追踪的不是‘插座还能不能赚钱’，而是利润的质量</h2><p>公牛的渠道与品牌历史解释了为什么一家传统制造企业能够沉淀大规模收入，但2025年下滑和2026年前三季度现金流压力也说明规模不保证利润持续增长。原料、地产装修需求、渠道库存、新业务投入都可能影响未来结果。要判断经营质量，下一阶段应按年报分产品收入和毛利、按季度现金周转以及监管公告追踪，避免把2021年的罚款故事、2025整年与2026前三季数字混成一个时间点。</p><p class="source">原文依据：<a href="https://static.cninfo.com.cn/finalpage/2026-10-30/1225639118.PDF" rel="noopener noreferrer">原始财报／历史采访核查</a></p></section><section><h2>第一批真正的客户在哪里？</h2><p>1995年经营主体可以通过公司IPO招股书核对，阮立平本人可回忆当时做转换器，但尚无公开可验的首位消费者姓名、第一名经销商的原始付款收据及首单金额，首单仍未知。不能把110多万终端网点等同110万已验证付费客户。</p></section>
 <section><h2>哪些可以借鉴？</h2><p>从高频补货的狭窄实体品类入手，把供应、品控、退换、送货路线和补货周期标准化；对经销商真实成交、终端缺货和库存周转建统一台账，而不是靠简单铺广告。</p></section>
 <section><h2>哪些不能照搬？</h2><p>三十年积累的品牌信任、覆盖城乡的百余万终端网点、制造供应链产能、经销商买断与现金回款历史、上市公司资源不可复制；限制零售转售价格属于反垄断风险，不能当成学习模板。</p></section>

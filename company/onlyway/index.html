@@ -129,6 +129,113 @@
  .pf-chart-scroll svg{min-width:720px}
  .pf-caption{font-size:13px}
 }
+
+/* Editorial Figure v2 — contextual financial charts, not decorative UI graphs. */
+.pf-share-overview{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px 24px;margin:0 0 26px;padding:22px 26px;border-radius:14px;background:#234f3c;color:#e9f3e7}
+.pf-share-overview>span{font-weight:750;font-size:17px}
+.pf-share-overview strong{font-variant-numeric:tabular-nums;font-weight:900;letter-spacing:-.05em;color:#f6e6b7;font-size:clamp(42px,4.3vw,76px)}
+.pf-share-overview small{color:#c3d8c6;font-size:14px}
+.pf-share-list{display:grid;gap:19px}
+.pf-share-row{display:grid;grid-template-columns:90px minmax(0,1fr) 98px;align-items:center;gap:16px}
+.pf-share-row time{font-size:18px;font-weight:850;color:#234c3b}
+.pf-share-row strong{font-size:25px;font-weight:850;letter-spacing:-.04em;color:#244f3b;text-align:right;font-variant-numeric:tabular-nums}
+.pf-share-track{height:38px;overflow:hidden;border-radius:8px;background:#edf0ea;box-shadow:inset 0 0 0 1px #e1e6df}
+.pf-share-track span{height:100%;display:block;background:linear-gradient(90deg,#246b4e,#5fa781);border-radius:8px 0 0 8px}
+.pf-under-note{font-size:13px;color:#718172;margin:18px 0 0;line-height:1.7}
+.pf-break-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.pf-break-head>div{display:flex;flex-direction:column;gap:3px}
+.pf-break-head span{font-weight:750;color:#628270;font-size:15px}
+.pf-break-head strong{font-variant-numeric:tabular-nums;font-size:clamp(38px,3.8vw,72px);font-weight:890;color:#184a34;letter-spacing:-.06em}
+.pf-break-head>div:last-child strong{color:#b17456}
+.pf-breaktrack{width:100%;height:65px;display:flex;overflow:hidden;border-radius:13px;gap:2px;background:#eef2ee;box-shadow:0 7px 23px rgba(26,64,44,.12)}
+.pf-breaktrack>span{display:block;min-width:7px;height:100%}
+.pf-break-supply{background:#276c50}
+.pf-break-equipment{background:#7fa986}
+.pf-break-franchise{background:#d3a169}
+.pf-breaklist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.pf-breaklist article{padding:17px;border:1px solid #e2e9e0;border-radius:12px;background:#f7f9f5;display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.pf-breaklist .pf-break-dot{width:13px;min-width:13px;height:13px;border-radius:3px;margin-top:6px}
+.pf-breaklist article div{min-width:0;display:grid;gap:5px;flex:1}
+.pf-breaklist article small{font-size:13px;color:#66806c}
+.pf-breaklist article strong{font-size:18px;font-weight:850;color:#234d3a;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pf-breaklist article b{font-size:19px;color:#315d43;letter-spacing:-.02em}
+.pf-waterfall-math{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;font-size:clamp(18px,2vw,30px);color:#254d3a;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0 15px}
+.pf-waterfall-math em{font-size:22px;color:#ba8066;font-weight:800;font-style:normal}
+.pf-waterfall-math strong{font-size:clamp(23px,2.4vw,37px);color:#116145;border-bottom:3px solid #aad1af}
+.pf-waterfall svg{min-width:780px}
+@media(max-width:760px){
+ .pf-share-overview{padding:18px 18px}
+ .pf-share-row{grid-template-columns:52px minmax(0,1fr) 67px;gap:9px}
+ .pf-share-row time{font-size:15px}
+ .pf-share-row strong{font-size:18px}
+ .pf-share-track{height:29px}
+ .pf-breaktrack{height:48px}
+ .pf-breaklist{grid-template-columns:1fr}
+ .pf-breaklist article{padding:12px 15px}
+ .pf-break-head{gap:9px}
+ .pf-break-head span{font-size:13px}
+ .pf-break-head strong{font-size:35px}
+ .pf-waterfall-math{font-size:17px;gap:5px}
+ .pf-waterfall-math strong{font-size:21px}
+}
+
+/* DAISO: a deliberate editorial distribution graphic with explicit scale and source units. */
+.pf-store-total{display:flex;flex-direction:column;gap:5px;align-items:flex-start;margin-bottom:23px}
+.pf-store-total small{color:#698572;font-size:15px;font-weight:780}
+.pf-store-total strong{color:#173f2d;font-size:clamp(46px,5vw,78px);font-weight:900;letter-spacing:-.07em;line-height:1.15;font-variant-numeric:tabular-nums}
+.pf-store-total em{font-size:18px;letter-spacing:0;font-style:normal;margin-left:8px;color:#5a7b66}
+.pf-store-track{display:flex;gap:3px;height:68px;border-radius:13px;overflow:hidden;background:#e9efe8;box-shadow:0 7px 20px rgba(37,85,49,.12)}
+.pf-store-track span{display:block;height:100%;min-width:7px}
+.pf-store-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:17px}
+.pf-store-label{display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:#f5f9f4;border:1px solid #dce8dc;padding:18px;border-radius:13px;min-width:0}
+.pf-store-label i{display:block;width:22px;height:7px;border-radius:4px}
+.pf-store-label b{font-size:16px;color:#426b4b}
+.pf-store-label strong{font-size:clamp(22px,2vw,29px);color:#234b36;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-store-label span{font-size:16px;color:#777c67;font-weight:750}
+@media(max-width:760px){
+ .pf-store-track{height:46px}
+ .pf-store-list{grid-template-columns:1fr}
+ .pf-store-label{flex-direction:row;align-items:center;gap:12px;padding:14px}
+ .pf-store-label i{width:10px;height:20px}
+ .pf-store-label b{flex:1}
+ .pf-store-label strong{font-size:22px}
+ .pf-store-label span{font-size:14px}
+}
+
+/* Anker 2025 independently reported channel revenue, not retail GMV. */
+.pf-channel-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 20px;margin:3px 0 22px}
+.pf-channel-head>div{display:grid;gap:5px}
+.pf-channel-head small{font-size:16px;color:#67836c;font-weight:760}
+.pf-channel-head strong{font-size:clamp(44px,4.4vw,74px);font-weight:900;color:#214c37;letter-spacing:-.045em;line-height:1.1;font-variant-numeric:tabular-nums}
+.pf-channel-head>span{font-size:14px;color:#8d7559;max-width:260px;line-height:1.6}
+.pf-channel-track{display:flex;width:100%;height:62px;gap:3px;border-radius:11px;overflow:hidden;background:#edf3ed;box-shadow:0 8px 18px rgba(40,70,43,.1)}
+.pf-channel-track span{display:block;height:100%;min-width:5px}
+.pf-channel-list{margin-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.pf-channel-item{padding:16px 18px;border-radius:10px;background:#f5f8f3;border:1px solid #dfe7dc;display:flex;align-items:center;gap:13px}
+.pf-channel-item>span{display:block;min-width:12px;width:12px;height:32px;border-radius:5px}
+.pf-channel-item>div{flex:1;min-width:0;display:grid;gap:4px}
+.pf-channel-item b{font-size:14px;color:#55745d}
+.pf-channel-item strong{font-size:20px;color:#275641;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-channel-item em{font-size:20px;font-weight:800;color:#4d7059;font-style:normal;font-variant-numeric:tabular-nums}
+@media(max-width:700px){
+ .pf-channel-track{height:42px}
+ .pf-channel-list{grid-template-columns:1fr}
+ .pf-channel-item{padding:12px 13px}
+ .pf-channel-item strong{font-size:18px}
+ .pf-channel-item em{font-size:18px}
+}
+
+/* Five founder-published MRR checkpoints — log vertical scale and elapsed-month horizontal scale. */
+.pf-mrr-axes{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px 22px;align-items:center;padding:4px 0 12px}
+.pf-mrr-axes strong{font-size:18px;font-weight:840;color:#31573e}
+.pf-mrr-axes span{font-size:13px;font-weight:760;color:#987555}
+.pf-mrr-chart{padding:8px 0;background:linear-gradient(180deg,#fff 0%,#fbfdf9 100%);border-radius:12px}
+.pf-mrr-chart svg{min-width:790px;width:100%;height:auto}
+.pf-mrr-chart svg circle{filter:drop-shadow(0px 2px 3px rgba(30,71,48,.14))}
+@media (max-width:710px){
+ .pf-mrr-axes strong{font-size:16px}
+ .pf-mrr-chart svg{min-width:750px}
+}
 /* Source-grounded biography: editorial human history, not avatar decoration. */
 .people-archive{background:#f8faf6;border:1px solid #d8e5d8;border-radius:22px;padding:clamp(22px,2.4vw,42px);margin:25px 0 39px;color:#294837;box-shadow:0 15px 36px rgba(18,52,37,.055)}
 .people-section-head{max-width:1150px;margin-bottom:25px}
@@ -259,6 +366,29 @@
  .hm-video-frame{margin:0 10px}
  .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
  .hm-interpretation p{font-size:14px}
+}
+
+/* Publisher-origin reportage images are hotlinked, not copied into the project.
+ * The separate Commons picture is downloaded with author and CC BY-SA attribution. */
+.hm-press-excerpt{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(280px,1.15fr);gap:0;margin:19px 0 0;border-radius:15px;overflow:hidden;border:1px solid #d7e4d7;background:#fff;max-width:1170px}
+.hm-press-image{display:block;background:#e8eee6;min-height:235px;max-height:360px;overflow:hidden}
+.hm-press-image img{width:100%;height:100%;max-height:360px;min-height:235px;object-fit:contain;display:block}
+.hm-press-excerpt figcaption{padding:clamp(17px,1.9vw,28px);display:flex;flex-direction:column;gap:8px;justify-content:center;min-width:0}
+.hm-press-excerpt .hm-press-eyebrow{font-size:12px;color:#987c56;font-weight:850;letter-spacing:.07em}
+.hm-press-excerpt figcaption strong{font-size:21px;line-height:1.5;color:#244731}
+.hm-press-excerpt figcaption small{font-size:14px;color:#627f69;line-height:1.73}
+.hm-press-excerpt figcaption a{font-weight:800;color:#216947;font-size:14px;margin-top:6px;text-underline-offset:4px}
+.hm-more-reports{margin-top:19px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hm-more-reports>strong{grid-column:1/-1;font-size:15px;color:#43644b}
+.hm-more-reports>a{background:#eff5ee;border-radius:10px;border:1px solid #dbe7da;padding:15px;color:#215f45;font-weight:800;font-size:15px;line-height:1.5;text-decoration:none;display:grid;gap:8px}
+.hm-more-reports>a:hover{border-color:#71a58a;background:#e7f3e8}
+.hm-more-reports a small{font-size:13px;font-weight:450;line-height:1.68;color:#67836f}
+@media(max-width:760px){
+ .hm-press-excerpt{grid-template-columns:1fr}
+ .hm-press-image{min-height:180px;max-height:330px}
+ .hm-press-image img{min-height:180px;max-height:330px}
+ .hm-press-excerpt figcaption{padding:16px}
+ .hm-more-reports{grid-template-columns:1fr}
 }
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-onlyway">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / Only Way is Down</p><h1>一只猫走下摩天楼，卖了8,656份：Steam抽成后4.1万美元，为何开发者仍不能靠它全职生活？</h1><p class="intro">一只小猫从高楼钢梁往下跳，很适合传播。这个短视频卖点成功吸引了关注，但它卖的是让人反复摔落的高难度游戏，不是轻松的治愈猫咪模拟器。2026年1月，一位独立开发者把Steam的销售、退款和营销数据公开。这比“零成本单人做游戏赚4万美元”的神话更有说服力：真正把钱赚到手，需要连续通过愿望单、付费、退款、平台抽成和成本五道门槛。</p></div><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/onlyway-dev-2026-sales-refunds-original-chart.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/onlyway-dev-2026-sales-refunds-original-chart.webp" alt="根据开发者2026年1月复盘原创重绘：8,656份扣退款后销量与1,712份退款构成总购买的83.5%和16.5%；作者另称上线愿望单17,821、Steam分成后净收入约4.1万美元、广告花费约5000美元。不同指标不能直接相减为净利润。"><span>查看完整图片 ↗</span></a><figcaption><strong>《Only Way is Down》销量、退款率与平台分成后净收入口径</strong><span>原始自述：Only Way is Down开发者2026年1月复盘；数据图为本站2026年原创重绘 · 2026-11-15整理</span><small>2026年11月15日依据开发者2026年1月发布的自述统计由本站原创重绘；不是历史留影、不是游戏场景实拍、不是Steam后台财务截图，数据没有取得Steam账单独立审计。销量、退款、愿望单和平台抽成后净收入为不同口径，广告费后仍未扣所有劳动、税费与其他成本。</small><a href="https://onlywayisdown.com/post-mortem/" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（10个节点）</summary><ol><li><time>2024年5月</time><div><p>作者自述已开设Steam商店页，并开始在Reddit、TikTok、YouTube等平台公开展示游戏。</p><a href="https://onlywayisdown.com/post-mortem/" target="_blank" rel="noopener noreferrer">开始积累产品关注而非销售 · 查看原文</a></div></li><li><time>2024年6月</time><div><p>Steam Next Fest试玩版据作者复盘带来约4,100份愿望单，这是潜在兴趣，不是买单收入。</p><a href="https://onlywayisdown.com/post-mortem/" target="_blank" rel="noopener noreferrer">试玩和玩家反馈 · 查看原文</a></div></li><li><time>2024年10月</time><div><p>开发者曾在Reddit讨论接近发售前的愿望单结构与推广数据，为后续调查保留当时记录。</p><a href="https://www.reddit.com/r/gamedev/comments/1ftkdb2/wishlist_breakdown_78k_nearing_launch/" target="_blank" rel="noopener noreferrer">发售前社媒数据复盘 · 查看原文</a></div></li><li><time>2025年3月31日—4月1日</time><div><p>Steam地区页显示3月31日发布，开发者及press kit均写4月1日；存在时区显示差异，不应强行伪造唯一全球时刻。</p><a href="https://store.steampowered.com/app/2804680/Only_Way_is_Down/" target="_blank" rel="noopener noreferrer">2025首发时间口径 · 查看原文</a></div></li><li><time>首发第一天（2025年4月）</time><div><p>作者披露1,248份销量和约8,232美元毛销售额，不能当扣退款或Steam分成后的收入。</p><a href="https://onlywayisdown.com/post-mortem/" target="_blank" rel="noopener noreferrer">第一天的毛销售窗口 · 查看原文</a></div></li><li><time>首发第一周（2025年4月）</time><div><p>作者披露累计3,091份和约19,851美元毛销售额，首发有20%折扣。</p><a href="https://onlywayisdown.com/post-mortem/" target="_blank" rel="noopener noreferrer">第一周经营窗口 · 查看原文</a></div></li><li><time>首发第一个月（2025年4月）</time><div><p>作者披露累计4,810份、约35,862美元毛销售额。首月与首周/首日不能累加。</p><a href="https://onlywayisdown.com/post-mortem/" target="_blank" rel="noopener noreferrer">第一月经营窗口 · 查看原文</a></div></li><li><time>2025年5月</time><div><p>开发者在Steam社区继续更新开发日志，复盘试玩和首发后的玩法修改。</p><a href="https://steamcommunity.com/app/2804680/discussions/0/601905527985837867/" target="_blank" rel="noopener noreferrer">继续修复玩家体验 · 查看原文</a></div></li><li><time>2026年1月26日</time><div><p>开发者在Reddit发布官方复盘链接；自述累计8,656份扣退款销量、1,712份退款，以及约4.1万美元Steam分成后净收入。</p><a href="https://www.reddit.com/r/gamedev/comments/1qnekte/solo_dev_post_mortem_of_first_commercial_release/" target="_blank" rel="noopener noreferrer">开发者公开经营复盘 · 查看原文</a></div></li><li><time>2026年11月（核对当期页面）</time><div><p>Steam官方页面仍可访问且存在持续更新的用户评论，不能拿当前评论总数冒充2026年1月的113条。</p><a href="https://store.steampowered.com/app/2804680/Only_Way_is_Down/" target="_blank" rel="noopener noreferrer">网站当期状态与历史资料分隔 · 查看原文</a></div></li></ol></details><section class="era-sources"><h2>时代原始材料：不是后期想象画面</h2><p>以下是来源机构原址。网页快照可以证明彼时页面内容，历史摄制、后期复原和后来回顾各有不同证据等级。我们尚未获得自动下载、转载原始影音的许可，不将素材复制进本站。</p><details><summary>展开2份带年代和出处的原始材料</summary><ol class="era-list"><li><div><strong>2025年 · 2026年1月26日开发者本人在Reddit发布游戏经营与销量复盘链接</strong><p>2025年发行后的作者自述，报告曾有退款、广告和Steam抽成后净收入；2026帖子不构成2025年当期银行收款凭证，不能证明扣完人工后的利润。</p><small>Reddit r/gamedev / 原开发者发帖 · 来源发表/保存：2026-01-26 · RETROSPECTIVE · 未转载原图</small></div><a href="https://www.reddit.com/r/gamedev/comments/1qnekte/solo_dev_post_mortem_of_first_commercial_release/" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2025年 · 开发者发布2025年Steam销量、退款和推广费用详细复盘</strong><p>作者2026年公开回看2025年销售及营销，不是独立审计数据。网站包含营销可视化，本站不下载或再发布原页面图片，具体财务口径以原文为准。</p><small>Only Way is Down 开发者原站 · 来源发表/保存：2026 · RETROSPECTIVE · 未转载原图</small></div><a href="https://onlywayisdown.com/post-mortem/" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li></ol></details></section><section class="chapter"><h2>第一幕：卖的不是可爱猫咪，而是会让人愤怒的高难度操作</h2><p>Steam官方商店显示本作由Jilted Generation Productions自行开发和发行，玩法是控制一只猫沿正在施工的摩天楼向下通过危险钢梁。开发者在复盘中直言，产品本质是rage precision platformer。游戏主角可爱，让短片有视觉吸引力，但“喜欢猫”的用户和“喜欢不断失败的高难度平台游戏”的用户并不重合，这是后来商业问题的起点。</p><p class="source">原文依据：<a href="https://store.steampowered.com/app/2804680/Only_Way_is_Down/" rel="noopener noreferrer">Steam官方商店确认游戏开发者、发行者与真实玩法</a></p></section>
 <section class="chapter"><h2>第二幕：愿望单不是现金，试玩版也不直接创造收入</h2><p>作者自述2024年5月左右启动社交媒体展示并开设Steam页面，2024年6月参加Steam Next Fest发布试玩版，获得约4,100项愿望单；发售当天愿望单达到17,821。愿望单代表潜在购买意向，不是承诺付款，也不能把每个愿望单当一份收入。演示版的价值更重要：观察真实玩家是否能操作、是否喜欢这种难度，并把反馈尽早用于制作。</p><p class="source">原文依据：<a href="https://onlywayisdown.com/post-mortem/" rel="noopener noreferrer">开发者原始post mortem关于Steam Next Fest和发售愿望单的复盘</a></p></section>

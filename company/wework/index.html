@@ -129,6 +129,113 @@
  .pf-chart-scroll svg{min-width:720px}
  .pf-caption{font-size:13px}
 }
+
+/* Editorial Figure v2 — contextual financial charts, not decorative UI graphs. */
+.pf-share-overview{display:flex;align-items:baseline;flex-wrap:wrap;gap:12px 24px;margin:0 0 26px;padding:22px 26px;border-radius:14px;background:#234f3c;color:#e9f3e7}
+.pf-share-overview>span{font-weight:750;font-size:17px}
+.pf-share-overview strong{font-variant-numeric:tabular-nums;font-weight:900;letter-spacing:-.05em;color:#f6e6b7;font-size:clamp(42px,4.3vw,76px)}
+.pf-share-overview small{color:#c3d8c6;font-size:14px}
+.pf-share-list{display:grid;gap:19px}
+.pf-share-row{display:grid;grid-template-columns:90px minmax(0,1fr) 98px;align-items:center;gap:16px}
+.pf-share-row time{font-size:18px;font-weight:850;color:#234c3b}
+.pf-share-row strong{font-size:25px;font-weight:850;letter-spacing:-.04em;color:#244f3b;text-align:right;font-variant-numeric:tabular-nums}
+.pf-share-track{height:38px;overflow:hidden;border-radius:8px;background:#edf0ea;box-shadow:inset 0 0 0 1px #e1e6df}
+.pf-share-track span{height:100%;display:block;background:linear-gradient(90deg,#246b4e,#5fa781);border-radius:8px 0 0 8px}
+.pf-under-note{font-size:13px;color:#718172;margin:18px 0 0;line-height:1.7}
+.pf-break-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.pf-break-head>div{display:flex;flex-direction:column;gap:3px}
+.pf-break-head span{font-weight:750;color:#628270;font-size:15px}
+.pf-break-head strong{font-variant-numeric:tabular-nums;font-size:clamp(38px,3.8vw,72px);font-weight:890;color:#184a34;letter-spacing:-.06em}
+.pf-break-head>div:last-child strong{color:#b17456}
+.pf-breaktrack{width:100%;height:65px;display:flex;overflow:hidden;border-radius:13px;gap:2px;background:#eef2ee;box-shadow:0 7px 23px rgba(26,64,44,.12)}
+.pf-breaktrack>span{display:block;min-width:7px;height:100%}
+.pf-break-supply{background:#276c50}
+.pf-break-equipment{background:#7fa986}
+.pf-break-franchise{background:#d3a169}
+.pf-breaklist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.pf-breaklist article{padding:17px;border:1px solid #e2e9e0;border-radius:12px;background:#f7f9f5;display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.pf-breaklist .pf-break-dot{width:13px;min-width:13px;height:13px;border-radius:3px;margin-top:6px}
+.pf-breaklist article div{min-width:0;display:grid;gap:5px;flex:1}
+.pf-breaklist article small{font-size:13px;color:#66806c}
+.pf-breaklist article strong{font-size:18px;font-weight:850;color:#234d3a;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pf-breaklist article b{font-size:19px;color:#315d43;letter-spacing:-.02em}
+.pf-waterfall-math{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;font-size:clamp(18px,2vw,30px);color:#254d3a;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0 15px}
+.pf-waterfall-math em{font-size:22px;color:#ba8066;font-weight:800;font-style:normal}
+.pf-waterfall-math strong{font-size:clamp(23px,2.4vw,37px);color:#116145;border-bottom:3px solid #aad1af}
+.pf-waterfall svg{min-width:780px}
+@media(max-width:760px){
+ .pf-share-overview{padding:18px 18px}
+ .pf-share-row{grid-template-columns:52px minmax(0,1fr) 67px;gap:9px}
+ .pf-share-row time{font-size:15px}
+ .pf-share-row strong{font-size:18px}
+ .pf-share-track{height:29px}
+ .pf-breaktrack{height:48px}
+ .pf-breaklist{grid-template-columns:1fr}
+ .pf-breaklist article{padding:12px 15px}
+ .pf-break-head{gap:9px}
+ .pf-break-head span{font-size:13px}
+ .pf-break-head strong{font-size:35px}
+ .pf-waterfall-math{font-size:17px;gap:5px}
+ .pf-waterfall-math strong{font-size:21px}
+}
+
+/* DAISO: a deliberate editorial distribution graphic with explicit scale and source units. */
+.pf-store-total{display:flex;flex-direction:column;gap:5px;align-items:flex-start;margin-bottom:23px}
+.pf-store-total small{color:#698572;font-size:15px;font-weight:780}
+.pf-store-total strong{color:#173f2d;font-size:clamp(46px,5vw,78px);font-weight:900;letter-spacing:-.07em;line-height:1.15;font-variant-numeric:tabular-nums}
+.pf-store-total em{font-size:18px;letter-spacing:0;font-style:normal;margin-left:8px;color:#5a7b66}
+.pf-store-track{display:flex;gap:3px;height:68px;border-radius:13px;overflow:hidden;background:#e9efe8;box-shadow:0 7px 20px rgba(37,85,49,.12)}
+.pf-store-track span{display:block;height:100%;min-width:7px}
+.pf-store-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:17px}
+.pf-store-label{display:flex;flex-direction:column;align-items:flex-start;gap:8px;background:#f5f9f4;border:1px solid #dce8dc;padding:18px;border-radius:13px;min-width:0}
+.pf-store-label i{display:block;width:22px;height:7px;border-radius:4px}
+.pf-store-label b{font-size:16px;color:#426b4b}
+.pf-store-label strong{font-size:clamp(22px,2vw,29px);color:#234b36;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-store-label span{font-size:16px;color:#777c67;font-weight:750}
+@media(max-width:760px){
+ .pf-store-track{height:46px}
+ .pf-store-list{grid-template-columns:1fr}
+ .pf-store-label{flex-direction:row;align-items:center;gap:12px;padding:14px}
+ .pf-store-label i{width:10px;height:20px}
+ .pf-store-label b{flex:1}
+ .pf-store-label strong{font-size:22px}
+ .pf-store-label span{font-size:14px}
+}
+
+/* Anker 2025 independently reported channel revenue, not retail GMV. */
+.pf-channel-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 20px;margin:3px 0 22px}
+.pf-channel-head>div{display:grid;gap:5px}
+.pf-channel-head small{font-size:16px;color:#67836c;font-weight:760}
+.pf-channel-head strong{font-size:clamp(44px,4.4vw,74px);font-weight:900;color:#214c37;letter-spacing:-.045em;line-height:1.1;font-variant-numeric:tabular-nums}
+.pf-channel-head>span{font-size:14px;color:#8d7559;max-width:260px;line-height:1.6}
+.pf-channel-track{display:flex;width:100%;height:62px;gap:3px;border-radius:11px;overflow:hidden;background:#edf3ed;box-shadow:0 8px 18px rgba(40,70,43,.1)}
+.pf-channel-track span{display:block;height:100%;min-width:5px}
+.pf-channel-list{margin-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.pf-channel-item{padding:16px 18px;border-radius:10px;background:#f5f8f3;border:1px solid #dfe7dc;display:flex;align-items:center;gap:13px}
+.pf-channel-item>span{display:block;min-width:12px;width:12px;height:32px;border-radius:5px}
+.pf-channel-item>div{flex:1;min-width:0;display:grid;gap:4px}
+.pf-channel-item b{font-size:14px;color:#55745d}
+.pf-channel-item strong{font-size:20px;color:#275641;font-weight:850;font-variant-numeric:tabular-nums}
+.pf-channel-item em{font-size:20px;font-weight:800;color:#4d7059;font-style:normal;font-variant-numeric:tabular-nums}
+@media(max-width:700px){
+ .pf-channel-track{height:42px}
+ .pf-channel-list{grid-template-columns:1fr}
+ .pf-channel-item{padding:12px 13px}
+ .pf-channel-item strong{font-size:18px}
+ .pf-channel-item em{font-size:18px}
+}
+
+/* Five founder-published MRR checkpoints — log vertical scale and elapsed-month horizontal scale. */
+.pf-mrr-axes{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px 22px;align-items:center;padding:4px 0 12px}
+.pf-mrr-axes strong{font-size:18px;font-weight:840;color:#31573e}
+.pf-mrr-axes span{font-size:13px;font-weight:760;color:#987555}
+.pf-mrr-chart{padding:8px 0;background:linear-gradient(180deg,#fff 0%,#fbfdf9 100%);border-radius:12px}
+.pf-mrr-chart svg{min-width:790px;width:100%;height:auto}
+.pf-mrr-chart svg circle{filter:drop-shadow(0px 2px 3px rgba(30,71,48,.14))}
+@media (max-width:710px){
+ .pf-mrr-axes strong{font-size:16px}
+ .pf-mrr-chart svg{min-width:750px}
+}
 /* Source-grounded biography: editorial human history, not avatar decoration. */
 .people-archive{background:#f8faf6;border:1px solid #d8e5d8;border-radius:22px;padding:clamp(22px,2.4vw,42px);margin:25px 0 39px;color:#294837;box-shadow:0 15px 36px rgba(18,52,37,.055)}
 .people-section-head{max-width:1150px;margin-bottom:25px}
@@ -259,6 +366,29 @@
  .hm-video-frame{margin:0 10px}
  .hm-video>p,.hm-video>a{margin-left:14px;margin-right:14px}
  .hm-interpretation p{font-size:14px}
+}
+
+/* Publisher-origin reportage images are hotlinked, not copied into the project.
+ * The separate Commons picture is downloaded with author and CC BY-SA attribution. */
+.hm-press-excerpt{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(280px,1.15fr);gap:0;margin:19px 0 0;border-radius:15px;overflow:hidden;border:1px solid #d7e4d7;background:#fff;max-width:1170px}
+.hm-press-image{display:block;background:#e8eee6;min-height:235px;max-height:360px;overflow:hidden}
+.hm-press-image img{width:100%;height:100%;max-height:360px;min-height:235px;object-fit:contain;display:block}
+.hm-press-excerpt figcaption{padding:clamp(17px,1.9vw,28px);display:flex;flex-direction:column;gap:8px;justify-content:center;min-width:0}
+.hm-press-excerpt .hm-press-eyebrow{font-size:12px;color:#987c56;font-weight:850;letter-spacing:.07em}
+.hm-press-excerpt figcaption strong{font-size:21px;line-height:1.5;color:#244731}
+.hm-press-excerpt figcaption small{font-size:14px;color:#627f69;line-height:1.73}
+.hm-press-excerpt figcaption a{font-weight:800;color:#216947;font-size:14px;margin-top:6px;text-underline-offset:4px}
+.hm-more-reports{margin-top:19px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hm-more-reports>strong{grid-column:1/-1;font-size:15px;color:#43644b}
+.hm-more-reports>a{background:#eff5ee;border-radius:10px;border:1px solid #dbe7da;padding:15px;color:#215f45;font-weight:800;font-size:15px;line-height:1.5;text-decoration:none;display:grid;gap:8px}
+.hm-more-reports>a:hover{border-color:#71a58a;background:#e7f3e8}
+.hm-more-reports a small{font-size:13px;font-weight:450;line-height:1.68;color:#67836f}
+@media(max-width:760px){
+ .hm-press-excerpt{grid-template-columns:1fr}
+ .hm-press-image{min-height:180px;max-height:330px}
+ .hm-press-image img{min-height:180px;max-height:330px}
+ .hm-press-excerpt figcaption{padding:16px}
+ .hm-more-reports{grid-template-columns:1fr}
 }
 </style></head><body><header><a class="site-brand" href="https://star8592.github.io/"><span class="site-mark">¥</span><span>创业调查局<small>真实赚钱故事 · 原始证据</small></span></a><nav><a href="https://star8592.github.io/">所有故事</a><a href="https://star8592.github.io/#company/c-wework">图谱与原始资料</a></nav></header><main><div class="article-lead"><p class="muted">企业档案 / WeWork（2010—2026扩张、破产与重组）</p><h1>WeWork：旧股东归零后，这家公司为什么还活着？</h1><p class="intro">一种真实而令人喜欢的产品，为什么可能变成资本市场最著名的失败案例？WeWork开门时交付的是可负担的共享办公室。到了2018年，收入接近18.22亿美元，却有19.27亿美元税后净亏损；2019年还背着约339.5亿美元已开始租约的未来未折现付款承诺。四年后它申请破产重组，2024年旧股权全部失效。然而在2026年的经营记录里，公司依然有成员和办公室。破产的到底是需求、旧股东，还是旧的融资与成本模型？</p></div><section class="people-archive" aria-label="创始人、管理团队及历史资料"><div class="people-section-head"><span class="people-kicker">PEOPLE / DECISIONS / ARCHIVE</span><h3>是谁做了这些决定？</h3><p>从创始人驱动的激进扩张，到董事会介入、联合CEO过渡、重整后的地产运营型领导。</p></div><div class="people-lead-grid"><figure class="people-hero-image"><a href="https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt_NY_2015_(17172830107)_cropped.jpg" target="_blank" rel="noopener noreferrer" title="核对人物摄影原始页面"><img src="/people-media/adam-neumann-2015.webp" loading="lazy" decoding="async" width="550" height="740" alt="亚当·诺伊曼在2015年的真实新闻摄影" /></a><figcaption><span>真实资料照 · 2015年</span><small>2015年TechCrunch Disrupt资料照，不是2019年IPO申报现场</small></figcaption></figure><div class="people-lead-story"><div class="people-lead-role">关键经营者 · 资料注明身份及年份</div><h4>亚当·诺伊曼</h4><p class="people-lead-english">Adam Neumann</p><p class="people-lead-title">WeWork联合创始人、原CEO；2019年9月卸任CEO</p><p>公司的资本叙事与扩张速度离不开创始人；但损益表与租约是可单独核查的经济事实。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">核对正式职务与履历 ↗</a><div class="people-lead-support"><b>不止一位创始人</b><small>下面是有来源、有准确时间界限的团队成员。没有照片的人不使用AI生成头像。</small></div><div class="people-team-grid"><article class="people-team-member"><div class="people-member-line"><strong>米格尔·麦凯尔维</strong><span>Miguel McKelvey</span></div><div class="people-member-role">WeWork联合创始人，2019年招股书列为首席文化官</div><p>场地设计、企业文化与品牌交付并非Adam一人完成。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">核对该任职资料 ↗</a></article><article class="people-team-member"><div class="people-member-line"><strong>阿蒂·明森</strong><span>Artie Minson</span></div><div class="people-member-role">2019年时任联席总裁兼首席财务官；2019年9月出任联合CEO</div><p>董事会过渡选择财务和运营领导层，对治理与风险控制有直接含义。</p><a href="https://www.wework.com/ideas/newsroom-landing-page/weworks-board-of-directors-announces-leadership-changes" target="_blank" rel="noopener noreferrer">核对该任职资料 ↗</a></article><article class="people-team-member"><div class="people-member-line"><strong>约翰·桑托拉</strong><span>John Santora</span></div><div class="people-member-role">2024年起担任WeWork CEO（公司现行官方介绍）</div><p>长周期办公地产运营背景，与早期创始人高速扩张叙事形成可核验对照。</p><a href="https://www.wework.com/info/wework-leadership-team" target="_blank" rel="noopener noreferrer">核对该任职资料 ↗</a></article></div></div></div><div class="people-subheading"><h4>团队如何更替</h4><p>同一家公司，不同年份的管理职责不能混用。</p></div><ol class="people-era-list"><li class="people-era"><time>2019-08</time><div><strong>申报时的创始人型管理团队</strong><p>IPO文件列出Adam Neumann、Miguel McKelvey、Artie Minson等不同管理职责。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">核对管理资料 ↗</a></div></li><li class="people-era"><time>2019-09-24</time><div><strong>从单一CEO到联合CEO</strong><p>董事会公告：Adam退任CEO；Artie Minson与Sebastian Gunningham过渡管理。</p><a href="https://www.wework.com/ideas/newsroom-landing-page/weworks-board-of-directors-announces-leadership-changes" target="_blank" rel="noopener noreferrer">核对管理资料 ↗</a></div></li><li class="people-era"><time>2024</time><div><strong>重整后新任CEO</strong><p>WeWork公司正式介绍John Santora于2024年加入并出任CEO，拥有商业地产运营背景。</p><a href="https://www.wework.com/info/wework-leadership-team" target="_blank" rel="noopener noreferrer">核对管理资料 ↗</a></div></li></ol><div class="people-subheading"><h4>亲眼看当年的资料</h4><p>真实视频、年报与历史页面仅指向原始出处，不把访谈当作审计证据。</p></div><div class="people-media-grid"><a class="people-media-link" href="https://www.youtube.com/watch?v=Tj25cD9m-zQ" target="_blank" rel="noopener noreferrer"><span class="people-media-kind">▶ 当时影像</span><strong>WeWork官方视频：两位创始人讲述公司文化</strong><small>2018-03-19 · 视频是2018年公司自我呈现，不是对经营数据的独立证实；观看Adam和Miguel如何介绍工作方式。</small><b>打开原始视频 ↗</b></a><a class="people-media-link" href="https://www.wework.com/ideas/newsroom-landing-page/weworks-board-of-directors-announces-leadership-changes" target="_blank" rel="noopener noreferrer"><span class="people-media-kind">▣ 官方公告</span><strong>董事会领导层调整原始公告</strong><small>2019-09-24 · 以当日原始公告核查CEO交接的确切时间、职位与人名。</small><b>打开原始资料 ↗</b></a></div><div class="people-photo-credit">照片：TechCrunch / Max Morse；CC BY 2.5，converted to WebP, max width 760px, aspect ratio preserved。 <a href="https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt_NY_2015_(17172830107)_cropped.jpg" target="_blank" rel="noopener noreferrer">原始照片 ↗</a> · <a href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener noreferrer">许可条款 ↗</a></div></section><section class="visual-proof"><h2>可核查的视觉资料</h2><p>下列材料包括当期原网站资料截取或基于来源数据的原创重绘。请以图注所写的制作、发表日期和权利边界为准；不以截图冒充历史现场。</p><div class="proof-gallery"><figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/wework-sec-2016-2018-revenue-loss-original-chart.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/wework-sec-2016-2018-revenue-loss-original-chart.webp" alt="SEC 2019 S-1的2016、2017、2018全年收入分别为436.1、886.0、1821.8百万美元；GAAP营业亏损分别396.3、931.8、1691.0百万美元，均非净利润或现金流。"><span>查看完整图片 ↗</span></a><figcaption><strong>WeWork 2016—2018 SEC全年营收与营业亏损原始数据原创对照</strong><span>The We Company · 2019-08-14 SEC S-1 · 2026编辑部原创重绘 · 2026-11-15整理</span><small>2026年按2019年SEC原始招股书全年同口径数值原创重绘；不是历史留影，不是SEC原版照片，本站未经独立审计；没有将2019未折现租约承诺或2026私有公司运营指标放在同一财务序列。</small><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure>
 <figure class="evidence-visual"><a class="evidence-image-link" href="/evidence-media/wework-2025-2026-operations-self-report-original-chart.webp" target="_blank" rel="noopener" aria-label="打开本地完整图片"><img loading="lazy" decoding="async" src="/evidence-media/wework-2025-2026-operations-self-report-original-chart.webp" alt="WeWork自报2025约600个运营地点和1900万独立访客；2026上半年存续公司平均使用面积同比增加9.9%，On Demand月均预约数同比增加20.4%。不同统计口径不能相加或推为净利。"><span>查看完整图片 ↗</span></a><figcaption><strong>WeWork重组后会员访问、空间使用与预约的范围界限原创图</strong><span>WeWork官方2025年度会员回顾及2026 H1业务报告 · 2026编辑部原创重绘 · 2026-11-15整理</span><small>2026编辑部根据WeWork 2025年度访客回顾和2026-10-06 H1自报原创重绘；不是历史留影或实拍办公楼；600运营地点不包括2000合作地点，成员增长不能证明2026公司GAAP盈利。</small><a href="https://www.wework.com/ideas/research-insights/business-intelligence-mid-year-snapshot-the-state-of-flex-at-wework" target="_blank" rel="noopener noreferrer">核对原始来源 ↗</a></figcaption></figure></div></section><details class="history-timeline"><summary>展开关键历史时间线（16个节点）</summary><ol><li><time>2010年初</time><div><p>美国纽约154 Grand Street首店开放；具体首位付款成员和首单金额未知。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2014年</time><div><p>公司扩张到伦敦、特拉维夫等海外市场（2019年自述）。</p><a href="https://www.wework.com/newsroom/wecompany" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2015年</time><div><p>联合创始人Miguel接受采访，介绍空间设计和社群体验。</p><a href="https://www.wework.com/ideas/community-stories/employee-spotlight/in-the-moment-with-weworks-miguel-mckelvey" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2016财年</time><div><p>全年收入4.361亿美元，营业亏损3.963亿美元。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2017财年</time><div><p>全年收入8.860亿美元，营业亏损9.318亿美元。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2018财年</time><div><p>全年收入18.218亿美元，营业亏损16.910亿美元。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2019-06-30</time><div><p>公司披露未来经营租约最低付款承诺约339.5亿美元（未折现），不含另131亿美元未起始租约。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2019-08-14</time><div><p>The We Company向SEC公开提交S-1申请，未完成当次IPO。</p><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2023-09-30</time><div><p>WeWork Q3营收7.94亿美元、净亏损8.20亿美元，披露持续经营风险。</p><a href="https://www.sec.gov/Archives/edgar/data/1813756/000181375623000067/wework2023q310q.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2023-11-06</time><div><p>WeWork Inc.及部分子公司申请Chapter 11保护。</p><a href="https://www.sec.gov/Archives/edgar/data/1813756/000149315224023778/form13da.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2024-05-30</time><div><p>法院确认第三次修订的重组计划。</p><a href="https://www.sec.gov/Archives/edgar/data/1813756/000149315224023778/form13da.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2024-06-11</time><div><p>完成重组退出Chapter 11，旧普通股及相关权益注销。</p><a href="https://www.sec.gov/Archives/edgar/data/1813756/000149315224023778/form13da.htm" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2025年</time><div><p>公司自报约600个经营地点、超过1900万独立访客，非经审计财务收入。</p><a href="https://www.wework.com/newsroom/how-the-world-worked-in-2025-new-data-from-weworks-global-member-year-in-review-report-signals-a-permanent-shift-to-flex-for-companies-of-one-or-1000-plus" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2026-02-06</time><div><p>公司宣布第三方合作办公网络约2000个地点，与自有运营地点须分开。</p><a href="https://www.wework.com/newsroom/wework-expands-its-coworking-partner-network-globally-to-2000-locations" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2026-10-06</time><div><p>公司发布2026 H1面积和On Demand会员活动变化，非集团利润。</p><a href="https://www.wework.com/ideas/research-insights/business-intelligence-mid-year-snapshot-the-state-of-flex-at-wework" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li><li><time>2026-11-09</time><div><p>公司宣布亚太区域负责人任命，披露亚太58个地点/8国。</p><a href="https://www.wework.com/newsroom/wework-appoints-ryan-jans-as-apac-president-building-on-regional-momentum" target="_blank" rel="noopener noreferrer">年代与报告主体 · 查看原文</a></div></li></ol></details><section class="era-sources"><h2>时代原始材料：不是后期想象画面</h2><p>以下是来源机构原址。网页快照可以证明彼时页面内容，历史摄制、后期复原和后来回顾各有不同证据等级。我们尚未获得自动下载、转载原始影音的许可，不将素材复制进本站。</p><details><summary>展开7份带年代和出处的原始材料</summary><ol class="era-list"><li><div><strong>2010年 · 首店、早期成员及2016—2018财务原始S-1</strong><p>仅链接原始SEC文件/创始人采访/官网自述。2019报告回顾2010开店，不是2010历史影像；2026本站数据图是现代原创重绘，无未经授权影视再上传。</p><small>美国SEC或WeWork原发布方 · 来源发表/保存：2019-08-14 · RETROSPECTIVE · 未转载原图</small></div><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2015年 · 2015联合创始人Miguel当期采访</strong><p>仅链接原始SEC文件/创始人采访/官网自述。2019报告回顾2010开店，不是2010历史影像；2026本站数据图是现代原创重绘，无未经授权影视再上传。</p><small>美国SEC或WeWork原发布方 · 来源发表/保存：2015 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://www.wework.com/ideas/community-stories/employee-spotlight/in-the-moment-with-weworks-miguel-mckelvey" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2019年 · 2019 S-1原始租约承诺与股权风险</strong><p>仅链接原始SEC文件/创始人采访/官网自述。2019报告回顾2010开店，不是2010历史影像；2026本站数据图是现代原创重绘，无未经授权影视再上传。</p><small>美国SEC或WeWork原发布方 · 来源发表/保存：2019-08-14 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2023年 · 2023三季10-Q持续经营与亏损</strong><p>仅链接原始SEC文件/创始人采访/官网自述。2019报告回顾2010开店，不是2010历史影像；2026本站数据图是现代原创重绘，无未经授权影视再上传。</p><small>美国SEC或WeWork原发布方 · 来源发表/保存：2023 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://www.sec.gov/Archives/edgar/data/1813756/000181375623000067/wework2023q310q.htm" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2024年 · 2024 SEC旧股权注销与继续运营</strong><p>仅链接原始SEC文件/创始人采访/官网自述。2019报告回顾2010开店，不是2010历史影像；2026本站数据图是现代原创重绘，无未经授权影视再上传。</p><small>美国SEC或WeWork原发布方 · 来源发表/保存：2024-06-11 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://www.sec.gov/Archives/edgar/data/1813756/000149315224023778/form13da.htm" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2026年 · 2026 H1会员使用面积与预约公司自报</strong><p>仅链接原始SEC文件/创始人采访/官网自述。2019报告回顾2010开店，不是2010历史影像；2026本站数据图是现代原创重绘，无未经授权影视再上传。</p><small>美国SEC或WeWork原发布方 · 来源发表/保存：2026-10-06 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://www.wework.com/ideas/research-insights/business-intelligence-mid-year-snapshot-the-state-of-flex-at-wework" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li><li><div><strong>2026年 · 2026亚太区域继续经营及58地点官方公告</strong><p>仅链接原始SEC文件/创始人采访/官网自述。2019报告回顾2010开店，不是2010历史影像；2026本站数据图是现代原创重绘，无未经授权影视再上传。</p><small>美国SEC或WeWork原发布方 · 来源发表/保存：2026-11-09 · CONTEMPORANEOUS · 未转载原图</small></div><a href="https://www.wework.com/newsroom/wework-appoints-ryan-jans-as-apac-president-building-on-regional-momentum" target="_blank" rel="noopener noreferrer">到原始存档查看 ↗</a></li></ol></details></section><section class="chapter"><h2>一、2010年：真正交付的是一张桌子，不是抽象的互联网概念</h2><p>2019年S-1回顾，WeWork在2010年初开放纽约154 Grand Street的首个社区，早期成员主要是自由职业者、小公司和初创团队。联合创始人Miguel McKelvey在2015年接受采访时强调，空间的设计感和人与人的连接就是核心卖点；但2010首位付费客户的姓名、具体收费和到账收据并未在这些材料里出现。</p><p class="source">原文依据：<a href="https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm" rel="noopener noreferrer">原始资料／范围核查</a></p></section>
