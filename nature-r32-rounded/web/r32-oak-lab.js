@@ -13,6 +13,8 @@ const param=new URLSearchParams(location.search).get('baseline');
 const baseline=['r29','r30','r31'].includes(param)?param:'r31';
 const refAsset=baseline==='r31'?'r31-oak-arch-baseline.glb.gz':
                baseline==='r30'?'r30-oak-arch-baseline.glb':'r29-oak-arch-baseline.glb';
+document.querySelector('#head-l').textContent=baseline.toUpperCase()+' 基线对照';
+if(baseline==='r31')document.querySelector('#preview').style.display='block';
 for(let i=0;i<2;i++){
  const scene=new THREE.Scene();scene.background=new THREE.Color('#dbe5d4');
  const hemi=new THREE.HemisphereLight(0xdaead0,0x527a59,.67);scene.add(hemi);
