@@ -131,7 +131,7 @@ function loadModel(idx,src){
   }else loader.load(src,onLoaded,undefined,reject);
  });
 }
-Promise.all([loadModel(0,(baseline==='r32'?'../assets/':'/nature-r32-rounded/assets/')+refAsset),
+Promise.all([loadModel(0,baseline==='r32'?'/nature-r32-rounded/assets/oak_arch.glb.gz':'/nature-r32-rounded/assets/'+refAsset),
  loadModel(1,'../assets/oak_arch.glb.gz.parts.json')]).then(()=>{
   ready=true;document.body.dataset.ready='1';
   document.querySelector('#head-l').textContent=baseline.toUpperCase()+' 旧版对照';
