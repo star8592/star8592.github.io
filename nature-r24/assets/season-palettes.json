@@ -1,0 +1,53 @@
+{
+  "summer": {
+    "materials": {
+      "LEAF_SUN": "#9bb45e", "LEAF_MID": "#60854e", "LEAF_SHADE": "#345d4f",
+      "LEAF_GOLD": "#ced17b", "GRASS_BRIGHT": "#96b65b", "GRASS_DARK": "#537c45",
+      "GRASS_GOLD": "#c4bd72", "PETAL_ROSE": "#e0779c",
+      "PETAL_BLUE": "#859ad4", "PETAL_IVORY": "#fff0bc"
+    },
+    "ground": {
+      "grass": "#81a46b", "shade": "#618a59", "path": "#c9b28b",
+      "bank": "#638e80", "water": "#3998ad", "sky": "#adc8b9"
+    },
+    "atmosphere": {
+      "sky_top": "#537f98", "sky_horizon": "#abc8bb",
+      "ground_horizon": "#b3bb99", "ground_bottom": "#587967",
+      "fog": "#dae8d0", "sun": "#fff1cf"
+    }
+  },
+  "autumn": {
+    "materials": {
+      "LEAF_SUN": "#d9a44c", "LEAF_MID": "#ae5f3b", "LEAF_SHADE": "#6a5948",
+      "LEAF_GOLD": "#f1cc77", "GRASS_BRIGHT": "#b0a15b", "GRASS_DARK": "#707448",
+      "GRASS_GOLD": "#d7bd6d", "PETAL_ROSE": "#d07a76",
+      "PETAL_BLUE": "#9a90af", "PETAL_IVORY": "#f6daa0"
+    },
+    "ground": {
+      "grass": "#b9a36e", "shade": "#867956", "path": "#bf956f",
+      "bank": "#89765d", "water": "#558b98", "sky": "#d2ba9f"
+    },
+    "atmosphere": {
+      "sky_top": "#8fa2bf", "sky_horizon": "#efd5b5",
+      "ground_horizon": "#aaa087", "ground_bottom": "#716855",
+      "fog": "#e1c6a7", "sun": "#ffd5a5"
+    }
+  },
+  "winter": {
+    "materials": {
+      "LEAF_SUN": "#d1dedb", "LEAF_MID": "#9baea7", "LEAF_SHADE": "#607c7c",
+      "LEAF_GOLD": "#e5e8d8", "GRASS_BRIGHT": "#b5bfc2", "GRASS_DARK": "#788e8e",
+      "GRASS_GOLD": "#d9ddd5", "PETAL_ROSE": "#dbb7bd",
+      "PETAL_BLUE": "#c7d4e2", "PETAL_IVORY": "#f5f7f0"
+    },
+    "ground": {
+      "grass": "#bbc8c6", "shade": "#9ea8a7", "path": "#d9d5c7",
+      "bank": "#a4c0c0", "water": "#92b9c9", "sky": "#cedbda"
+    },
+    "atmosphere": {
+      "sky_top": "#a7c4d4", "sky_horizon": "#e8f2f4",
+      "ground_horizon": "#b5c4c2", "ground_bottom": "#8c9f9e",
+      "fog": "#d2e0df", "sun": "#f2f6ff"
+    }
+  }
+}
