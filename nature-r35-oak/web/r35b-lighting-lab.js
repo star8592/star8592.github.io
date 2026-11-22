@@ -125,12 +125,20 @@ function loadModel(idx,src){
       const index=await response.json();
       if(!Array.isArray(index.parts)||index.parts.length<1||index.parts.length>16)
         throw new Error('invalid archive part manifest');
+      let receivedParts=0;
       const arrays=await Promise.all(index.parts.map(async name=>{
         if(!/^oak_arch[.]glb[.]gz[.]part[0-9]{2}$/.test(name))
           throw new Error('invalid archive part filename');
         const r=await fetch(new URL(name,new URL(src,location.href)));
         if(!r.ok)throw new Error('GLB part HTTP '+r.status+': '+name);
-        return new Uint8Array(await r.arrayBuffer());
+        const buffer=await r.arrayBuffer();
+        receivedParts++;
+        if(document.body.dataset.ready==='0'){
+          document.querySelector('#status').textContent=
+            '完整高清模型：已下载 '+receivedParts+'/'+index.parts.length+
+            ' 片，正在保留全部三维细节…';
+        }
+        return new Uint8Array(buffer);
       }));
       const size=arrays.reduce((n,a)=>n+a.length,0);
       if(index.compressed_bytes && index.compressed_bytes!==size)
@@ -139,10 +147,12 @@ function loadModel(idx,src){
       arrays.forEach(a=>{merged.set(a,offset);offset+=a.length});
       if(merged[0]!==31||merged[1]!==139)
         throw new Error('invalid gzip GLB archive');
+      document.querySelector('#status').textContent='下载完成，正在无损解压高精度树叶…';
       const data=await new Response(new Blob([merged]).stream()
           .pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
       if(index.raw_bytes&&data.byteLength!==index.raw_bytes)
         throw new Error('wrong 3D model geometry size');
+      document.querySelector('#status').textContent='正在装配三维枝叶和材质…';
       loader.parse(data,new URL('.',new URL(src,location.href)).href,onLoaded,reject);
     }).catch(reject);
   }else if(src.endsWith('.gz')){
