@@ -1,0 +1,784 @@
+{
+  "kit": "Original Stylized Nature R29 / grouped canopy oak study",
+  "version": 29,
+  "license": "Original self-authored geometry (no Fab meshes)",
+  "export_format": "glTF2 GLB",
+  "units": "meters",
+  "up_axis": "Y",
+  "asset_count": 43,
+  "assets": [
+    {
+      "id": "oak_arch",
+      "vertices": 20285,
+      "triangles": 33978,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "WOOD_LIGHT",
+        "LEAF_MID",
+        "LEAF_SHADE",
+        "LEAF_SUN"
+      ],
+      "size_bytes": 1246180,
+      "gltf": "assets/oak_arch.glb",
+      "blend": "sources/oak_arch.blend",
+      "blend_bytes": 1089734,
+      "group": "tree",
+      "seed": 280117,
+      "up_axis": "Y"
+    },
+    {
+      "id": "maple_canopy",
+      "vertices": 13500,
+      "triangles": 22042,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 614400,
+      "gltf": "assets/maple_canopy.glb",
+      "blend": "sources/maple_canopy.blend",
+      "blend_bytes": 735236,
+      "group": "tree",
+      "seed": 12,
+      "up_axis": "Y"
+    },
+    {
+      "id": "birch_airy",
+      "vertices": 10562,
+      "triangles": 17282,
+      "semantic_materials": [
+        "WOOD_LIGHT",
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 483208,
+      "gltf": "assets/birch_airy.glb",
+      "blend": "sources/birch_airy.blend",
+      "blend_bytes": 599319,
+      "group": "tree",
+      "seed": 13,
+      "up_axis": "Y"
+    },
+    {
+      "id": "cedar_fir",
+      "vertices": 33498,
+      "triangles": 51426,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SHADE",
+        "LEAF_GOLD",
+        "LEAF_SUN",
+        "LEAF_MID"
+      ],
+      "size_bytes": 1654260,
+      "gltf": "assets/cedar_fir.glb",
+      "blend": "sources/cedar_fir.blend",
+      "blend_bytes": 1655804,
+      "group": "tree",
+      "seed": 14,
+      "up_axis": "Y"
+    },
+    {
+      "id": "willow_river",
+      "vertices": 4130,
+      "triangles": 6082,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 199236,
+      "gltf": "assets/willow_river.glb",
+      "blend": "sources/willow_river.blend",
+      "blend_bytes": 286513,
+      "group": "tree",
+      "seed": 15,
+      "up_axis": "Y"
+    },
+    {
+      "id": "bush_wide",
+      "vertices": 1312,
+      "triangles": 2080,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SHADE",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID"
+      ],
+      "size_bytes": 67512,
+      "gltf": "assets/bush_wide.glb",
+      "blend": "sources/bush_wide.blend",
+      "blend_bytes": 163410,
+      "group": "bush",
+      "seed": 17,
+      "up_axis": "Y"
+    },
+    {
+      "id": "bush_compact",
+      "vertices": 984,
+      "triangles": 1560,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SHADE",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID"
+      ],
+      "size_bytes": 52280,
+      "gltf": "assets/bush_compact.glb",
+      "blend": "sources/bush_compact.blend",
+      "blend_bytes": 148033,
+      "group": "bush",
+      "seed": 18,
+      "up_axis": "Y"
+    },
+    {
+      "id": "bush_flowers",
+      "vertices": 2046,
+      "triangles": 2676,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SHADE",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "GRASS_DARK",
+        "PETAL_IVORY",
+        "PETAL_ROSE",
+        "LEAF_MID"
+      ],
+      "size_bytes": 104716,
+      "gltf": "assets/bush_flowers.glb",
+      "blend": "sources/bush_flowers.blend",
+      "blend_bytes": 187783,
+      "group": "bush",
+      "seed": 19,
+      "up_axis": "Y"
+    },
+    {
+      "id": "grass_short",
+      "vertices": 120,
+      "triangles": 60,
+      "semantic_materials": [
+        "GRASS_BRIGHT",
+        "GRASS_DARK"
+      ],
+      "size_bytes": 7576,
+      "gltf": "assets/grass_short.glb",
+      "blend": "sources/grass_short.blend",
+      "blend_bytes": 108960,
+      "group": "ground",
+      "seed": 23,
+      "up_axis": "Y"
+    },
+    {
+      "id": "grass_tall",
+      "vertices": 252,
+      "triangles": 126,
+      "semantic_materials": [
+        "GRASS_BRIGHT",
+        "GRASS_DARK"
+      ],
+      "size_bytes": 13264,
+      "gltf": "assets/grass_tall.glb",
+      "blend": "sources/grass_tall.blend",
+      "blend_bytes": 112730,
+      "group": "ground",
+      "seed": 24,
+      "up_axis": "Y"
+    },
+    {
+      "id": "river_reeds",
+      "vertices": 1008,
+      "triangles": 1296,
+      "semantic_materials": [
+        "GRASS_BRIGHT",
+        "GRASS_GOLD",
+        "GRASS_DARK"
+      ],
+      "size_bytes": 51616,
+      "gltf": "assets/river_reeds.glb",
+      "blend": "sources/river_reeds.blend",
+      "blend_bytes": 147187,
+      "group": "ground",
+      "seed": 25,
+      "up_axis": "Y"
+    },
+    {
+      "id": "flower_pink",
+      "vertices": 905,
+      "triangles": 940,
+      "semantic_materials": [
+        "GRASS_DARK",
+        "PETAL_ROSE",
+        "PETAL_IVORY"
+      ],
+      "size_bytes": 45408,
+      "gltf": "assets/flower_pink.glb",
+      "blend": "sources/flower_pink.blend",
+      "blend_bytes": 136473,
+      "group": "ground",
+      "seed": 26,
+      "up_axis": "Y"
+    },
+    {
+      "id": "flower_blue",
+      "vertices": 905,
+      "triangles": 940,
+      "semantic_materials": [
+        "GRASS_DARK",
+        "PETAL_BLUE",
+        "PETAL_IVORY"
+      ],
+      "size_bytes": 45408,
+      "gltf": "assets/flower_blue.glb",
+      "blend": "sources/flower_blue.blend",
+      "blend_bytes": 137618,
+      "group": "ground",
+      "seed": 27,
+      "up_axis": "Y"
+    },
+    {
+      "id": "flower_ivory",
+      "vertices": 905,
+      "triangles": 940,
+      "semantic_materials": [
+        "GRASS_DARK",
+        "PETAL_IVORY"
+      ],
+      "size_bytes": 44320,
+      "gltf": "assets/flower_ivory.glb",
+      "blend": "sources/flower_ivory.blend",
+      "blend_bytes": 137567,
+      "group": "ground",
+      "seed": 28,
+      "up_axis": "Y"
+    },
+    {
+      "id": "fern_fronds",
+      "vertices": 950,
+      "triangles": 600,
+      "semantic_materials": [
+        "GRASS_DARK",
+        "LEAF_GOLD",
+        "LEAF_MID"
+      ],
+      "size_bytes": 45160,
+      "gltf": "assets/fern_fronds.glb",
+      "blend": "sources/fern_fronds.blend",
+      "blend_bytes": 132902,
+      "group": "ground",
+      "seed": 29,
+      "up_axis": "Y"
+    },
+    {
+      "id": "mushroom_cluster",
+      "vertices": 594,
+      "triangles": 858,
+      "semantic_materials": [
+        "FUNGUS_CREAM",
+        "FUNGUS_RED"
+      ],
+      "size_bytes": 31380,
+      "gltf": "assets/mushroom_cluster.glb",
+      "blend": "sources/mushroom_cluster.blend",
+      "blend_bytes": 131970,
+      "group": "ground",
+      "seed": 30,
+      "up_axis": "Y"
+    },
+    {
+      "id": "boulder",
+      "vertices": 144,
+      "triangles": 240,
+      "semantic_materials": [
+        "STONE_WARM",
+        "STONE_LIGHT",
+        "STONE_SHADE"
+      ],
+      "size_bytes": 33800,
+      "gltf": "assets/boulder.glb",
+      "blend": "sources/boulder.blend",
+      "blend_bytes": 119470,
+      "group": "stone",
+      "seed": 31,
+      "up_axis": "Y"
+    },
+    {
+      "id": "moss_boulder",
+      "vertices": 224,
+      "triangles": 368,
+      "semantic_materials": [
+        "STONE_WARM",
+        "MOSS",
+        "STONE_LIGHT",
+        "STONE_SHADE"
+      ],
+      "size_bytes": 51016,
+      "gltf": "assets/moss_boulder.glb",
+      "blend": "sources/moss_boulder.blend",
+      "blend_bytes": 123587,
+      "group": "stone",
+      "seed": 32,
+      "up_axis": "Y"
+    },
+    {
+      "id": "river_rocks",
+      "vertices": 336,
+      "triangles": 560,
+      "semantic_materials": [
+        "STONE_WARM",
+        "STONE_LIGHT",
+        "STONE_SHADE"
+      ],
+      "size_bytes": 74124,
+      "gltf": "assets/river_rocks.glb",
+      "blend": "sources/river_rocks.blend",
+      "blend_bytes": 128382,
+      "group": "stone",
+      "seed": 33,
+      "up_axis": "Y"
+    },
+    {
+      "id": "flat_slabs",
+      "vertices": 240,
+      "triangles": 400,
+      "semantic_materials": [
+        "STONE_WARM",
+        "STONE_LIGHT",
+        "STONE_SHADE"
+      ],
+      "size_bytes": 53888,
+      "gltf": "assets/flat_slabs.glb",
+      "blend": "sources/flat_slabs.blend",
+      "blend_bytes": 124612,
+      "group": "stone",
+      "seed": 34,
+      "up_axis": "Y"
+    },
+    {
+      "id": "cliff_outcrop",
+      "vertices": 450,
+      "triangles": 736,
+      "semantic_materials": [
+        "STONE_WARM",
+        "MOSS",
+        "STONE_LIGHT",
+        "STONE_SHADE"
+      ],
+      "size_bytes": 97380,
+      "gltf": "assets/cliff_outcrop.glb",
+      "blend": "sources/cliff_outcrop.blend",
+      "blend_bytes": 132639,
+      "group": "stone",
+      "seed": 35,
+      "up_axis": "Y"
+    },
+    {
+      "id": "fallen_log",
+      "vertices": 64,
+      "triangles": 68,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "GRASS_DARK",
+        "MOSS"
+      ],
+      "size_bytes": 6476,
+      "gltf": "assets/fallen_log.glb",
+      "blend": "sources/fallen_log.blend",
+      "blend_bytes": 116803,
+      "group": "stone",
+      "seed": 36,
+      "up_axis": "Y"
+    },
+    {
+      "id": "tree_stump",
+      "vertices": 181,
+      "triangles": 212,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "WOOD_LIGHT"
+      ],
+      "size_bytes": 10968,
+      "gltf": "assets/tree_stump.glb",
+      "blend": "sources/tree_stump.blend",
+      "blend_bytes": 121176,
+      "group": "stone",
+      "seed": 37,
+      "up_axis": "Y"
+    },
+    {
+      "id": "footbridge",
+      "vertices": 214,
+      "triangles": 256,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "WOOD_LIGHT"
+      ],
+      "size_bytes": 12548,
+      "gltf": "assets/footbridge.glb",
+      "blend": "sources/footbridge.blend",
+      "blend_bytes": 121377,
+      "group": "prop",
+      "seed": 38,
+      "up_axis": "Y"
+    },
+    {
+      "id": "waystone",
+      "vertices": 70,
+      "triangles": 112,
+      "semantic_materials": [
+        "STONE_WARM",
+        "STONE_LIGHT"
+      ],
+      "size_bytes": 16576,
+      "gltf": "assets/waystone.glb",
+      "blend": "sources/waystone.blend",
+      "blend_bytes": 117781,
+      "group": "prop",
+      "seed": 39,
+      "up_axis": "Y"
+    },
+    {
+      "id": "oak_leaning",
+      "vertices": 19662,
+      "triangles": 32178,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 892164,
+      "gltf": "assets/oak_leaning.glb",
+      "blend": "sources/oak_leaning.blend",
+      "blend_bytes": 1038312,
+      "group": "tree",
+      "seed": 101,
+      "up_axis": "Y"
+    },
+    {
+      "id": "oak_ancient",
+      "vertices": 19662,
+      "triangles": 32178,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 892168,
+      "gltf": "assets/oak_ancient.glb",
+      "blend": "sources/oak_ancient.blend",
+      "blend_bytes": 1038587,
+      "group": "tree",
+      "seed": 102,
+      "up_axis": "Y"
+    },
+    {
+      "id": "maple_low",
+      "vertices": 13500,
+      "triangles": 22042,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 614384,
+      "gltf": "assets/maple_low.glb",
+      "blend": "sources/maple_low.blend",
+      "blend_bytes": 749115,
+      "group": "tree",
+      "seed": 103,
+      "up_axis": "Y"
+    },
+    {
+      "id": "maple_high",
+      "vertices": 13500,
+      "triangles": 22042,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 614392,
+      "gltf": "assets/maple_high.glb",
+      "blend": "sources/maple_high.blend",
+      "blend_bytes": 749582,
+      "group": "tree",
+      "seed": 104,
+      "up_axis": "Y"
+    },
+    {
+      "id": "birch_twin",
+      "vertices": 10562,
+      "triangles": 17282,
+      "semantic_materials": [
+        "WOOD_LIGHT",
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 483208,
+      "gltf": "assets/birch_twin.glb",
+      "blend": "sources/birch_twin.blend",
+      "blend_bytes": 611774,
+      "group": "tree",
+      "seed": 105,
+      "up_axis": "Y"
+    },
+    {
+      "id": "fir_dense",
+      "vertices": 33498,
+      "triangles": 51426,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SHADE",
+        "LEAF_GOLD",
+        "LEAF_SUN",
+        "LEAF_MID"
+      ],
+      "size_bytes": 1654264,
+      "gltf": "assets/fir_dense.glb",
+      "blend": "sources/fir_dense.blend",
+      "blend_bytes": 1667689,
+      "group": "tree",
+      "seed": 106,
+      "up_axis": "Y"
+    },
+    {
+      "id": "fir_sapling",
+      "vertices": 33498,
+      "triangles": 51426,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SHADE",
+        "LEAF_GOLD",
+        "LEAF_SUN",
+        "LEAF_MID"
+      ],
+      "size_bytes": 1654272,
+      "gltf": "assets/fir_sapling.glb",
+      "blend": "sources/fir_sapling.blend",
+      "blend_bytes": 1668354,
+      "group": "tree",
+      "seed": 107,
+      "up_axis": "Y"
+    },
+    {
+      "id": "willow_swept",
+      "vertices": 4130,
+      "triangles": 6082,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID",
+        "LEAF_SHADE"
+      ],
+      "size_bytes": 199240,
+      "gltf": "assets/willow_swept.glb",
+      "blend": "sources/willow_swept.blend",
+      "blend_bytes": 300290,
+      "group": "tree",
+      "seed": 108,
+      "up_axis": "Y"
+    },
+    {
+      "id": "bush_berry",
+      "vertices": 2046,
+      "triangles": 2676,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SHADE",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "GRASS_DARK",
+        "PETAL_IVORY",
+        "PETAL_ROSE",
+        "LEAF_MID"
+      ],
+      "size_bytes": 104716,
+      "gltf": "assets/bush_berry.glb",
+      "blend": "sources/bush_berry.blend",
+      "blend_bytes": 197575,
+      "group": "bush",
+      "seed": 109,
+      "up_axis": "Y"
+    },
+    {
+      "id": "bush_dry",
+      "vertices": 984,
+      "triangles": 1560,
+      "semantic_materials": [
+        "WOOD_DARK",
+        "LEAF_SHADE",
+        "LEAF_SUN",
+        "LEAF_GOLD",
+        "LEAF_MID"
+      ],
+      "size_bytes": 52276,
+      "gltf": "assets/bush_dry.glb",
+      "blend": "sources/bush_dry.blend",
+      "blend_bytes": 160950,
+      "group": "bush",
+      "seed": 110,
+      "up_axis": "Y"
+    },
+    {
+      "id": "wild_grass_spray",
+      "vertices": 252,
+      "triangles": 126,
+      "semantic_materials": [
+        "GRASS_BRIGHT",
+        "GRASS_DARK"
+      ],
+      "size_bytes": 13276,
+      "gltf": "assets/wild_grass_spray.glb",
+      "blend": "sources/wild_grass_spray.blend",
+      "blend_bytes": 121360,
+      "group": "ground",
+      "seed": 111,
+      "up_axis": "Y"
+    },
+    {
+      "id": "sedge_river",
+      "vertices": 1008,
+      "triangles": 1296,
+      "semantic_materials": [
+        "GRASS_BRIGHT",
+        "GRASS_GOLD",
+        "GRASS_DARK"
+      ],
+      "size_bytes": 51616,
+      "gltf": "assets/sedge_river.glb",
+      "blend": "sources/sedge_river.blend",
+      "blend_bytes": 154456,
+      "group": "ground",
+      "seed": 112,
+      "up_axis": "Y"
+    },
+    {
+      "id": "flowering_aster",
+      "vertices": 905,
+      "triangles": 940,
+      "semantic_materials": [
+        "GRASS_DARK",
+        "PETAL_BLUE",
+        "PETAL_IVORY"
+      ],
+      "size_bytes": 45412,
+      "gltf": "assets/flowering_aster.glb",
+      "blend": "sources/flowering_aster.blend",
+      "blend_bytes": 143873,
+      "group": "ground",
+      "seed": 113,
+      "up_axis": "Y"
+    },
+    {
+      "id": "golden_daisy",
+      "vertices": 905,
+      "triangles": 940,
+      "semantic_materials": [
+        "GRASS_DARK",
+        "PETAL_IVORY"
+      ],
+      "size_bytes": 44320,
+      "gltf": "assets/golden_daisy.glb",
+      "blend": "sources/golden_daisy.blend",
+      "blend_bytes": 143949,
+      "group": "ground",
+      "seed": 114,
+      "up_axis": "Y"
+    },
+    {
+      "id": "granite_cluster",
+      "vertices": 144,
+      "triangles": 240,
+      "semantic_materials": [
+        "STONE_WARM",
+        "STONE_LIGHT",
+        "STONE_SHADE"
+      ],
+      "size_bytes": 33812,
+      "gltf": "assets/granite_cluster.glb",
+      "blend": "sources/granite_cluster.blend",
+      "blend_bytes": 120421,
+      "group": "stone",
+      "seed": 115,
+      "up_axis": "Y"
+    },
+    {
+      "id": "slate_outcrop",
+      "vertices": 450,
+      "triangles": 736,
+      "semantic_materials": [
+        "STONE_WARM",
+        "MOSS",
+        "STONE_LIGHT",
+        "STONE_SHADE"
+      ],
+      "size_bytes": 97376,
+      "gltf": "assets/slate_outcrop.glb",
+      "blend": "sources/slate_outcrop.blend",
+      "blend_bytes": 133157,
+      "group": "stone",
+      "seed": 116,
+      "up_axis": "Y"
+    },
+    {
+      "id": "river_pebble_mix",
+      "vertices": 336,
+      "triangles": 560,
+      "semantic_materials": [
+        "STONE_WARM",
+        "STONE_LIGHT",
+        "STONE_SHADE"
+      ],
+      "size_bytes": 74132,
+      "gltf": "assets/river_pebble_mix.glb",
+      "blend": "sources/river_pebble_mix.blend",
+      "blend_bytes": 128338,
+      "group": "stone",
+      "seed": 117,
+      "up_axis": "Y"
+    },
+    {
+      "id": "fern_shade",
+      "vertices": 950,
+      "triangles": 600,
+      "semantic_materials": [
+        "GRASS_DARK",
+        "LEAF_GOLD",
+        "LEAF_MID"
+      ],
+      "size_bytes": 45156,
+      "gltf": "assets/fern_shade.glb",
+      "blend": "sources/fern_shade.blend",
+      "blend_bytes": 139278,
+      "group": "ground",
+      "seed": 118,
+      "up_axis": "Y"
+    }
+  ],
+  "engine_targets": [
+    "Godot 4",
+    "Three.js"
+  ]
+}
