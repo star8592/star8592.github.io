@@ -1,0 +1,41 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R35 · 橡树高清实机对照</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}
+body{margin:0;background:#f1f2ea;color:#233d32;font:15px system-ui,-apple-system,sans-serif}
+header{padding:48px max(24px,calc((100vw - 1150px)/2));background:linear-gradient(125deg,#203b32,#405c44);color:#f7f7e8}
+header small{letter-spacing:.18em;color:#d0dec1}
+h1{font-size:clamp(28px,4vw,43px);margin:13px 0 8px}
+header p{max-width:750px;line-height:1.7;color:#e0e9d9;margin:0}
+main{max-width:1150px;margin:34px auto;padding:0 24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+article{background:white;border:1px solid #d5dfd0;border-radius:16px;overflow:hidden;box-shadow:0 9px 28px #1c44320c}
+article img{display:block;width:100%;aspect-ratio:1.58;object-fit:cover;background:#dce6d5}
+article section{padding:21px}
+article h2{font-size:22px;margin:0 0 8px}
+article p{line-height:1.65;color:#52685b;min-height:70px;margin:0 0 19px}
+a.primary{display:inline-block;background:#244b39;color:white;padding:12px 17px;border-radius:8px;text-decoration:none;font-weight:650}
+a.primary:hover{background:#3e6849}
+.more{max-width:1150px;margin:0 auto 40px;padding:0 24px 24px}
+.more a{color:#315f48;margin-right:22px}
+footer{text-align:center;padding:20px;background:#e5e9df;color:#576657;font-size:13px}
+@media(max-width:740px){main{grid-template-columns:1fr}header{padding:30px 22px}article p{min-height:0}}
+</style></head><body>
+<header><small>修仙2D · 高精度树木实验室</small>
+<h1>R35 橡树：把叶子做真实，再让光穿过去</h1>
+<p>两组由真实 Three.js + Blender 几何运行的 A/B 测试。下方均为实际浏览器截图，不是 AI 概念图。点击后可以同步旋转两棵树、放大近看枝叶，也可切换树冠俯视。</p>
+</header>
+<main>
+<article><img src="r35a-tree.png" alt="R34-L与R35-A相同面数橡树的真实实机对照">
+<section><h2>R35-A · 圆润叶缘</h2>
+<p>左右均为 8,330,954 面，枝干、叶片数量、机位和光照不变。只改变每片橡叶的裂片凹口与曲面轮廓。</p>
+<a class="primary" href="web/r35a-oak-lab.html">打开模型几何 A/B</a></section></article>
+<article><img src="r35b-lighting.png" alt="同一棵橡树在原版与加强轮廓光下的真实画面">
+<section><h2>R35-B · 真实光影</h2>
+<p>左右共用同一份 833 万面三维网格，只改变真实灯光与阴影配置。可对比背光枝叶、树冠内部深度。</p>
+<a class="primary" href="web/r35b-lighting-lab.html">打开树冠光影 A/B</a></section></article>
+</main>
+<div class="more"><b>实机局部：</b> <a href="r35a-detail.png">R35-A 叶片近景</a>
+<a href="r35b-detail.png">R35-B 光照近景</a><a href="r35b-crown.png">R35-B 树冠俯视</a></div>
+<footer>独立高清原型，不改变正式森林；首次进入三维需下载完整模型，请使用桌面浏览器。</footer>
+</body></html>
