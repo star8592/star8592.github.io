@@ -1,0 +1,98 @@
+{
+  "summer": {
+    "materials": {
+      "LEAF_SUN": "#a6c278",
+      "LEAF_MID": "#668f61",
+      "LEAF_SHADE": "#426952",
+      "LEAF_GOLD": "#bbc67a",
+      "GRASS_BRIGHT": "#9fc274",
+      "GRASS_DARK": "#5e8f62",
+      "GRASS_GOLD": "#c4bd72",
+      "PETAL_ROSE": "#e0779c",
+      "PETAL_BLUE": "#859ad4",
+      "PETAL_IVORY": "#fff0bc",
+      "WOOD_DARK": "#77634d",
+      "WOOD_LIGHT": "#c9c0ad"
+    },
+    "ground": {
+      "grass": "#68a27a",
+      "shade": "#39755d",
+      "path": "#b9ae8a",
+      "bank": "#4c7d67",
+      "water": "#42847e",
+      "sky": "#b2d4ce"
+    },
+    "atmosphere": {
+      "sky_top": "#75b0bb",
+      "sky_horizon": "#d8e9c9",
+      "ground_horizon": "#d8e9c9",
+      "ground_bottom": "#6c9683",
+      "fog": "#d7e8d5",
+      "sun": "#fff1cf"
+    }
+  },
+  "autumn": {
+    "materials": {
+      "LEAF_SUN": "#d9a44c",
+      "LEAF_MID": "#ae5f3b",
+      "LEAF_SHADE": "#6a5948",
+      "LEAF_GOLD": "#f1cc77",
+      "GRASS_BRIGHT": "#b0a15b",
+      "GRASS_DARK": "#707448",
+      "GRASS_GOLD": "#d7bd6d",
+      "PETAL_ROSE": "#d07a76",
+      "PETAL_BLUE": "#9a90af",
+      "PETAL_IVORY": "#f6daa0",
+      "WOOD_DARK": "#82664c",
+      "WOOD_LIGHT": "#d3bea5"
+    },
+    "ground": {
+      "grass": "#b49d67",
+      "shade": "#78795b",
+      "path": "#b89a7a",
+      "bank": "#8d8165",
+      "water": "#637f78",
+      "sky": "#dec6b1"
+    },
+    "atmosphere": {
+      "sky_top": "#91a4b7",
+      "sky_horizon": "#e8d2b1",
+      "ground_horizon": "#e8d2b1",
+      "ground_bottom": "#716855",
+      "fog": "#e9ddc7",
+      "sun": "#ffd5a5"
+    }
+  },
+  "winter": {
+    "materials": {
+      "LEAF_SUN": "#d1dedb",
+      "LEAF_MID": "#9baea7",
+      "LEAF_SHADE": "#607c7c",
+      "LEAF_GOLD": "#e5e8d8",
+      "GRASS_BRIGHT": "#b5bfc2",
+      "GRASS_DARK": "#788e8e",
+      "GRASS_GOLD": "#d9ddd5",
+      "PETAL_ROSE": "#dbb7bd",
+      "PETAL_BLUE": "#c7d4e2",
+      "PETAL_IVORY": "#f5f7f0",
+      "WOOD_DARK": "#71695d",
+      "WOOD_LIGHT": "#d4d5ca"
+    },
+    "ground": {
+      "grass": "#b7c7c5",
+      "shade": "#89a0a4",
+      "path": "#d6d2bd",
+      "bank": "#9db8b7",
+      "water": "#7c9eaa",
+      "sky": "#d7e6e8"
+    },
+    "atmosphere": {
+      "sky_top": "#9dbbcf",
+      "sky_horizon": "#e4edf0",
+      "ground_horizon": "#e4edf0",
+      "ground_bottom": "#8c9f9e",
+      "fog": "#e4edf0",
+      "sun": "#f2f6ff"
+    }
+  }
+}
