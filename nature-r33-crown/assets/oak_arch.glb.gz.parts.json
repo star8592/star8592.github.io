@@ -1,0 +1,12 @@
+{
+  "format": "gzip-parted-glb",
+  "parts": [
+    "oak_arch.glb.gz.part00",
+    "oak_arch.glb.gz.part01",
+    "oak_arch.glb.gz.part02"
+  ],
+  "compressed_bytes": 99517922,
+  "raw_bytes": 175812252,
+  "triangles": 4431090,
+  "sha256": "eb340758de72031760c24c4d40988f96d141643b230ea137d0b9d11777c12981"
+}
