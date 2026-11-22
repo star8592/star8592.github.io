@@ -1,5 +1,5 @@
 {
-  "kit": "Original Stylized Nature R30 / high-detail individual oak leaf study",
+  "kit": "Original Stylized Nature R30 / high-detail individual leaves",
   "version": 30,
   "license": "Original self-authored geometry (no Fab meshes)",
   "export_format": "glTF2 GLB",
@@ -9,20 +9,20 @@
   "assets": [
     {
       "id": "oak_arch",
-      "vertices": 346677,
-      "triangles": 620562,
+      "vertices": 336807,
+      "triangles": 572470,
       "semantic_materials": [
         "WOOD_DARK",
         "WOOD_LIGHT",
-        "LEAF_SHADE",
         "LEAF_MID",
+        "LEAF_SHADE",
         "LEAF_GOLD",
         "LEAF_SUN"
       ],
-      "size_bytes": 25879440,
+      "size_bytes": 19357032,
       "gltf": "assets/oak_arch.glb",
       "blend": "sources/oak_arch.blend",
-      "blend_bytes": 18845400,
+      "blend_bytes": 16311904,
       "group": "tree",
       "seed": 280117,
       "up_axis": "Y"

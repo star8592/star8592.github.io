@@ -59,7 +59,8 @@ W.addEventListener('resize',()=>renderer.setSize(innerWidth,innerHeight));
 const loader=new THREE.GLTFLoader();
 function loadModel(idx,src){
  return new Promise((resolve,reject)=>{
-  loader.load(src,gltf=>{
+  let tries=0;
+  const attempt=()=>loader.load(src,gltf=>{
     const root=gltf.scene;
     let meshCount=0,triangles=0;
     root.traverse(o=>{
@@ -85,7 +86,14 @@ function loadModel(idx,src){
     scenes[idx].add(root);
     models[idx]={meshCount,triangles};
     resolve();
-  },undefined,reject);
+  },undefined,err=>{
+    if(tries++<3){
+      document.querySelector('#status').textContent=
+        'CDN暂时无法读取 '+src.split('/').pop()+'，重试 '+tries+'/3…';
+      setTimeout(attempt,350*2**(tries-1));
+    }else reject(err);
+  });
+  attempt();
  });
 }
 Promise.all([loadModel(0,'../assets/r29-oak-arch-baseline.glb'),
