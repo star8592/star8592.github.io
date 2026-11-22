@@ -1,0 +1,4 @@
+Three.js source files three.min.js and GLTFLoader.js
+Copyright (c) 2010-2026 three.js authors
+MIT License https://github.com/mrdoob/three.js/blob/master/LICENSE
+Vendored for local headless/standalone demo testing; not original forest art.
