@@ -4,6 +4,22 @@
 (async function(){
 "use strict";
 const status=document.getElementById("status");
+// GitHub Pages/CDN occasionally returns transient 503s on cold requests.
+let retries=0;
+async function fetchJsonRetry(url,label){
+ for(let attempt=0;attempt<4;attempt++){
+  try{
+   const response=await fetch(url,{cache:"default"});
+   if(!response.ok)throw Error(label+" HTTP "+response.status);
+   return await response.json();
+  }catch(e){
+   if(attempt===3)throw Error(label+" retry-exhausted: "+e.message);
+   retries++;
+   status.textContent=label+" 网络暂时不稳定，重试 "+(attempt+1)+"/3…";
+   await new Promise(done=>setTimeout(done,350*2**attempt));
+  }
+ }
+}
 const params=new URLSearchParams(location.search);
 const catalogMode=params.get("mode")==="catalog";
 if(params.has("capture"))document.body.classList.add("capture");
@@ -125,10 +141,7 @@ for(let i=0;i<30;i++){
 }
 clouds.instanceMatrix.needsUpdate=true;scene.add(clouds);
 
-const allPalettes=await fetch("../assets/season-palettes.json").then(r=>{
- if(!r.ok)throw Error("Cannot load shared palettes "+r.status);
- return r.json();
-});
+const allPalettes=await fetchJsonRetry("../assets/season-palettes.json","季节配色");
 const P=Object.fromEntries(Object.entries(allPalettes).map(([season,cfg])=>[season,cfg.materials]));
 const COLORS=Object.fromEntries(Object.entries(allPalettes).map(([season,cfg])=>[season,cfg.ground]));
 const smooth=(a,b,x)=>{const t=Math.max(0,Math.min(1,(x-a)/(b-a)));return t*t*(3-2*t);};
@@ -486,8 +499,8 @@ function addCatalogLabels(){
 }
 async function loadPack(){
  const [lay,man]=await Promise.all([
-  fetch("../assets/layout.json").then(r=>{if(!r.ok)throw Error("layout HTTP "+r.status);return r.json()}),
-  fetch("../assets/manifest.json").then(r=>{if(!r.ok)throw Error("manifest HTTP "+r.status);return r.json()})
+  fetchJsonRetry("../assets/layout.json","场景布局"),
+  fetchJsonRetry("../assets/manifest.json","模型清单")
  ]);
  layout=lay;manifest=man;
  if(catalogMode){
@@ -499,26 +512,36 @@ async function loadPack(){
  }
  const loader=new THREE.GLTFLoader();
  const one=asset=>new Promise((resolve,reject)=>{
-  loader.load("../"+asset.gltf,gltf=>{
-   const submeshes=[];
-   gltf.scene.updateMatrixWorld(true);
-   gltf.scene.traverse(o=>{if(o.isMesh)submeshes.push(o);});
-   if(!submeshes.length)return reject(Error("No mesh "+asset.id));
-   submeshes.forEach((mesh,i)=>{
-     buildInstances(asset,layout.placements,mesh.geometry,mesh.material,i,mesh.matrixWorld);
+  const attemptLoad=(attempt)=>{
+   loader.load("../"+asset.gltf,gltf=>{
+    const submeshes=[];
+    gltf.scene.updateMatrixWorld(true);
+    gltf.scene.traverse(o=>{if(o.isMesh)submeshes.push(o);});
+    if(!submeshes.length)return reject(Error("No mesh "+asset.id));
+    submeshes.forEach((mesh,i)=>{
+      buildInstances(asset,layout.placements,mesh.geometry,mesh.material,i,mesh.matrixWorld);
+    });
+    loadedAssets++;
+    status.textContent=loadedAssets+" / "+manifest.asset_count+" 类 · "+layout.placements.length+" 株实例";
+    resolve(asset.id);
+   },undefined,err=>{
+    if(attempt>=3)return reject(Error(asset.id+" retry-exhausted: "+err.message));
+    retries++;
+    status.textContent="正在重试模型 "+asset.id+" ("+(attempt+1)+"/3)";
+    setTimeout(()=>attemptLoad(attempt+1),350*2**attempt);
    });
-   console.log("R23_MODEL_SURFACES",asset.id,submeshes.length);
-   loadedAssets++;
-   status.textContent=loadedAssets+" / "+manifest.asset_count+" 类 · "+layout.placements.length+" 株实例";
-   resolve(asset.id);
-  },undefined,err=>reject(Error(asset.id+": "+err.message)));
+  };
+  attemptLoad(0);
  });
- await Promise.all(man.assets.map(one));
+ // Avoid a single burst of 43 GLB HTTP requests against static hosting.
+ const pending=man.assets.slice();
+ const worker=async()=>{while(pending.length)await one(pending.shift());};
+ await Promise.all(Array.from({length:Math.min(6,man.assets.length)},worker));
  addCatalogLabels();
  status.textContent="原创 GLB "+loadedAssets+" 类 · "+layout.placements.length+" 实例 · "+season.toUpperCase();
  document.body.dataset.ready="1";
  console.log("R23_WEB_SCENE_READY models="+loadedAssets+" submeshes="+renderGroups+" instances="+layout.placements.length+" season="+season);
- window.__R23_STATUS={models:loadedAssets,submeshes:renderGroups,instances:layout.placements.length,season};
+ window.__R23_STATUS={models:loadedAssets,submeshes:renderGroups,instances:layout.placements.length,season,retries};
 }
 function seasonChange(next){
  season=next;
@@ -675,7 +698,8 @@ function render(){
   camera:camera.position.toArray().map(x=>Number(x.toFixed(3))),
   models:loadedAssets,
   instances:layout?.placements.length||0,
-  season
+  season,
+  retries
  };
  updateFX(t);
  for(const sh of windShaders){
@@ -688,5 +712,9 @@ function render(){
 }
 render();
 try{await loadPack();}
-catch(err){status.textContent="资源加载失败："+err.message;console.error(err);document.body.dataset.ready="error";}
+catch(err){
+ status.textContent="加载失败："+err.message+"。请刷新重试。";
+ document.body.dataset.ready="error";
+ console.error("R25_SCENE_UNRECOVERABLE",err);
+}
 })();
