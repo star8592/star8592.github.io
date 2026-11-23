@@ -1,0 +1,12 @@
+{
+  "format": "gzip-parted-glb",
+  "parts": [
+    "birch_airy.r39.glb.gz.part00",
+    "birch_airy.r39.glb.gz.part01",
+    "birch_airy.r39.glb.gz.part02"
+  ],
+  "compressed_bytes": 77833892,
+  "compressed_sha256": "beac6fdb5c2baede596a07cb434af2ffd55d6ba38d73278e53eaed708861ede0",
+  "raw_bytes": 156657800,
+  "raw_sha256": "7f442030603c7566034a187f0ba1af49f4a36a3279814107ada748a8881234c1"
+}

@@ -1,0 +1,12 @@
+{
+  "format": "gzip-parted-glb",
+  "parts": [
+    "cedar_fir.r39.glb.gz.part00",
+    "cedar_fir.r39.glb.gz.part01",
+    "cedar_fir.r39.glb.gz.part02"
+  ],
+  "compressed_bytes": 106070834,
+  "compressed_sha256": "f0383f6946e97562c887642e966ed78220f7c9d4e2cf199d977cea4f1099ac92",
+  "raw_bytes": 191354420,
+  "raw_sha256": "6c2a1e33e1c59012c21a8d7156aa0aeeeda13625c6f0663af0878fa25cee7925"
+}
