@@ -1,0 +1,54 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,"><title>R37 · 枫树自然生长重构实机</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f5ee;color:#263d2f;font:15px/1.7 system-ui,-apple-system,sans-serif}
+header{padding:50px max(22px,calc((100vw - 1050px)/2));background:linear-gradient(115deg,#1b3028,#496544);color:#eff5e8}
+small{color:#d1e3c5;font-weight:650;letter-spacing:.12em}
+h1{font-size:clamp(28px,4vw,47px);line-height:1.23;margin:12px 0}
+header p{max-width:890px;color:#d6e5d4;margin:0}
+main{max-width:1090px;margin:30px auto;padding:0 20px 40px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+article{border:1px solid #d9e1d6;border-radius:13px;background:#fff;padding:15px;overflow:hidden}
+article img{width:100%;height:auto;display:block;border-radius:7px;background:#dae7d5}
+h2{font-size:20px;margin:15px 3px 7px}
+article p{margin:0 3px 13px;color:#596b5f}
+button,.button{display:inline-block;background:#28503a;color:white;border:none;padding:11px 17px;border-radius:8px;text-decoration:none;font-weight:600;font:inherit;cursor:pointer}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.note{padding:21px;background:#e7ecdf;border-radius:12px;color:#475948}
+.note strong{color:#243c2a}
+footer{text-align:center;padding:18px;color:#6b7b6a}
+@media(max-width:720px){.grid{grid-template-columns:1fr}header{padding:34px 20px}main{margin:14px auto}}
+</style></head><body>
+<header>
+<small>修仙2D · 真实三维美术实验 R37</small>
+<h1>从“挂满叶子的枝架”改成真正生长的树</h1>
+<p>本轮放弃规则放射式树枝建模，改用树冠吸引点驱动的分枝生长、逐级枝干粗细以及成片但并不相同的五裂枫叶。下面是相同灯光和相机的<strong>真实浏览器截图</strong>，不是AI概念图。</p>
+</header>
+<main>
+<div class="grid">
+<article>
+<img src="r37-maple-growth-v2-ab.png" alt="左R36机械扇形枫树，右R37真实生长结构枫树，同光照浏览器实机比较">
+<h2>R36 vs R37 · 树木结构改变</h2>
+<p>左边依旧是固定放射状树枝，右边是独立生长的枝条与五裂叶片。左右可以同步旋转与放大近景。</p>
+<a class="button" href="web/r37-growth-lab.html?model=maple_canopy">查看可操作3D A/B</a>
+</article>
+<article>
+<img src="r37-maple-growth-closeup.png" alt="R37五裂三维叶片与真实细枝近景浏览器截图">
+<h2>近景 · 分枝与叶片</h2>
+<p>重点检查枝条连接、叶片体积、疏密交错和遮挡。没有把“树冠球”作为背景模型。</p>
+<a class="button" href="r37-maple-growth-closeup.png">打开真实近景截图</a>
+</article>
+</div>
+<div class="row">
+<a class="button" href="r37-maple-growth-side.png">查看侧面实机</a>
+<a class="button" href="r37-maple-growth-v1-ab.png">查看第一轮原型</a>
+<a class="button" href="https://star8592.github.io/nature-r36-models/">对照 R36 其他模型</a>
+</div>
+<div class="note">
+<strong>当前状态：生长算法验证成功，但美术还未终验。</strong>
+R37 枫树现在约244万三角面，而R36约101万面；这一轮改善来自主枝生长结构和自然树冠层次，而不是面数本身。顶部轮廓仍稍像修剪过的伞形树，下一步继续消除这种人工感。独立工作区，正式森林完全没有被覆盖。
+</div>
+</main>
+<footer>真实 Blender 3D模型、Chrome WebGL三维及可编辑源工程。首次打开互动页面会载入完整模型。</footer>
+</body></html>
