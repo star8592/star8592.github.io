@@ -1,0 +1,72 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>R36 · 修仙2D多模型高清并行实验</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}
+body{margin:0;background:#f5f5f0;color:#21392e;font:15px/1.7 system-ui,-apple-system,sans-serif}
+header{background:linear-gradient(130deg,#192f2a,#354d3b 72%,#576b4b);color:#f5f4ea;padding:49px max(24px,calc((100vw - 1220px)/2))}
+small{letter-spacing:.15em;text-transform:uppercase;color:#bcd1b2;font-weight:600}
+h1{font-size:clamp(30px,4vw,48px);letter-spacing:-.03em;margin:13px 0 8px}
+header p{max-width:850px;color:#dce6d8;margin:0;font-size:16px}
+nav{display:flex;gap:12px;margin-top:25px;flex-wrap:wrap}
+nav a{color:#e4eee0;text-decoration:none;border:1px solid #a0b59a7e;border-radius:80px;padding:6px 14px}
+main{max-width:1240px;margin:auto;padding:26px 24px 58px}
+.heading{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #d5dcd1;padding:14px 0 10px;margin:16px 0 22px;gap:12px}
+.heading h2{font-size:24px;margin:0;letter-spacing:-.02em}
+.heading span{color:#768576;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+article{border:1px solid #e0e5dc;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 8px 23px #26452c0a}
+article img{display:block;width:100%;aspect-ratio:1.70;object-fit:cover;background:#dce6d6}
+article .inside{padding:20px 23px 22px}
+.eyebrow{font-size:12px;color:#78917b;letter-spacing:.06em;font-weight:700}
+article h3{font-size:21px;letter-spacing:-.02em;margin:2px 0 9px}
+article p{color:#536858;margin:0 0 13px;min-height:47px}
+figcaption{font-size:13px;color:#728372;margin:0 0 16px}
+.action{display:inline-block;background:#254b36;border-radius:8px;color:#fff;padding:9px 16px;text-decoration:none;font-weight:600}
+.action:hover{background:#386449}
+.more{margin-left:13px;color:#355a42;font-weight:600;text-decoration:none;font-size:13px}
+.water{border:1px solid #dde4dc;background:#fff;padding:18px;border-radius:14px}
+.water img{display:block;width:100%;height:auto;border-radius:6px}
+.water p{margin:12px 4px 0;color:#4e6454}
+footer{text-align:center;border-top:1px solid #dce0d6;padding:22px;color:#687968}
+@media(max-width:740px){.grid{grid-template-columns:1fr}header{padding:31px 21px}main{padding:20px 14px}article p{min-height:0}.heading span{display:none}}
+</style></head><body>
+<header><small>修仙2D · 原生三维模型工厂 / R36</small>
+<h1>不止橡树，整个世界开始生长</h1>
+<p>枫树、白桦、冷杉与四种岩石已经独立重新建模；河流水面同步升级。全部使用可编辑三维几何与程序化材质，以下图片来自真实浏览器和 Godot 实机，而不是概念图。左边是原版，右边是新的高清实验模型。</p>
+<nav><a href="#forest">三维树木</a><a href="#rocks">岩石地形</a><a href="#river">动态河流</a><a href="https://star8592.github.io/nature-r35-oak/">回看 R35 橡树</a></nav>
+</header>
+<main>
+<div class="heading" id="forest"><h2>01 / 其他树种</h2><span>独立叶片、真实枝梢、无球形叶团</span></div>
+<div class="grid">
+<article><img src="web/preview/maple_canopy.png" alt="原枫树与高清新枫树真实3D截图"><div class="inside">
+<div class="eyebrow">MAPLE / 三维掌状叶</div><h3>枫树</h3>
+<p>重新设计掌状裂片、中央叶脉与弯曲叶面，并将叶冠补充为多层真实枝梢。</p>
+<figcaption>22,042 → 1,015,144 三角面</figcaption>
+<a class="action" href="web/r36-model-lab.html?model=maple_canopy">查看真实三维 A/B</a><a class="more" href="images/maple_canopy-detail.png">叶片近景</a></div></article>
+<article><img src="web/preview/birch_airy.png" alt="原白桦与高清新白桦的三维截图"><div class="inside">
+<div class="eyebrow">BIRCH / 细叶与树皮</div><h3>白桦</h3>
+<p>改造亮色主干与真实树皮裂痕，枝端挂接小型弯曲叶片并保留枝间透光。</p>
+<figcaption>17,282 → 1,261,964 三角面</figcaption>
+<a class="action" href="web/r36-model-lab.html?model=birch_airy">查看真实三维 A/B</a><a class="more" href="images/birch_airy-detail.png">树冠近景</a></div></article>
+<article><img src="web/preview/cedar_fir.png" alt="原针叶树与高清新冷杉真实截图"><div class="inside">
+<div class="eyebrow">CONIFER / 真实针叶层级</div><h3>冷杉</h3>
+<p>放弃球形叶团，以细小枝梢和独立立体针叶建立层层下垂的树冠。</p>
+<figcaption>51,426 → 604,804 三角面</figcaption>
+<a class="action" href="web/r36-model-lab.html?model=cedar_fir">查看真实三维 A/B</a><a class="more" href="images/cedar_fir-detail.png">针叶近景</a></div></article>
+</div>
+<div class="heading" id="rocks"><h2>02 / 石头与地貌</h2><span>真三维风化表面、断裂节理、苔茎</span></div>
+<div class="grid">
+<article><img src="web/preview/boulder.png" alt="原巨石和新巨石模型真实浏览器截图"><div class="inside"><div class="eyebrow">BOULDER</div><h3>不规则巨石</h3><p>由简陋块体升级为不对称岩面，加入真实起伏与细裂纹。</p><figcaption>240 → 11,352 三角面</figcaption><a class="action" href="web/r36-model-lab.html?model=boulder">查看真实三维 A/B</a><a class="more" href="images/boulder-detail.png">细部</a></div></article>
+<article><img src="web/preview/moss_boulder.png" alt="原苔石和新苔石3D截图"><div class="inside"><div class="eyebrow">MOSS ROCK</div><h3>苔石</h3><p>多层风化岩石上生长实际微型苔茎，而非绿色贴片。</p><figcaption>368 → 13,632 三角面</figcaption><a class="action" href="web/r36-model-lab.html?model=moss_boulder">查看真实三维 A/B</a><a class="more" href="images/moss_boulder-detail.png">细部</a></div></article>
+<article><img src="web/preview/cliff_outcrop.png" alt="悬崖露头岩层真实模型比较"><div class="inside"><div class="eyebrow">CLIFF</div><h3>崖壁露头</h3><p>多块风化地层相互叠压，存在真实体积和纵向节理。</p><figcaption>736 → 26,060 三角面</figcaption><a class="action" href="web/r36-model-lab.html?model=cliff_outcrop">查看真实三维 A/B</a><a class="more" href="images/cliff_outcrop-detail.png">细部</a></div></article>
+<article><img src="web/preview/river_rocks.png" alt="河滩石新版三维模型比较"><div class="inside"><div class="eyebrow">RIVER STONES</div><h3>河滩石</h3><p>不同大小的水磨石与柔化棱角，为河岸细节打底。</p><figcaption>560 → 30,272 三角面</figcaption><a class="action" href="web/r36-model-lab.html?model=river_rocks">查看真实三维 A/B</a><a class="more" href="images/river_rocks-detail.png">细部</a></div></article>
+</div>
+<div class="heading" id="river"><h2>03 / 河流与程序化水面</h2><span>Godot 4.7.2 真实渲染</span></div>
+<div class="water">
+<img src="images/water-ab.png" alt="相同镜头下原版河流和R36程序化水体的Godot实际渲染比较">
+<p>在保持原河道路径不变的基础上，将河面网格从 2,400 提升到 14,400 三角面，加入三层真实顶点波动、流向细纹和岸边泡沫。这里是实机渲染截图，不是浏览器三维试玩；水体与岩石接触的艺术效果仍在精修。</p>
+</div>
+</main><footer>R36 是隔离美术实验。其余正式资源、游戏森林及现有 R35 橡树不被覆盖。未进行最终美术审定或真实显卡性能验收。</footer>
+</body></html>
