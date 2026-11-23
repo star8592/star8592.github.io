@@ -1,0 +1,29 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R41 真实垂柳 · R40严格A/B</title><link rel="icon" href="data:,">
+<style>
+*{box-sizing:border-box}body{margin:0;overflow:hidden;background:#dce5d6;color:#213b32;font:14px system-ui}
+canvas{display:block;width:100vw;height:100vh}
+#firstpaint{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;z-index:1;background:#dce5d6;pointer-events:none;display:none}
+body[data-ready="1"] #firstpaint{display:none!important}
+#header{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:3;background:#f1f6eae8;border:1px solid #b7cdb5;border-radius:11px;padding:9px 17px;min-width:310px;text-align:center;backdrop-filter:blur(8px)}
+#header b{display:block;font-size:16px}#header button{border:1px solid #9caf9d;background:#f3faf1;border-radius:5px;padding:5px 9px;color:#254333;cursor:pointer}
+#left,#right{position:fixed;top:102px;z-index:3;background:#f1f6e9e8;border-radius:8px;padding:7px 12px;font-weight:bold}
+#left{left:5%}#right{left:55%}
+#status{position:fixed;bottom:15px;left:15px;z-index:4;padding:9px 12px;background:#f1f6e9e8;border-radius:8px}
+#help{position:fixed;bottom:15px;right:15px;z-index:3;padding:9px;background:#f1f6e9d9;border-radius:8px}
+#split{position:fixed;top:0;left:50%;height:100%;width:2px;background:#284b3988;pointer-events:none}
+@media(max-width:720px){#header{top:6px;width:94%;font-size:11px}#header b{font-size:13px}#left,#right{top:105px;font-size:11px;padding:4px}#status,#help{font-size:10px}}
+</style></head><body data-ready="0">
+<img id="firstpaint" alt="真实 Chrome/WebGL 实机截图；模型加载完成后才出现交互">
+<div id="header"><b>R36 其他模型 · 真实几何 A/B</b><span id="desc">左右同相机、同光照；R36旧树 vs R39自然生长</span>
+<div><button onclick="window.r36Pose?.('front')">正面</button>
+<button onclick="window.r36Pose?.('side')">侧面</button>
+<button onclick="window.r36Pose?.('top')">俯视</button>
+<button onclick="window.r36Pose?.('detail')">近景</button></div></div>
+<div id="left">R37伞形冠</div><div id="right">R38自然树冠</div>
+<div id="status">正在读取真实三维模型…</div>
+<div id="help">鼠标拖动同步旋转 · 滚轮缩放</div><div id="split"></div>
+<script src="vendor/three.min.js"></script><script src="vendor/GLTFLoader.js"></script>
+<script src="r41-willow-lab.js"></script>
+</body></html>
