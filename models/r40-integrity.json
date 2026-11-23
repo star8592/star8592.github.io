@@ -1,0 +1,156 @@
+{
+  "willow_river": {
+    "group": "willow",
+    "base": {
+      "bytes": 199236,
+      "sha256": "66e966805a287c7b414f41183d5f03006ac9e5097f0dbd57d1316ab34d43e2e5"
+    },
+    "r40": {
+      "bytes": 27164504,
+      "sha256": "5ce086a9e5419377476822b7a035b13054878f8a4561a24ec5d7a6872c509bcc"
+    }
+  },
+  "willow_swept": {
+    "group": "willow",
+    "base": {
+      "bytes": 199240,
+      "sha256": "8c6086849908d0cff9ca9410cc7469ae16465ba49023f15a652859a5bfc424d5"
+    },
+    "r40": {
+      "bytes": 25517668,
+      "sha256": "695648df2b6e4d26440da4b22fa1eee91c0e9098c94eac574ef991455e29b764"
+    }
+  },
+  "bush_wide": {
+    "group": "shrub",
+    "base": {
+      "bytes": 67512,
+      "sha256": "fe7845317d4d77ee58734f62d5885ec71abada3addb96b400f3e71b047fcd473"
+    },
+    "r40": {
+      "bytes": 6015680,
+      "sha256": "404fb4dc95600a35b9509777e9b6f69922fed264a1fe43d3b72348fd2a41297d"
+    }
+  },
+  "bush_compact": {
+    "group": "shrub",
+    "base": {
+      "bytes": 52280,
+      "sha256": "a9eabd777ad1e685ab191e6aed238b8c3d1c65e6ae237cf5ea50fa6802108e6e"
+    },
+    "r40": {
+      "bytes": 3997256,
+      "sha256": "3ccd5533f1b03d7427bf17834cb1b239d7f20e7e7650df11008ca72e50dd104a"
+    }
+  },
+  "bush_flowers": {
+    "group": "shrub",
+    "base": {
+      "bytes": 104716,
+      "sha256": "aded34b813bc540ff84a1ef1f6276f4039f9af1b5e3160e0c2d253d344a81534"
+    },
+    "r40": {
+      "bytes": 5215824,
+      "sha256": "81db75bd8f9ed28638544c3477a29e53cd7dc0adfb7e33db5965e1993696b5bb"
+    }
+  },
+  "bush_berry": {
+    "group": "shrub",
+    "base": {
+      "bytes": 104716,
+      "sha256": "00d6430c1a64b3588b454c2897e15f01e009de85a2ec38b8a77fff2c697a0b54"
+    },
+    "r40": {
+      "bytes": 4014396,
+      "sha256": "8d8ba081fab9b09527886107cd570f37d54f84c309b3b2bf00f38c32a62418aa"
+    }
+  },
+  "bush_dry": {
+    "group": "shrub",
+    "base": {
+      "bytes": 52276,
+      "sha256": "5c45333b5577e2f656976a73c8d6e8e9e0fcf15e0e7ed5e13ebd6cfc97c5db5e"
+    },
+    "r40": {
+      "bytes": 1015440,
+      "sha256": "d1456b7da70e12bd3c1218dce3e3b1bd34dd7b328b3bee3af5bdd88ee9000a53"
+    }
+  },
+  "fern_fronds": {
+    "group": "ground",
+    "base": {
+      "bytes": 45160,
+      "sha256": "427a4c0cd5cb06d4c75e299aa0cf5a33f9e0c947d9b08b1941e848e45b5b34d3"
+    },
+    "r40": {
+      "bytes": 1636680,
+      "sha256": "114b30c684c70b07e2dc2a2f1395e4e8d50cfab1b5887ab3e21f77341041fdcd"
+    }
+  },
+  "fern_shade": {
+    "group": "ground",
+    "base": {
+      "bytes": 45156,
+      "sha256": "3643716d33383524b73b6e9467c8424dc2472c124d1190ac3c1d4603284a9005"
+    },
+    "r40": {
+      "bytes": 1404848,
+      "sha256": "b9243feaf98847fe44f20f62007c579cb7d0d4e112884e3108ef35ce8eb4d2bb"
+    }
+  },
+  "grass_short": {
+    "group": "ground",
+    "base": {
+      "bytes": 7576,
+      "sha256": "79ab2bbaa00b70255b84d4a7fc95917707b522fe3b104e57d87538a219436e5f"
+    },
+    "r40": {
+      "bytes": 421936,
+      "sha256": "10d1733af038df921605c1ba301cf2bcc9c73c8a592f2d9b98ab52a43c0fafaa"
+    }
+  },
+  "grass_tall": {
+    "group": "ground",
+    "base": {
+      "bytes": 13264,
+      "sha256": "23c8432f187757995a08b4d676b4056efc252055bdcb31aa4998f4bb773042e8"
+    },
+    "r40": {
+      "bytes": 390060,
+      "sha256": "19c91dd17544bad1247de42e781aa83035cf8098bf1ee157554481820529ea03"
+    }
+  },
+  "wild_grass_spray": {
+    "group": "ground",
+    "base": {
+      "bytes": 13276,
+      "sha256": "3019eca69ac73828ae877fd80eb0251e2bf3b049203954f1b1444d5565b9e184"
+    },
+    "r40": {
+      "bytes": 417956,
+      "sha256": "b7327cb4aa1096b7dba717ba73e6165805217891d106b0cf1549f30413600071"
+    }
+  },
+  "river_reeds": {
+    "group": "ground",
+    "base": {
+      "bytes": 51616,
+      "sha256": "cc76e95acc502c9698b8c6c3102ef9e196f6407f0dd36049f4a78cb172236af0"
+    },
+    "r40": {
+      "bytes": 661396,
+      "sha256": "c04a7b30478aa934711243638ff971557edc264123d0c62e0e57559d06e8f189"
+    }
+  },
+  "sedge_river": {
+    "group": "ground",
+    "base": {
+      "bytes": 51616,
+      "sha256": "22027415e0519f6042a2c83a82a085aa1cbe36c0a5df60f247452d12128bdbea"
+    },
+    "r40": {
+      "bytes": 647196,
+      "sha256": "a9f0a02e0b3fff9686f0d3ddea4eeaebaf17135b5af90f24b27e906ddc5a36c7"
+    }
+  }
+}
