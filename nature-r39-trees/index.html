@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>R39 · 白桦与冷杉自然树形实机对照</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}
+body{margin:0;background:#f1f4ed;color:#263e34;font:15px/1.7 system-ui,-apple-system,sans-serif}
+header{padding:46px max(22px,calc((100vw - 1170px)/2));background:linear-gradient(123deg,#20392e,#47624c);color:#eef7e9}
+header small{color:#bcd9ba;font-weight:700;letter-spacing:.14em}h1{font-size:clamp(30px,4vw,47px);line-height:1.24;margin:13px 0}
+header p{max-width:970px;margin:0;color:#d9e8d5}
+main{max-width:1200px;margin:32px auto;padding:0 20px 50px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+article{background:white;border:1px solid #d6dfd1;border-radius:14px;overflow:hidden;box-shadow:0 8px 26px #183a2410}
+article img{display:block;width:100%;aspect-ratio:1.6;object-fit:cover;background:#dce4d9}
+article section{padding:21px}
+h2{font-size:24px;margin:0 0 7px}p{margin:0 0 16px;color:#59705f}
+a.primary{display:inline-block;padding:11px 17px;background:#2a513b;color:white;border-radius:8px;text-decoration:none;font-weight:700}
+a.ghost{display:inline-block;padding:10px;color:#325c42;text-decoration:none}
+.row{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}
+.code{color:#7a907f;font-size:12px;font-weight:700;letter-spacing:.09em}
+footer{max-width:1200px;margin:0 auto 35px;padding:20px;color:#57695c;border-top:1px solid #cfd9cb}
+footer strong{color:#294a36}
+@media(max-width:740px){.grid{grid-template-columns:1fr}main{padding:0 14px;margin:18px auto}header{padding:30px 20px}article section{padding:17px}}
+</style></head><body>
+<header><small>修仙 2D · R39 自然生长美术实验</small><h1>把自然树形推广到白桦和冷杉</h1>
+<p>继 R38 枫树后，重新制作了两种关键树木：白桦不再是规则向外插枝，冷杉不再是一摞均匀的针叶圆盘。下面所有画面均来自真实 Blender 模型在 Chrome / WebGL 中的 A/B 实机截图。左侧旧模型，右侧新模型。</p></header>
+<main><div class="grid">
+<article><img src="web/preview/birch_airy.png" alt="R36与R39白桦真实三维效果对照">
+<section><div class="code">R39 / BETULA · BIRCH</div><h2>白桦 · 悬垂细枝</h2>
+<p>白色细长主干、多条向上竞争的分枝轴、逐段下垂的小枝、真实锯齿形卵状叶和几何树皮裂痕。</p>
+<p>R36 126 万面 → R39 375 万面。重点验收细枝下垂是否自然、树冠是否留有透光空隙。</p>
+<a class="primary" href="web/r39-natural-lab.html?model=birch_airy">打开白桦三维 A/B</a>
+<div class="row"><a class="ghost" href="images/birch-close.png">枝叶近景</a><a class="ghost" href="images/birch-side.png">树冠侧视</a></div>
+</section></article>
+<article><img src="web/preview/cedar_fir.png" alt="R36与R39冷杉真实三维效果对照">
+<section><div class="code">R39 / ABIES · FIR</div><h2>冷杉 · 自然枝层</h2>
+<p>不规则分布的主枝、带重力挠度的枝梢、细分枝上的独立立体针叶；第二次实机调整增加了树冠内部覆盖。</p>
+<p>R36 60 万面 → R39 456 万面。重点验收主枝暴露、针叶层次和整体锥形轮廓。</p>
+<a class="primary" href="web/r39-natural-lab.html?model=cedar_fir">打开冷杉三维 A/B</a>
+<div class="row"><a class="ghost" href="images/fir-close.png">针叶近景</a><a class="ghost" href="images/fir-rejected-v1.png">首版失败对比</a><a class="ghost" href="images/fir-side.png">侧视</a></div>
+</section></article>
+</div></main>
+<footer><strong>说明：</strong>两棵树都处于隔离原型阶段。可加载、可旋转与美术自然不是同一个验收指标，最终自然性仍需结合真实森林环境检查。没有覆盖正式森林，也没有声称真实 RTX 显卡的 FPS 已通过。<div class="row"><a class="ghost" href="https://star8592.github.io/nature-r38-maple/">返回 R38 枫树</a><a class="ghost" href="https://star8592.github.io/nature-r36-models/">查看 R36 全模型</a></div></footer></body></html>
