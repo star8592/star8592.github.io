@@ -1,0 +1,11 @@
+{
+  "format": "gzip-parted-glb",
+  "parts": [
+    "willow_river.r42.glb.gz.part00",
+    "willow_river.r42.glb.gz.part01"
+  ],
+  "compressed_bytes": 57737506,
+  "compressed_sha256": "5135bb1c549bac965c29e2d72fb944a4ca80bfed5b9681a6c85400124595ce9e",
+  "raw_bytes": 105823680,
+  "raw_sha256": "7a3c2735403261dcb7889f16144327df1c894cf2a69ed0b7a85278ae3ebda47e"
+}

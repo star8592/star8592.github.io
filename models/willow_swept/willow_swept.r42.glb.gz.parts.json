@@ -1,0 +1,11 @@
+{
+  "format": "gzip-parted-glb",
+  "parts": [
+    "willow_swept.r42.glb.gz.part00",
+    "willow_swept.r42.glb.gz.part01"
+  ],
+  "compressed_bytes": 55677108,
+  "compressed_sha256": "9cae9ea56acbf4968b93f00e0a4e21b2cc0a0d3818483a040ff6a718816a4381",
+  "raw_bytes": 102076064,
+  "raw_sha256": "6367d0e0ec5d44034e5275a14786dd02fe35f24e0f8bec22e53e1767268e9b5e"
+}
