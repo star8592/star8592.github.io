@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
+<meta name="theme-color" content="#193529"><title>R42 实机 · 垂柳自然下垂 A/B</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5ed;color:#263e30;font:15px/1.7 system-ui,-apple-system,sans-serif}
+header{background:linear-gradient(130deg,#142d24,#355a40 68%,#5e8063);color:#f4f6e9;padding:54px max(22px,calc((100vw - 1120px)/2))}
+header small{letter-spacing:.12em;color:#c7e4c8;font-weight:700}h1{font-size:clamp(28px,4.1vw,51px);line-height:1.18;margin:14px 0}header p{color:#e1efdc;max-width:820px}
+main{max-width:1160px;margin:31px auto;padding:0 18px 42px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+article,.metrics{background:white;border:1px solid #dbe4d3;border-radius:12px;overflow:hidden;box-shadow:0 9px 22px #2036270c}
+article img{display:block;width:100%;aspect-ratio:1.70;object-fit:cover}article section{padding:21px}h2{margin:0 0 8px;font-size:24px}p{margin:8px 0 14px;color:#59715d}
+a.cta{display:inline-block;background:#335a41;color:white;text-decoration:none;font-weight:700;padding:10px 15px;border-radius:8px}
+.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}.links a,footer a{color:#3e6950;text-decoration:none}
+.metrics{padding:21px;margin-top:20px;overflow-x:auto}table{width:100%;border-collapse:collapse}td,th{padding:11px 10px;text-align:left;border-bottom:1px solid #e3e9de}td:nth-child(n+2),th:nth-child(n+2){text-align:right}
+.note{margin-top:19px;background:#e7eee2;border:1px solid #d6e0d0;border-radius:10px;padding:16px 19px;color:#526e57}
+footer{text-align:center;color:#6b806d;margin:25px auto;font-size:13px}@media(max-width:735px){.grid{grid-template-columns:1fr}header{padding:35px 20px}main{padding:0 13px 32px}}
+</style></head><body>
+<header><small>修仙2D · 原生几何植物实验 · R42</small><h1>让柳枝像柳丝，而不是一整面绿墙。</h1>
+<p>R41 建立了真实长垂枝；R42 进一步修正主枝挂点、枝梢重力弯曲、不同高度的叶幕间隙与二级柔枝。左右两侧均是 Blender 生成的完整 GLB，通过 Chrome WebGL 实际加载和截屏，不用贴图、看板或绿色体块。</p></header>
+<main><div class="grid">
+<article><img src="web/preview/willow_river.png" alt="河岸垂柳 R41 与 R42 真实三维截图对比">
+<section><h2>河岸垂柳</h2><p>左侧 R41，右侧 R42。重点看从树冠高处落向地面的柳丝、叶间透光、非等距枝梢和疏密不均的外轮廓。</p>
+<a class="cta" href="web/r42-willow-lab.html?model=willow_river">打开 3D 旋转 / 拉近 A/B</a>
+<div class="links"><a href="images/willow_river-detail.png">细枝与叶片近景</a><a href="images/willow_river-side.png">侧视完整截图</a></div>
+</section></article>
+<article><img src="web/preview/willow_swept.png" alt="斜生垂柳 R41 与 R42 三维截图对比">
+<section><h2>斜生垂柳</h2><p>保留树干倾斜和非对称树冠；柳条的弧度、长短和朝向不再简单复制成圆筒状叶帘。</p>
+<a class="cta" href="web/r42-willow-lab.html?model=willow_swept">打开 3D 旋转 / 拉近 A/B</a>
+<div class="links"><a href="images/willow_swept-detail.png">细枝与叶片近景</a><a href="images/willow_swept-side.png">侧视完整截图</a></div>
+</section></article></div>
+<div class="metrics"><h2>可复验的模型数据</h2><table><thead><tr><th>指标</th><th>R42 河岸垂柳</th><th>R42 斜生垂柳</th></tr></thead><tbody>
+<tr><td>悬垂细枝</td><td>796 条</td><td>763 条</td></tr>
+<tr><td>独立三维柳叶</td><td>24,586 片</td><td>23,721 片</td></tr>
+<tr><td>最大枝条下垂</td><td>6.33m</td><td>6.22m</td></tr>
+<tr><td>平均枝条下垂</td><td>4.21m</td><td>3.85m</td></tr>
+<tr><td>枝梢低于 1.45m</td><td>54.1%</td><td>54.9%</td></tr>
+<tr><td>三角面</td><td>3,104,852</td><td>2,994,862</td></tr>
+</tbody></table></div>
+<div class="note"><b>验收边界：</b>R42 为隔离植物实验；未覆盖正式森林。Chrome WebGL 截图与加载已通过，但风动、河岸水体接触、完整 HD-2D 光照及真实 RTX 帧率尚未完成最终美术验收。完整形态由浏览器现载的 GLB 几何组成，图像只是实机证据。</div>
+<footer><a href="https://star8592.github.io/nature-r41-willow/">R41 保留版</a> · <a href="https://star8592.github.io/nature-r40-plants/">R40 植物库</a></footer></main></body></html>
