@@ -1,0 +1,128 @@
+{
+  "willow_river": {
+    "name": "垂柳",
+    "description": "交错上升的主枝，细枝自然悬垂。6,554 片独立柳叶，不再有绿色球团。",
+    "group": "柳树与河岸乔木",
+    "old_triangles": 6082,
+    "new_triangles": 806320,
+    "detail": "images/willow_river-detail.png",
+    "side": "images/willow_river-side.png"
+  },
+  "willow_swept": {
+    "name": "斜柳",
+    "description": "不同方向的枝梢与柳条，保留树冠透光空隙。",
+    "group": "柳树与河岸乔木",
+    "old_triangles": 6082,
+    "new_triangles": 760906,
+    "detail": "images/willow_swept-detail.png",
+    "side": "images/willow_swept-side.png"
+  },
+  "bush_wide": {
+    "name": "阔叶灌木",
+    "description": "真正多级枝干、不同高低的叶层，不使用绿色几何球。",
+    "group": "灌木与野花",
+    "old_triangles": 2080,
+    "new_triangles": 212376,
+    "detail": "images/bush_wide-detail.png",
+    "side": "images/bush_wide-side.png"
+  },
+  "bush_compact": {
+    "name": "矮生灌木",
+    "description": "低矮丛生，多枝互相穿插并保留内侧枝条。",
+    "group": "灌木与野花",
+    "old_triangles": 1560,
+    "new_triangles": 140744,
+    "detail": "images/bush_compact-detail.png",
+    "side": "images/bush_compact-side.png"
+  },
+  "bush_flowers": {
+    "name": "开花灌木",
+    "description": "花瓣和花心均为三维几何，花朵长在真实枝端。",
+    "group": "灌木与野花",
+    "old_triangles": 2676,
+    "new_triangles": 183056,
+    "detail": "images/bush_flowers-detail.png",
+    "side": "images/bush_flowers-side.png"
+  },
+  "bush_berry": {
+    "name": "浆果灌木",
+    "description": "果实悬挂于分枝末端，浆果与叶片分开建模。",
+    "group": "灌木与野花",
+    "old_triangles": 2676,
+    "new_triangles": 140166,
+    "detail": "images/bush_berry-detail.png",
+    "side": "images/bush_berry-side.png"
+  },
+  "bush_dry": {
+    "name": "旱生灌木",
+    "description": "局部落叶与裸露枝干，不再整体均匀铺满绿色。",
+    "group": "灌木与野花",
+    "old_triangles": 1560,
+    "new_triangles": 34788,
+    "detail": "images/bush_dry-detail.png",
+    "side": "images/bush_dry-side.png"
+  },
+  "fern_fronds": {
+    "name": "羽状蕨叶",
+    "description": "真实羽状小叶和弯曲叶轴，蕨叶从根部逐渐展开。",
+    "group": "蕨类、草丛与湿地",
+    "old_triangles": 600,
+    "new_triangles": 59018,
+    "detail": "images/fern_fronds-detail.png",
+    "side": "images/fern_fronds-side.png"
+  },
+  "fern_shade": {
+    "name": "阴生蕨",
+    "description": "更低矮的林下形态，带有不同生长期的叶轴。",
+    "group": "蕨类、草丛与湿地",
+    "old_triangles": 600,
+    "new_triangles": 50634,
+    "detail": "images/fern_shade-detail.png",
+    "side": "images/fern_shade-side.png"
+  },
+  "grass_short": {
+    "name": "短草丛",
+    "description": "草叶厚度、叶脊和自然弯折都由网格生成。",
+    "group": "蕨类、草丛与湿地",
+    "old_triangles": 60,
+    "new_triangles": 15120,
+    "detail": "images/grass_short-detail.png",
+    "side": "images/grass_short-side.png"
+  },
+  "grass_tall": {
+    "name": "高草丛",
+    "description": "不等长度的弧形草叶，多簇交织生长。",
+    "group": "蕨类、草丛与湿地",
+    "old_triangles": 126,
+    "new_triangles": 13968,
+    "detail": "images/grass_tall-detail.png",
+    "side": "images/grass_tall-side.png"
+  },
+  "wild_grass_spray": {
+    "name": "野草",
+    "description": "不同倾斜、叶宽与高低，让草丛摆脱机械整齐。",
+    "group": "蕨类、草丛与湿地",
+    "old_triangles": 126,
+    "new_triangles": 14976,
+    "detail": "images/wild_grass_spray-detail.png",
+    "side": "images/wild_grass_spray-side.png"
+  },
+  "river_reeds": {
+    "name": "河岸芦苇",
+    "description": "真实茎秆、叶片和顶端穗枝，适合河岸水边。",
+    "group": "蕨类、草丛与湿地",
+    "old_triangles": 1296,
+    "new_triangles": 20482,
+    "detail": "images/river_reeds-detail.png",
+    "side": "images/river_reeds-side.png"
+  },
+  "sedge_river": {
+    "name": "河岸莎草",
+    "description": "密集细长叶片与不同朝向的湿地植物。",
+    "group": "蕨类、草丛与湿地",
+    "old_triangles": 1296,
+    "new_triangles": 20008,
+    "detail": "images/sedge_river-detail.png",
+    "side": "images/sedge_river-side.png"
+  }
+}
