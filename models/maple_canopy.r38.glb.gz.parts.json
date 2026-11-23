@@ -1,0 +1,11 @@
+{
+  "format": "gzip-parted-glb",
+  "parts": [
+    "maple_canopy.r38.glb.gz.part00",
+    "maple_canopy.r38.glb.gz.part01"
+  ],
+  "compressed_bytes": 65556774,
+  "compressed_sha256": "468363c076074c580439b3a3c1bb08fc3991fd517062597919d5261edf39bb63",
+  "raw_bytes": 123554340,
+  "raw_sha256": "e0240249d1bfda7ab9c6dbcc93b3b2ffa98f614fb7e90ec5a0d9d1091785a0e8"
+}
