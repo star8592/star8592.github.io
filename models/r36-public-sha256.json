@@ -1,0 +1,72 @@
+{
+  "maple_canopy": {
+    "base.glb": {
+      "bytes": 614400,
+      "sha256": "faf1d052251fee8fbf2090d5b0a6bf10924ecb82b8839b12d94bd6555c23c88a"
+    },
+    "r36.glb": {
+      "bytes": 41793812,
+      "sha256": "19d94d8db25d223afb6a5ceb8b352f0f00182ad5901c8cbba4e43d7f97332e18"
+    }
+  },
+  "birch_airy": {
+    "base.glb": {
+      "bytes": 483208,
+      "sha256": "585e49979b23f7ec926e796fd0a4c2b73b5d1eb902fe34d8f8ad32739580ce19"
+    },
+    "r36.glb": {
+      "bytes": 52697192,
+      "sha256": "110aeaec4d725ef2b3271cc733bf00a2b65cfb7421cf6f3de8fcb2746c94f161"
+    }
+  },
+  "cedar_fir": {
+    "base.glb": {
+      "bytes": 1654260,
+      "sha256": "2de7b93f33a213f7664863a72b6860d296a0065b980f6290cff77ccd47f23633"
+    },
+    "r36.glb": {
+      "bytes": 25132676,
+      "sha256": "a74dbf5fd0afce2f427e13aba727d5212f4c326c6222fa51d6cef3bc18ab0f6e"
+    }
+  },
+  "boulder": {
+    "base.glb": {
+      "bytes": 33800,
+      "sha256": "98a7b8aa749158dab4e5a6c0349f263d83c7fc017afdd488adb70a03fa006ec8"
+    },
+    "r36.glb": {
+      "bytes": 1433720,
+      "sha256": "e9108694d68aa34027699a48973b22be78addacab1b8cc080ca3d371d925eba2"
+    }
+  },
+  "moss_boulder": {
+    "base.glb": {
+      "bytes": 51016,
+      "sha256": "4207d285aec4ed39dbcb32a373eb1a5fa1cedc52bc382dc38d07ba79bb2eea9f"
+    },
+    "r36.glb": {
+      "bytes": 1722104,
+      "sha256": "fc4eafc683c05e587156257b578ad24cb085bc2ec7e36e81c1f19cfc443521ee"
+    }
+  },
+  "cliff_outcrop": {
+    "base.glb": {
+      "bytes": 97380,
+      "sha256": "e45d0d182be400758fc348d2cd95391354ceb3ef90e2773ab94257e4bb9eed93"
+    },
+    "r36.glb": {
+      "bytes": 3287900,
+      "sha256": "93eb48e05af53c66224132ee5754fe951a3c3809f706b2c72960dabe55d6cb71"
+    }
+  },
+  "river_rocks": {
+    "base.glb": {
+      "bytes": 74124,
+      "sha256": "b45a6fd6c7a5c0d7f9b81f5f0f73c7eb7f533c06609b9f1391943dd56399a756"
+    },
+    "r36.glb": {
+      "bytes": 3816228,
+      "sha256": "7e6eb4b11f35f467d88a81d15d97274619e20d3e803ebabdbdbf28d895fa0dbc"
+    }
+  }
+}
