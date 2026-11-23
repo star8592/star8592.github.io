@@ -1,0 +1,66 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#18392a"><link rel="icon" href="data:,">
+<title>修仙 2D R43 · 43 种独立三维自然模型实机总览</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5ee;color:#203d30;font:14px/1.65 system-ui,-apple-system,sans-serif}
+header{padding:48px max(20px,calc((100vw - 1160px)/2));background:linear-gradient(110deg,#132e25,#345d42 70%,#57775a);color:#f3f8ee}
+h1{font-size:clamp(27px,4vw,47px);line-height:1.19;margin:11px 0}
+header p{max-width:890px;color:#d5e8d6;font-size:15px}header small{letter-spacing:.12em;color:#bde1c4;font-weight:700}
+.stats{display:flex;flex-wrap:wrap;gap:35px;margin-top:24px}.stats b{font-size:26px;display:block}.stats span{font-size:12px;color:#cfe7d2}
+main{max-width:1220px;margin:24px auto;padding:0 19px 50px}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:17px 0 21px}
+.toolbar input,.toolbar select{font:inherit;border:1px solid #bdcfc0;border-radius:8px;padding:10px 12px;background:white;color:#254634;min-width:130px}
+.toolbar input{flex:1;max-width:380px}.count{color:#6b826f;margin-left:auto}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+article{border:1px solid #dbe4d8;border-radius:12px;overflow:hidden;background:white;box-shadow:0 7px 23px #1c31230a}
+article a.photo{display:block}article img{width:100%;aspect-ratio:1.53;object-fit:cover;display:block}
+article .body{padding:13px 14px 16px}h2{font-size:16px;margin:0 0 5px;line-height:1.35}
+article p{font-size:12px;color:#677f6b;margin:4px 0}.tiny{font-size:11px;color:#85968a}
+.note{margin:25px 0 0;padding:17px 20px;background:#e5eee3;border-radius:10px;color:#45634c}
+footer{text-align:center;padding:18px;color:#758d7b;font-size:12px}a{color:#326e4b}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:710px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}header{padding:30px 18px}.stats{gap:25px}.toolbar{margin-top:6px}}
+@media(max-width:455px){.grid{grid-template-columns:1fr 1fr}article .body{padding:10px}h2{font-size:14px}.count{width:100%}}
+</style></head><body>
+<header><small>修仙2D · 原生自然资产工厂 · R43</small>
+<h1>43 种独立自然模型，全部实机生成。</h1>
+<p>不是概念图，也不是网上拼接的参考图。这 43 张模型截图均来自 Z890 上 Blender 生成的独立三维 GLB，并由 Chrome WebGL 逐个真实加载与截屏。保留 4 个已完成的高精度品种，其他 39 个本轮重建。</p>
+<div class="stats"><div><b>43 / 43</b><span>独立 GLB 与 Blender 模型</span></div>
+<div><b>39</b><span>本轮重新制作</span></div>
+<div><b>0</b><span>图片贴图 / Billboard</span></div>
+<div><b>100%</b><span>逐项 Chrome WebGL 加载通过</span></div></div></header>
+<main><div class="toolbar"><input id="search" type="search" placeholder="搜索：柳树、白桦、岩石、fern…">
+<select id="filter"><option value="all">全部品类（43）</option><option value="tree">乔木</option><option value="bush">灌木</option><option value="ground">花草蕨菌</option><option value="stone">岩石枯木</option><option value="prop">人造景物</option></select>
+<span id="count" class="count">43 项</span></div><section id="grid" class="grid"></section>
+<div class="note"><b>验收说明：</b>截图证明每个模型已在 WebGL 中实际加载，不等于整片森林最终美术通过。局部树形、石材颜色、完整森林自然性、风动和真实 NVIDIA 游戏帧率仍需迭代。本页展示的是可核对的截图；完整三维模型保存在 Z890 的 R43 工程目录，未把静态缩略图伪称为网页可操作模型。</div></main>
+<footer>GlobalGameFoundry · 原生三维植物/景物资产集 · R43</footer>
+<script>
+const state={items:[],query:'',group:'all'};
+const grid=document.querySelector('#grid');
+function format(n){return new Intl.NumberFormat('zh-CN').format(n);}
+function render(){
+ const q=state.query.trim().toLowerCase();
+ const data=state.items.filter(x=>(state.group==='all'||state.group===x.group)&&
+  (!q||x.id.toLowerCase().includes(q)||x.title.includes(q)||x.category.includes(q)));
+ grid.replaceChildren();
+ for(const x of data){
+  const card=document.createElement('article');
+  const a=document.createElement('a');a.className='photo';a.href=x.image;a.target='_blank';a.rel='noopener';
+  const im=document.createElement('img');im.src=x.image;im.alt=x.title+' R43 真实 GLB WebGL 截图';
+  im.loading='lazy';im.decoding='async';a.append(im);
+  const body=document.createElement('div');body.className='body';
+  const h=document.createElement('h2');h.textContent=x.title;body.append(h);
+  const desc=document.createElement('p');desc.textContent=x.category+' · '+format(x.triangles)+' 三角面';body.append(desc);
+  const id=document.createElement('div');id.className='tiny';id.textContent=x.id;body.append(id);
+  card.append(a,body);grid.append(card);
+ }
+ document.querySelector('#count').textContent=data.length+' 项';
+}
+document.querySelector('#filter').addEventListener('change',e=>{state.group=e.target.value;render()});
+document.querySelector('#search').addEventListener('input',e=>{state.query=e.target.value;render()});
+fetch('catalog.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(d=>{
+ if(d.total!==43||d.items.length!==43)throw Error('目录不完整');
+ state.items=d.items;render();
+}).catch(e=>document.querySelector('#count').textContent='数据加载失败 '+e.message);
+</script></body></html>

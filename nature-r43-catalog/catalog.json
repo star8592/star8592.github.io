@@ -1,0 +1,608 @@
+{
+  "version": 43,
+  "total": 43,
+  "items": [
+    {
+      "id": "oak_arch",
+      "title": "高冠橡树",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 8330954,
+      "status": "preserved",
+      "bounds": {
+        "x": 8.51,
+        "y": 8.65,
+        "z": 8.38
+      },
+      "image": "images/oak_arch.webp"
+    },
+    {
+      "id": "maple_canopy",
+      "title": "舒展枫树",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 3576216,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 5.66,
+        "y": 8.62,
+        "z": 5.49
+      },
+      "image": "images/maple_canopy.webp"
+    },
+    {
+      "id": "birch_airy",
+      "title": "透光白桦",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 3748254,
+      "status": "preserved",
+      "bounds": {
+        "x": 7.31,
+        "y": 11.27,
+        "z": 7.01
+      },
+      "image": "images/birch_airy.webp"
+    },
+    {
+      "id": "cedar_fir",
+      "title": "雪松冷杉",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 1658880,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 5.9,
+        "y": 9.64,
+        "z": 5.8
+      },
+      "image": "images/cedar_fir.webp"
+    },
+    {
+      "id": "willow_river",
+      "title": "河岸垂柳",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 3104852,
+      "status": "preserved",
+      "bounds": {
+        "x": 7.29,
+        "y": 6.89,
+        "z": 7.2
+      },
+      "image": "images/willow_river.webp"
+    },
+    {
+      "id": "bush_wide",
+      "title": "阔叶灌木",
+      "group": "bush",
+      "category": "灌木",
+      "triangles": 346680,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.22,
+        "y": 1.79,
+        "z": 2.65
+      },
+      "image": "images/bush_wide.webp"
+    },
+    {
+      "id": "bush_compact",
+      "title": "紧凑灌木",
+      "group": "bush",
+      "category": "灌木",
+      "triangles": 140400,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 1.64,
+        "y": 1.24,
+        "z": 1.66
+      },
+      "image": "images/bush_compact.webp"
+    },
+    {
+      "id": "bush_flowers",
+      "title": "开花灌木",
+      "group": "bush",
+      "category": "灌木",
+      "triangles": 448328,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.02,
+        "y": 1.85,
+        "z": 2.1
+      },
+      "image": "images/bush_flowers.webp"
+    },
+    {
+      "id": "grass_short",
+      "title": "矮草簇",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 47040,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.29,
+        "y": 0.39,
+        "z": 2.38
+      },
+      "image": "images/grass_short.webp"
+    },
+    {
+      "id": "grass_tall",
+      "title": "高草丛",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 43680,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.62,
+        "y": 0.88,
+        "z": 2.5
+      },
+      "image": "images/grass_tall.webp"
+    },
+    {
+      "id": "river_reeds",
+      "title": "河岸芦苇",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 109080,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 3.52,
+        "y": 2.09,
+        "z": 3.46
+      },
+      "image": "images/river_reeds.webp"
+    },
+    {
+      "id": "flower_pink",
+      "title": "粉色野花",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 106200,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.54,
+        "y": 0.98,
+        "z": 2.54
+      },
+      "image": "images/flower_pink.webp"
+    },
+    {
+      "id": "flower_blue",
+      "title": "蓝色野花",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 106200,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.57,
+        "y": 0.97,
+        "z": 2.38
+      },
+      "image": "images/flower_blue.webp"
+    },
+    {
+      "id": "flower_ivory",
+      "title": "乳白野花",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 106200,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.56,
+        "y": 0.98,
+        "z": 2.41
+      },
+      "image": "images/flower_ivory.webp"
+    },
+    {
+      "id": "fern_fronds",
+      "title": "羽状蕨叶",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 76380,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 1.98,
+        "y": 0.82,
+        "z": 2.25
+      },
+      "image": "images/fern_fronds.webp"
+    },
+    {
+      "id": "mushroom_cluster",
+      "title": "野生菌簇",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 15504,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 1.92,
+        "y": 0.59,
+        "z": 1.97
+      },
+      "image": "images/mushroom_cluster.webp"
+    },
+    {
+      "id": "boulder",
+      "title": "孤石",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 741,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.97,
+        "y": 0.87,
+        "z": 2.61
+      },
+      "image": "images/boulder.webp"
+    },
+    {
+      "id": "moss_boulder",
+      "title": "苔藓石",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 4341,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.05,
+        "y": 0.93,
+        "z": 2.08
+      },
+      "image": "images/moss_boulder.webp"
+    },
+    {
+      "id": "river_rocks",
+      "title": "河滩石群",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 4446,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.71,
+        "y": 0.72,
+        "z": 3.05
+      },
+      "image": "images/river_rocks.webp"
+    },
+    {
+      "id": "flat_slabs",
+      "title": "片状岩板",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 2964,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.96,
+        "y": 0.72,
+        "z": 3.49
+      },
+      "image": "images/flat_slabs.webp"
+    },
+    {
+      "id": "cliff_outcrop",
+      "title": "陡崖露岩",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 3157,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 5.61,
+        "y": 3.13,
+        "z": 4.91
+      },
+      "image": "images/cliff_outcrop.webp"
+    },
+    {
+      "id": "fallen_log",
+      "title": "倒卧枯木",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 6180,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 4.04,
+        "y": 0.8,
+        "z": 0.92
+      },
+      "image": "images/fallen_log.webp"
+    },
+    {
+      "id": "tree_stump",
+      "title": "老树桩",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 5738,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 1.76,
+        "y": 1.07,
+        "z": 1.59
+      },
+      "image": "images/tree_stump.webp"
+    },
+    {
+      "id": "footbridge",
+      "title": "木质小桥",
+      "group": "prop",
+      "category": "人造景物",
+      "triangles": 5674,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 5.25,
+        "y": 0.98,
+        "z": 1.69
+      },
+      "image": "images/footbridge.webp"
+    },
+    {
+      "id": "waystone",
+      "title": "山道石碑",
+      "group": "prop",
+      "category": "人造景物",
+      "triangles": 1136,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 1.16,
+        "y": 2.35,
+        "z": 0.71
+      },
+      "image": "images/waystone.webp"
+    },
+    {
+      "id": "oak_leaning",
+      "title": "斜生橡树",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 1007900,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 7.55,
+        "y": 8.34,
+        "z": 7.83
+      },
+      "image": "images/oak_leaning.webp"
+    },
+    {
+      "id": "oak_ancient",
+      "title": "古老橡树",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 1111092,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 9.46,
+        "y": 9.03,
+        "z": 8.84
+      },
+      "image": "images/oak_ancient.webp"
+    },
+    {
+      "id": "maple_low",
+      "title": "矮冠枫树",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 3596216,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 7.22,
+        "y": 7.02,
+        "z": 7.03
+      },
+      "image": "images/maple_low.webp"
+    },
+    {
+      "id": "maple_high",
+      "title": "高冠枫树",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 3870852,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 7.47,
+        "y": 10.22,
+        "z": 7.25
+      },
+      "image": "images/maple_high.webp"
+    },
+    {
+      "id": "birch_twin",
+      "title": "双干白桦",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 1513232,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 6.29,
+        "y": 9.58,
+        "z": 5.28
+      },
+      "image": "images/birch_twin.webp"
+    },
+    {
+      "id": "fir_dense",
+      "title": "密冠冷杉",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 1843128,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 6.76,
+        "y": 10.55,
+        "z": 6.97
+      },
+      "image": "images/fir_dense.webp"
+    },
+    {
+      "id": "fir_sapling",
+      "title": "冷杉幼树",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 459528,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.83,
+        "y": 4.75,
+        "z": 2.53
+      },
+      "image": "images/fir_sapling.webp"
+    },
+    {
+      "id": "willow_swept",
+      "title": "斜生垂柳",
+      "group": "tree",
+      "category": "乔木",
+      "triangles": 2994862,
+      "status": "preserved",
+      "bounds": {
+        "x": 7.63,
+        "y": 6.76,
+        "z": 8.54
+      },
+      "image": "images/willow_swept.webp"
+    },
+    {
+      "id": "bush_berry",
+      "title": "浆果灌木",
+      "group": "bush",
+      "category": "灌木",
+      "triangles": 394472,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.16,
+        "y": 1.95,
+        "z": 2.01
+      },
+      "image": "images/bush_berry.webp"
+    },
+    {
+      "id": "bush_dry",
+      "title": "旱生灌木",
+      "group": "bush",
+      "category": "灌木",
+      "triangles": 147480,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.59,
+        "y": 1.7,
+        "z": 2.55
+      },
+      "image": "images/bush_dry.webp"
+    },
+    {
+      "id": "wild_grass_spray",
+      "title": "散生野草",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 56648,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.35,
+        "y": 1.38,
+        "z": 2.61
+      },
+      "image": "images/wild_grass_spray.webp"
+    },
+    {
+      "id": "sedge_river",
+      "title": "河岸莎草",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 214820,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.81,
+        "y": 1.22,
+        "z": 2.74
+      },
+      "image": "images/sedge_river.webp"
+    },
+    {
+      "id": "flowering_aster",
+      "title": "紫菀小花",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 159264,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.39,
+        "y": 1.1,
+        "z": 2.26
+      },
+      "image": "images/flowering_aster.webp"
+    },
+    {
+      "id": "golden_daisy",
+      "title": "金色雏菊",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 139104,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.51,
+        "y": 1.13,
+        "z": 2.48
+      },
+      "image": "images/golden_daisy.webp"
+    },
+    {
+      "id": "granite_cluster",
+      "title": "花岗岩簇",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 1729,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 3.84,
+        "y": 1.11,
+        "z": 3.16
+      },
+      "image": "images/granite_cluster.webp"
+    },
+    {
+      "id": "slate_outcrop",
+      "title": "板岩露头",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 3157,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 3.94,
+        "y": 2.33,
+        "z": 4.05
+      },
+      "image": "images/slate_outcrop.webp"
+    },
+    {
+      "id": "river_pebble_mix",
+      "title": "砾石混合",
+      "group": "stone",
+      "category": "岩石枯木",
+      "triangles": 4446,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 2.34,
+        "y": 0.62,
+        "z": 2.17
+      },
+      "image": "images/river_pebble_mix.webp"
+    },
+    {
+      "id": "fern_shade",
+      "title": "阴地蕨叶",
+      "group": "ground",
+      "category": "花草蕨菌",
+      "triangles": 92460,
+      "status": "rebuilt",
+      "bounds": {
+        "x": 1.68,
+        "y": 0.67,
+        "z": 1.76
+      },
+      "image": "images/fern_shade.webp"
+    }
+  ]
+}
